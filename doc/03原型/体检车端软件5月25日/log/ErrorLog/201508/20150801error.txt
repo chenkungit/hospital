@@ -1,0 +1,84 @@
+
+ 
+记录时间：2015-08-01 15:22:06,101 
+线程ID:[22] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-01 15:22:05rn[Application UnhandledException]:未将对象引用设置到对象的实例。;
+--[堆栈信息]:
+   在 System.StubHelpers.StubHelpers.CheckCollectedDelegateMDA(IntPtr pEntryThunk)
+
+ 
+
+ 
+记录时间：2015-08-01 15:22:13,748 
+线程ID:[19] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-01 15:22:13rn[Application UnhandledException]:未将对象引用设置到对象的实例。;
+--[堆栈信息]:
+   在 TCPHelper.TcpCli.RecvData(IAsyncResult iar) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\SXLibrary\TCPHelper\TcpCli.cs:行号 345
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+
+ 
+
+ 
+记录时间：2015-08-01 15:44:29,640 
+线程ID:[18] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-01 15:44:29rn[Application UnhandledException]:未将对象引用设置到对象的实例。;
+--[堆栈信息]:
+   在 System.StubHelpers.StubHelpers.CheckCollectedDelegateMDA(IntPtr pEntryThunk)
+
+ 
+
+ 
+记录时间：2015-08-01 15:47:17,247 
+线程ID:[11] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-01 15:47:17rn[Application UnhandledException]:未将对象引用设置到对象的实例。;
+--[堆栈信息]:
+   在 System.StubHelpers.StubHelpers.CheckCollectedDelegateMDA(IntPtr pEntryThunk)
+
+ 
+
+ 
+记录时间：2015-08-01 15:55:56,411 
+线程ID:[18] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-01 15:55:56rn[Application UnhandledException]:未将对象引用设置到对象的实例。;
+--[堆栈信息]:
+   在 System.StubHelpers.StubHelpers.CheckCollectedDelegateMDA(IntPtr pEntryThunk)
+
+ 
+
+ 
+记录时间：2015-08-01 16:06:05,755 
+线程ID:[19] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-01 16:06:05rn[Application UnhandledException]:由于以前的关闭调用，套接字在那个方向已经关闭，发送或接收数据的请求没有被接受。;
+--[堆栈信息]:
+   在 TCPHelper.TcpCli.RecvData(IAsyncResult iar) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\SXLibrary\TCPHelper\TcpCli.cs:行号 383
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+
+ 

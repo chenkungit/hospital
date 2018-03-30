@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAEEEC4D-E6E7-4F0B-8A3F-88668CC0FF7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cis_business</RootNamespace>
+    <AssemblyName>cis-business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\SCommon\DLL\Log4Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\SCommon\DLL\Db\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="biz\clinicar\ClinicarCheckResultBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarCheckItemBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarCheckBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarItemtDetailBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarAllCheckBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarConsultationBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarHospitalBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarDptSechedulBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarItemtBiz.cs" />
+    <Compile Include="biz\clinicar\ClinicarDptBiz.cs" />
+    <Compile Include="biz\clinihospital\ClinihospitalDptBiz.cs" />
+    <Compile Include="biz\sys\SysDicBiz.cs" />
+    <Compile Include="biz\sys\SysBaseDataBiz.cs" />
+    <Compile Include="biz\sys\SysUserBiz.cs" />
+    <Compile Include="dao\clinicar\ClinicarCheckResultDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarCheckItemDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarCheckDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarAllCheckDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarConsultationDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarHospitalDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarDptSechedulDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarItemDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarDptDao.cs" />
+    <Compile Include="dao\clinicar\ClinicarItemDetailDao.cs" />
+    <Compile Include="dao\clinihospital\ClinicarDptDao.cs" />
+    <Compile Include="dao\sys\SysDicDao.cs" />
+    <Compile Include="dao\sys\SysBaseDataDao.cs" />
+    <Compile Include="dao\sys\SysUserDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\Constant.cs" />
+    <Compile Include="util\UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\cis-model\cis-model.csproj">
+      <Project>{f1bed9e0-b0b3-411a-83cd-776ad9a17d1d}</Project>
+      <Name>cis-model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cis-util\cis-util.csproj">
+      <Project>{7b11f03c-4b83-4b81-b5ab-3ef428c9cb0c}</Project>
+      <Name>cis-util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCommon\SCommon.csproj">
+      <Project>{d0c96775-a236-45cb-b185-43cffb3b93fc}</Project>
+      <Name>SCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Castle.ActiveRecord.fakes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

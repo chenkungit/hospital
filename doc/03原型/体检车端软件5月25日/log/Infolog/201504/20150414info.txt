@@ -1,0 +1,56 @@
+
+ 
+记录时间：2015-04-14 17:31:01,766 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆失败@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-14 17:31:03,302 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-14 17:32:00,487 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆失败@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-14 17:32:03,918 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-14 17:35:06,370 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-14 17:37:57,234 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-14 17:41:34,400 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 

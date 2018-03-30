@@ -1,0 +1,32 @@
+
+ 
+记录时间：2014-12-22 11:53:22,783 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：必须声明标量变量 "@eventno"。
+CommandText: SELECT * FROM _ZhiYeBingInfo WHERE EventNo =@eventno
+
+ 
+
+ 
+记录时间：2014-12-22 11:54:23,939 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：必须声明标量变量 "@eventno"。
+CommandText: SELECT * FROM _ZhiYeBingInfo WHERE EventNo =@eventno
+
+ 
+
+ 
+记录时间：2014-12-22 13:59:29,739 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：'<' 附近有语法错误。
+CommandText: SELECT 
+Event_No,Name,Sex_Name,Age,Marriage_Name,Team,Team_Part,itemComoboName,total_fee,Reg_Doctor
+FROM HealthExam_Reg WHERE Start_Date >='2014/12/1 0:00:00' AND Start_Date=<'2014/12/23 0:00:00'and Team= '参核人员'  AND Team_Part= '参核人员' AND Team_Group = '参核人员'
+
+ 

@@ -1,0 +1,78 @@
+
+ 
+记录时间：2015-07-13 09:35:27,951 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-13 09:35:27
+[异常类型]：NullReferenceException
+[异常消息]：
+未将对象引用设置到对象的实例。
+[异常信息]：
+   在 易捷远程会诊.会诊.会诊视频.视频.ArrayWindow(Rectangle rect) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\会诊视频\视频.cs:行号 206
+   在 易捷远程会诊.会诊.会诊视频.视频.视频_Resize(Object sender, EventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\会诊视频\视频.cs:行号 361
+   在 System.Windows.Forms.Control.OnResize(EventArgs e)
+   在 System.Windows.Forms.Form.OnResize(EventArgs e)
+   在 System.Windows.Forms.Control.OnSizeChanged(EventArgs e)
+   在 System.Windows.Forms.Control.UpdateBounds(Int32 x, Int32 y, Int32 width, Int32 height, Int32 clientWidth, Int32 clientHeight)
+   在 System.Windows.Forms.Control.UpdateBounds()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2015-07-13 09:47:32,103 
+线程ID:[8] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-13 09:47:31
+[异常类型]：NullReferenceException
+[异常消息]：
+未将对象引用设置到对象的实例。
+[异常信息]：
+   在 易捷远程会诊.会诊.会诊视频.视频.ArrayWindow(Rectangle rect) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\会诊视频\视频.cs:行号 209
+   在 易捷远程会诊.会诊.会诊视频.视频.视频_Resize(Object sender, EventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\会诊视频\视频.cs:行号 359
+   在 System.Windows.Forms.Control.OnResize(EventArgs e)
+   在 System.Windows.Forms.Form.OnResize(EventArgs e)
+   在 System.Windows.Forms.Control.OnSizeChanged(EventArgs e)
+   在 System.Windows.Forms.Control.UpdateBounds(Int32 x, Int32 y, Int32 width, Int32 height, Int32 clientWidth, Int32 clientHeight)
+   在 System.Windows.Forms.Control.UpdateBounds()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2015-07-13 10:31:55,440 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-13 10:31:55
+[异常类型]：IndexOutOfRangeException
+[异常消息]：
+索引超出了数组界限。
+[异常信息]：
+   在 易捷远程会诊.会诊.进入会诊.DrawActivePage(Boolean bActive) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\进入会诊.cs:行号 153
+   在 易捷远程会诊.会诊.进入会诊.SetActiveWnd(Int32 nIndex) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\进入会诊.cs:行号 146
+   在 易捷远程会诊.会诊.进入会诊.进入会诊_Paint(Object sender, PaintEventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\进入会诊.cs:行号 718
+   在 System.Windows.Forms.Control.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Form.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

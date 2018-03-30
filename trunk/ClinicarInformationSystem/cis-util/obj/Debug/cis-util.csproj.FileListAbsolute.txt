@@ -1,0 +1,6 @@
+D:\SINOTAO\trunk\ClinicarInformationSystem\cis-util\bin\Debug\cis-util.dll
+D:\SINOTAO\trunk\ClinicarInformationSystem\cis-util\bin\Debug\cis-util.pdb
+D:\SINOTAO\trunk\ClinicarInformationSystem\cis-util\obj\Debug\cis-util.csprojResolveAssemblyReference.cache
+D:\SINOTAO\trunk\ClinicarInformationSystem\cis-util\obj\Debug\cis-util.csproj.CoreCompileInputs.cache
+D:\SINOTAO\trunk\ClinicarInformationSystem\cis-util\obj\Debug\cis-util.dll
+D:\SINOTAO\trunk\ClinicarInformationSystem\cis-util\obj\Debug\cis-util.pdb

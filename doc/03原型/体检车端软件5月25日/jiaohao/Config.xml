@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <connStrOut>server=192.168.1.110;uid=sa;pwd=sa;database=anyangtj;</connStrOut>
+  <connStrQueue>server=192.168.1.110;uid=sa;pwd=sa;database=SXqueue;</connStrQueue>
+  <PCName>外科1</PCName>
+  <listenport>4750</listenport>
+  <receivetimeout>1000</receivetimeout>
+</root>

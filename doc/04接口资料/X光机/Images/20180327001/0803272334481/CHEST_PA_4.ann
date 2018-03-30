@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--LEAD XML Annotation File-->
+<LTANN Version="16.0">
+	<Page>
+		<Object>
+			AnnObjectContainer
+			<Father>0</Father>
+			<Visible>1</Visible>
+			<Tag>0</Tag>
+			<Scalar X="0.867069" Y="0.867069"/>
+			<Offset X="0.000000" Y="0.000000"/>
+			<ForeColor>x0</ForeColor>
+			<BackColor>xFFFFFF</BackColor>
+			<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+			<LineWidth>0</LineWidth>
+			<LineStyle>5</LineStyle>
+			<FillPattern>0</FillPattern>
+			<FillMode>0</FillMode>
+			<Alpha>0</Alpha>
+			<ShowRotateHandles>1</ShowRotateHandles>
+			<Grouping>0</Grouping>
+			<BitmapDpi X="0.000000" Y="0.000000"/>
+			<Points>
+				3
+				<Point X="44.199544" Y="160.199544"/>
+				<Point X="44.199544" Y="825.199544"/>
+				<Point X="709.199544" Y="825.199544"/>
+			</Points>
+		</Object>
+		<Block>
+			<Object>
+				AnnObjectRuler
+				<Father>0</Father>
+				<Visible>1</Visible>
+				<Tag>0</Tag>
+				<Scalar X="1.000000" Y="1.000000"/>
+				<Offset X="0.000000" Y="0.000000"/>
+				<ForeColor>xFF</ForeColor>
+				<BackColor>xFFFFFF</BackColor>
+				<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				<LineWidth>1</LineWidth>
+				<LineStyle>0</LineStyle>
+				<FillMode>0</FillMode>
+				<Rop2>0</Rop2>
+				<TextOptions>
+					<Text/>
+					<TextAlign>1</TextAlign>
+					<TextRotate>0</TextRotate>
+					<TextExpandTokens>1</TextExpandTokens>
+					<TextShowText>1</TextShowText>
+					<TextShowBorder>1</TextShowBorder>
+					<TextColor>xFF</TextColor>
+					<TextFlags>0</TextFlags>
+				</TextOptions>
+				<RulerOptions Unit="5" UnitAbbrev="cm" Precision="2" GaugeLen="30.000000" TicmarkLen="30.000000" ShowLength="1" ShowGauge="0" ShowTicMarks="1"/>
+				<RotateHandles>
+					2
+					<Handle X="340.573175" Y="127.787352" ID="100" Visible="1" Shape="6" PenColor="x0" FillColor="xFF00"/>
+					<Handle X="310.575914" Y="127.381983" ID="101" Visible="1" Shape="2" PenColor="x0" FillColor="xFF00"/>
+				</RotateHandles>
+				<ShowRotateHandles>1</ShowRotateHandles>
+				<Name>
+					<Text/>
+					<ShowName>1</ShowName>
+					<Offset X="0.000000" Y="0.000000"/>
+					<AutoAdjust>1</AutoAdjust>
+					<ForeColor>x0</ForeColor>
+					<BackColor>xFFFFFF</BackColor>
+					<BackTransparent>0</BackTransparent>
+					<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				</Name>
+				<RestrictToContainer>0</RestrictToContainer>
+				<Fixed>0</Fixed>
+				<BitmapDpi X="39.291870" Y="39.291870"/>
+				<Points>
+					2
+					<Point X="338.843209" Y="255.804839"/>
+					<Point X="342.303141" Y="-0.230136"/>
+				</Points>
+				<DefaultHandles>0</DefaultHandles>
+			</Object>
+			<Object>
+				AnnObjectRuler
+				<Father>0</Father>
+				<Visible>1</Visible>
+				<Tag>0</Tag>
+				<Scalar X="1.000000" Y="1.000000"/>
+				<Offset X="0.000000" Y="0.000000"/>
+				<ForeColor>xFF</ForeColor>
+				<BackColor>xFFFFFF</BackColor>
+				<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				<LineWidth>1</LineWidth>
+				<LineStyle>0</LineStyle>
+				<FillMode>0</FillMode>
+				<Rop2>0</Rop2>
+				<TextOptions>
+					<Text/>
+					<TextAlign>1</TextAlign>
+					<TextRotate>0</TextRotate>
+					<TextExpandTokens>1</TextExpandTokens>
+					<TextShowText>1</TextShowText>
+					<TextShowBorder>1</TextShowBorder>
+					<TextColor>xFF</TextColor>
+					<TextFlags>0</TextFlags>
+				</TextOptions>
+				<RulerOptions Unit="5" UnitAbbrev="cm" Precision="2" GaugeLen="30.000000" TicmarkLen="30.000000" ShowLength="1" ShowGauge="0" ShowTicMarks="1"/>
+				<RotateHandles>
+					2
+					<Handle X="334.229966" Y="547.592445" ID="100" Visible="1" Shape="6" PenColor="x0" FillColor="xFF00"/>
+					<Handle X="304.231436" Y="547.295430" ID="101" Visible="1" Shape="2" PenColor="x0" FillColor="xFF00"/>
+				</RotateHandles>
+				<ShowRotateHandles>1</ShowRotateHandles>
+				<Name>
+					<Text/>
+					<ShowName>1</ShowName>
+					<Offset X="0.000000" Y="0.000000"/>
+					<AutoAdjust>1</AutoAdjust>
+					<ForeColor>x0</ForeColor>
+					<BackColor>xFFFFFF</BackColor>
+					<BackTransparent>0</BackTransparent>
+					<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				</Name>
+				<RestrictToContainer>0</RestrictToContainer>
+				<Fixed>0</Fixed>
+				<BitmapDpi X="39.291870" Y="39.291870"/>
+				<Points>
+					2
+					<Point X="335.383277" Y="431.108064"/>
+					<Point X="333.076655" Y="664.076825"/>
+				</Points>
+				<DefaultHandles>0</DefaultHandles>
+			</Object>
+			<Object>
+				AnnObjectRuler
+				<Father>0</Father>
+				<Visible>1</Visible>
+				<Tag>0</Tag>
+				<Scalar X="1.000000" Y="1.000000"/>
+				<Offset X="0.000000" Y="0.000000"/>
+				<ForeColor>xFF</ForeColor>
+				<BackColor>xFFFFFF</BackColor>
+				<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				<LineWidth>1</LineWidth>
+				<LineStyle>0</LineStyle>
+				<FillMode>0</FillMode>
+				<Rop2>0</Rop2>
+				<TextOptions>
+					<Text/>
+					<TextAlign>1</TextAlign>
+					<TextRotate>0</TextRotate>
+					<TextExpandTokens>1</TextExpandTokens>
+					<TextShowText>1</TextShowText>
+					<TextShowBorder>1</TextShowBorder>
+					<TextColor>xFF</TextColor>
+					<TextFlags>0</TextFlags>
+				</TextOptions>
+				<RulerOptions Unit="5" UnitAbbrev="cm" Precision="2" GaugeLen="30.000000" TicmarkLen="30.000000" ShowLength="1" ShowGauge="0" ShowTicMarks="1"/>
+				<RotateHandles>
+					2
+					<Handle X="542.402547" Y="349.799660" ID="100" Visible="1" Shape="6" PenColor="x0" FillColor="xFF00"/>
+					<Handle X="542.544725" Y="319.799997" ID="101" Visible="1" Shape="2" PenColor="x0" FillColor="xFF00"/>
+				</RotateHandles>
+				<ShowRotateHandles>1</ShowRotateHandles>
+				<Name>
+					<Text/>
+					<ShowName>1</ShowName>
+					<Offset X="0.000000" Y="0.000000"/>
+					<AutoAdjust>1</AutoAdjust>
+					<ForeColor>x0</ForeColor>
+					<BackColor>xFFFFFF</BackColor>
+					<BackTransparent>0</BackTransparent>
+					<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				</Name>
+				<RestrictToContainer>0</RestrictToContainer>
+				<Fixed>0</Fixed>
+				<BitmapDpi X="39.291870" Y="39.291870"/>
+				<Points>
+					2
+					<Point X="420.728268" Y="349.223005"/>
+					<Point X="664.076825" Y="350.376316"/>
+				</Points>
+				<DefaultHandles>0</DefaultHandles>
+			</Object>
+			<Object>
+				AnnObjectRuler
+				<Father>0</Father>
+				<Visible>1</Visible>
+				<Tag>0</Tag>
+				<Scalar X="1.000000" Y="1.000000"/>
+				<Offset X="0.000000" Y="0.000000"/>
+				<ForeColor>xFF</ForeColor>
+				<BackColor>xFFFFFF</BackColor>
+				<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				<LineWidth>1</LineWidth>
+				<LineStyle>0</LineStyle>
+				<FillMode>0</FillMode>
+				<Rop2>0</Rop2>
+				<TextOptions>
+					<Text/>
+					<TextAlign>1</TextAlign>
+					<TextRotate>0</TextRotate>
+					<TextExpandTokens>1</TextExpandTokens>
+					<TextShowText>1</TextShowText>
+					<TextShowBorder>1</TextShowBorder>
+					<TextColor>xFF</TextColor>
+					<TextFlags>0</TextFlags>
+				</TextOptions>
+				<RulerOptions Unit="5" UnitAbbrev="cm" Precision="2" GaugeLen="30.000000" TicmarkLen="30.000000" ShowLength="1" ShowGauge="0" ShowTicMarks="1"/>
+				<RotateHandles>
+					2
+					<Handle X="128.940662" Y="348.646350" ID="100" Visible="1" Shape="6" PenColor="x0" FillColor="xFF00"/>
+					<Handle X="129.342412" Y="318.649040" ID="101" Visible="1" Shape="2" PenColor="x0" FillColor="xFF00"/>
+				</RotateHandles>
+				<ShowRotateHandles>1</ShowRotateHandles>
+				<Name>
+					<Text/>
+					<ShowName>1</ShowName>
+					<Offset X="0.000000" Y="0.000000"/>
+					<AutoAdjust>1</AutoAdjust>
+					<ForeColor>x0</ForeColor>
+					<BackColor>xFFFFFF</BackColor>
+					<BackTransparent>0</BackTransparent>
+					<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+				</Name>
+				<RestrictToContainer>0</RestrictToContainer>
+				<Fixed>0</Fixed>
+				<BitmapDpi X="39.291870" Y="39.291870"/>
+				<Points>
+					2
+					<Point X="258.111460" Y="350.376316"/>
+					<Point X="-0.230136" Y="346.916384"/>
+				</Points>
+				<DefaultHandles>0</DefaultHandles>
+			</Object>
+		</Block>
+	</Page>
+</LTANN>
+

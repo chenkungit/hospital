@@ -1,0 +1,9 @@
+﻿
+                             <tr>
+                <td width="200" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px;word-wrap:break-word;word-break:break-all;">&nbsp;[项目名称]&nbsp;</td>
+                <td width="140" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px; word-wrap:break-word;word-break:break-all;">&nbsp;[检查结果]&nbsp;</td>
+		<td width="90" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px;word-wrap:break-word;word-break:break-all;">&nbsp;[异常]&nbsp;</td>
+                <td width="130" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px;word-wrap:break-word;word-break:break-all;">&nbsp;[参考值]&nbsp;</td> 
+                <td width="100" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px;word-wrap:break-word;word-break:break-all;">&nbsp;[项目单位]&nbsp;</td>
+                </tr>      
+                

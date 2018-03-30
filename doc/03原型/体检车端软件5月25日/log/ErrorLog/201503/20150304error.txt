@@ -1,0 +1,70 @@
+
+ 
+记录时间：2015-03-04 11:17:08,622 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体模版.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-03-04 11:17:13,890 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体模版.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-03-04 11:17:22,327 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体模版.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-03-04 16:57:42,257 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/3/4 16:57:42
+[异常类型]：NullReferenceException
+[异常消息]：
+未将对象引用设置到对象的实例。
+[异常信息]：
+   在 易捷健康体检系统.TuanTi.ShuJuDaoRu.dgvPerson_CellClick(Object sender, DataGridViewCellEventArgs e) 位置 c:\Users\LL\Desktop\ll\54所\体检系统\体检软件\易捷健康体检系统\TuanTi\ShuJuDaoRu.cs:行号 634
+   在 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2015-03-04 17:30:00,278 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/3/4 17:30:00
+[异常类型]：IndexOutOfRangeException
+[异常消息]：
+在位置 2 处没有任何行。
+[异常信息]：
+   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 易捷健康体检系统.TuanTi.ShuJuDaoRu.dgvPerson_CellClick(Object sender, DataGridViewCellEventArgs e) 位置 c:\Users\LL\Desktop\ll\54所\体检系统\体检软件\易捷健康体检系统\TuanTi\ShuJuDaoRu.cs:行号 621
+   在 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

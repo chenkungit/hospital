@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <lisConnStr>server=192.168.1.10;uid=root;pwd=root;database=sxlis;allow user variables=true;</lisConnStr>
+  <tjConnStr>server=192.168.1.10;uid=root;pwd=root;database=sxtj;allow user variables=true;</tjConnStr>
+</root>

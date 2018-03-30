@@ -1,0 +1,64 @@
+
+ 
+记录时间：2015-03-14 14:53:44,596 
+线程ID:[13] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/3/14 14:53:44rn[Application UnhandledException]:由于目标计算机积极拒绝，无法连接。 127.0.0.1:47600;
+--[堆栈信息]:
+   在 易捷健康体检系统.Form1.tcpCli_connentException(String str) 位置 c:\Users\LL\Desktop\ll\54所\体检系统\体检软件\易捷健康体检系统\Form1.cs:行号 65
+   在 TCPHelper.TcpCli.Connected(IAsyncResult iar) 位置 c:\Users\LL\Desktop\ll\SXLibrary\TCPHelper\TcpCli.cs:行号 303
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.Socket.ConnectCallback()
+   在 System.Net.Sockets.Socket.RegisteredWaitCallback(Object state, Boolean timedOut)
+   在 System.Threading._ThreadPoolWaitOrTimerCallback.PerformWaitOrTimerCallback(Object state, Boolean timedOut)
+
+ 
+
+ 
+记录时间：2015-03-14 16:16:01,610 
+线程ID:[12] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/3/14 16:16:01rn[Application UnhandledException]:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接);
+--[堆栈信息]:
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 c:\Users\LL\Desktop\ll\SXLibrary\DBHelper\DBHelper.cs:行号 767
+   在 SXLibrary.DBHelper.GetOneResult(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 c:\Users\LL\Desktop\ll\SXLibrary\DBHelper\DBHelper.cs:行号 441
+   在 SXLibrary.DBHelper.GetOneString(String cmdText) 位置 c:\Users\LL\Desktop\ll\SXLibrary\DBHelper\DBHelper.cs:行号 366
+   在 TJobj.DT_bind.setting.get_setting(String name) 位置 c:\Users\LL\Desktop\ll\54所\体检系统\体检软件\TJobj\DT_bind.cs:行号 995
+   在 易捷健康体检系统.Form1.tcpCli_ReceivedDatagram(Object sender, NetEventArgs e) 位置 c:\Users\LL\Desktop\ll\54所\体检系统\体检软件\易捷健康体检系统\Form1.cs:行号 132
+   在 TCPHelper.TcpCli.RecvData(IAsyncResult iar) 位置 c:\Users\LL\Desktop\ll\SXLibrary\TCPHelper\TcpCli.cs:行号 372
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+
+ 

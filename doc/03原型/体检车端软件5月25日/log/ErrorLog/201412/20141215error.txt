@@ -1,0 +1,58 @@
+
+ 
+记录时间：2014-12-15 09:01:15,296 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Cehr_Patient'。不能在对象 'dbo.Cehr_Patient' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Cehr_Patient]
+           ([Last_Update_DTime],[Org_Code],[Patient_Id],[Name],[Sex_Code],[Sex_Name],[Birth_Date]
+           ,[Nationality_Code],[Nationality_Name],[ID_Type_Code],[ID_Type_Name],[ID_No],[Card_No]
+           ,[Occupation_Code],[Occupation_Name],[Email],[This_Health_Card_No],[Native],[Address]
+           ,[Postal_Code],[Tel_No],[Name_PY],[Secret_Level])
+     VALUES
+           ('2014-12-15 9:01:14','','8008','lll','1','男','1980-12-15 0:00:00','1','汉族','01','居民身份证','','10474','010101','其他'
+,'email','','籍贯','','邮编','','lll',0)
+
+ 
+
+ 
+记录时间：2014-12-15 09:07:27,484 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Group'。不能在对象 'dbo.Result_Group' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Group] 
+           ([Result_groupid_Id],[event_no],[office_id],[office_name],[group_id],[group_name],[patient_id],[prtient_name],[time],
+[discountType],[price],discountValue,shishoufei,[isShouFei],[isAppend],
+[AppNo])
+     VALUES ('62175','1412150002','519','检验科(三楼)','2065','血常规','8009','llll','2014-12-15 9:07:27',
+'打折','30.00','1','30.00','已收费','非附加',
+'');
+
+ 
+
+ 
+记录时间：2014-12-15 09:08:08,218 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Office'。不能在对象 'dbo.Result_Office' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Office]
+                       ([Result_Office_Id],[Office_Id],[Office_name],[Group_Id],[Group_Name],[Patient_Id],[Patient_Name],[Event_No],[date])
+                 VALUES
+                       ('38490','519','检验科(三楼)','2065','血常规','8010','llll','1412150003','2014-12-15 9:08:08');
+
+ 
+
+ 
+记录时间：2014-12-15 09:08:40,468 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Item'。不能在对象 'dbo.Result_Item' 中插入重复键。
+语句已终止。
+ 

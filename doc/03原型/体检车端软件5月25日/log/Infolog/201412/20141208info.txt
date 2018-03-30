@@ -1,0 +1,64 @@
+
+ 
+记录时间：2014-12-08 00:00:55,595 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:06:20,622 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:07:15,627 
+线程ID:[11] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:08:21,890 
+线程ID:[11] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:14:47,987 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:18:11,648 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:18:41,409 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 
+
+ 
+记录时间：2014-12-08 00:32:07,479 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20141010LRZK\Administrator
+ 

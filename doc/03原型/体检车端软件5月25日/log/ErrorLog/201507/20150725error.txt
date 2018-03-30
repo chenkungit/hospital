@@ -1,0 +1,20 @@
+
+ 
+记录时间：2015-07-25 15:47:40,322 
+线程ID:[13] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-25 15:47:40rn[Application UnhandledException]:你的主机中的软件中止了一个已建立的连接。;
+--[堆栈信息]:
+   在 TCPHelper.TcpCli.RecvData(IAsyncResult iar) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\SXLibrary\TCPHelper\TcpCli.cs:行号 383
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+
+ 

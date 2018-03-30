@@ -1,0 +1,194 @@
+
+ 
+记录时间：2017-04-15 10:23:01,324 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-15 10:23:01
+[异常类型]：MySqlException
+[异常消息]：
+Unable to connect to any of the specified MySQL hosts.
+[异常信息]：
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 1030
+   at SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 552
+   at SXLibrary.DBHelper.GetDataTable(String cmdText) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 515
+   at 易捷远程会诊.登录.bindDoctor()
+   at 易捷远程会诊.登录.登录_Load(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2017-04-15 10:23:05,849 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-15 10:23:05
+[异常类型]：MySqlException
+[异常消息]：
+Unable to connect to any of the specified MySQL hosts.
+[异常信息]：
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 1030
+   at SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 552
+   at SXLibrary.DBHelper.GetDataTable(String cmdText) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 515
+   at 易捷远程会诊.登录.bindDoctor()
+   at 易捷远程会诊.登录.登录_Load(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2017-04-15 19:56:38,183 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-15 19:56:37
+[异常类型]：TimeoutException
+[异常消息]：
+Timeout in IO operation
+[异常信息]：
+   at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadOk(Boolean read)
+   at MySql.Data.MySqlClient.NativeDriver.SetDatabase(String dbName)
+   at MySql.Data.MySqlClient.Driver.SetDatabase(String dbName)
+   at MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(String databaseName)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 1030
+   at SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 552
+   at SXLibrary.DBHelper.GetDataTable(String cmdText) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 515
+   at 易捷远程会诊.开始.开始.ReciveSession()
+   at 易捷远程会诊.开始.开始.timer1_Tick(Object sender, EventArgs e)
+   at System.Windows.Forms.Timer.OnTick(EventArgs e)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2017-04-15 19:57:59,663 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-15 19:57:59
+[异常类型]：IndexOutOfRangeException
+[异常消息]：
+There is no row at position 0.
+[异常信息]：
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at 易捷远程会诊.会诊.会诊申请详细信息.会诊申请详细信息_Load(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2017-04-15 21:30:56,056 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-15 21:30:55
+[异常类型]：TimeoutException
+[异常消息]：
+Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+[异常信息]：
+   at MySql.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadOk(Boolean read)
+   at MySql.Data.MySqlClient.NativeDriver.SetDatabase(String dbName)
+   at MySql.Data.MySqlClient.Driver.SetDatabase(String dbName)
+   at MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(String databaseName)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 1030
+   at SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 552
+   at SXLibrary.DBHelper.GetDataTable(String cmdText) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 515
+   at 易捷远程会诊.开始.开始.ReciveSession()
+   at 易捷远程会诊.开始.开始.timer1_Tick(Object sender, EventArgs e)
+   at System.Windows.Forms.Timer.OnTick(EventArgs e)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2017-04-15 21:43:16,690 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-15 21:43:16
+[异常类型]：IndexOutOfRangeException
+[异常消息]：
+There is no row at position 0.
+[异常信息]：
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at 易捷远程会诊.会诊.会诊申请详细信息.会诊申请详细信息_Load(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

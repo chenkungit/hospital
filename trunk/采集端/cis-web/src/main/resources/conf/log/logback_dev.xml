@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+	<!-- appender -->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS}[%-5p][%logger][%-4L] - %m%n</pattern>
+			<charset>utf-8</charset>
+		</encoder>
+	</appender>
+	<appender name="mainTime"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/opt/log/cis-web/web.log</file>
+		<append>true</append>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>/opt/log/cis-web/web-%d{yyyyMMdd-HH}.log
+			</FileNamePattern>
+			<maxHistory>365</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<ImmediateFlush>true</ImmediateFlush>
+			<charset>utf-8</charset>
+			<Pattern>[%d{yyyyMMdd HH:mm:ss.SSS}][%-5level][%logger][%-3L][SeqId:%X{SeqId}] - %m%n</Pattern>
+		</encoder>
+	</appender>
+	
+	<!-- log 通过 LoggerFactory.getLogger(name)取得 -->
+	<logger name="myLog" additivity="true" level="info">
+		<appender-ref ref="stdout" />
+	</logger>
+	<logger name="org.springframework.scheduling.quartz.LocalDataSourceJobStore" level="WARN"/>
+	<!-- root 默认日志配置 -->
+	<root level="DEBUG">
+		<appender-ref ref="stdout" />
+	</root>
+</configuration>

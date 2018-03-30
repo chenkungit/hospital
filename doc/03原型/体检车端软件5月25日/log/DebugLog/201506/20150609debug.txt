@@ -1,0 +1,8 @@
+
+ 
+记录时间：2015-06-09 11:28:43,013 
+线程ID:[10] 
+日志级别：DEBUG 
+发生类：null  
+描述：Unknown column 'DiscountType' in 'field list'
+ 

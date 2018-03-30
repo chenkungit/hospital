@@ -1,0 +1,32 @@
+
+ 
+记录时间：2015-05-20 10:06:48,070 
+线程ID:[1] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-05-20 10:14:47,840 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-05-20 10:15:18,964 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-05-20 10:51:16,280 
+线程ID:[1] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 

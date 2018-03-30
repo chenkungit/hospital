@@ -1,0 +1,6 @@
+D:\SINOTAO\trunk\医院端\cis-util\bin\Debug\cis-util.dll
+D:\SINOTAO\trunk\医院端\cis-util\bin\Debug\cis-util.pdb
+D:\SINOTAO\trunk\医院端\cis-util\obj\Debug\cis-util.csprojResolveAssemblyReference.cache
+D:\SINOTAO\trunk\医院端\cis-util\obj\Debug\cis-util.dll
+D:\SINOTAO\trunk\医院端\cis-util\obj\Debug\cis-util.pdb
+D:\SINOTAO\trunk\医院端\cis-util\obj\Debug\cis-util.csproj.CoreCompileInputs.cache

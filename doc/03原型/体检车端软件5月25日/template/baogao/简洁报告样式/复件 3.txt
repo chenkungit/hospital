@@ -1,0 +1,13 @@
+﻿    
+  
+  <tr>
+                <td colspan="4"  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:12px; line-height:18px;"><hr /></td>
+                </tr>
+  <tr>
+    <td colspan="4"  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:12px; line-height:18px;">结论： [结论]</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="right"  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:12px; line-height:18px;">检查医生：[检查医生]&nbsp;</td>
+  </tr>
+  </table>
+<br/><br/>            

@@ -1,0 +1,81 @@
+
+ 
+记录时间：2015-07-04 10:29:54,325 
+线程ID:[8] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-04 10:29:54
+[异常类型]：Exception
+[异常消息]：
+Duplicate entry '5e6f953f-2152-11e5-a71e-ecf4bbd35c64' for key 'app_hos_id'
+[异常信息]：
+   在 WSDBHelperCli.DBHelperCli.ExecuteTransaction(List`1 TL) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\WSDBHelper\WSDBHelperCli\WSDBHelperCli\DBHelperCli.cs:行号 221
+   在 易捷远程会诊.会诊.会诊申请详细信息.InsertApplyInfo() 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\会诊申请详细信息.cs:行号 240
+   在 易捷远程会诊.会诊.会诊申请详细信息.btnApply_Click(Object sender, EventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\会诊申请详细信息.cs:行号 176
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2015-07-04 12:53:30,978 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-04 12:53:30
+[异常类型]：Exception
+[异常消息]：
+Table 'remote_diag.applyInfodetail' doesn't exist
+[异常信息]：
+   在 WSDBHelperCli.DBHelperCli.GetDataTable(String sql, Dictionary`2 dc) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\WSDBHelper\WSDBHelperCli\WSDBHelperCli\DBHelperCli.cs:行号 64
+   在 易捷远程会诊.会诊.编辑会诊详细信息.bindinfo(String applyid) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\编辑会诊详细信息.cs:行号 213
+   在 易捷远程会诊.会诊.编辑会诊详细信息.编辑会诊详细信息_Load(Object sender, EventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\编辑会诊详细信息.cs:行号 22
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2015-07-04 15:54:13,542 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-04 15:54:13
+[异常类型]：ArgumentException
+[异常消息]：
+未能找到名为 app_info 的列。
+参数名: columnName
+[异常信息]：
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 易捷远程会诊.会诊.申请会诊.btnConsulatation_Click(Object sender, EventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\申请会诊.cs:行号 210
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

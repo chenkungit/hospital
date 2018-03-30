@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Screen Primary="0" Second="1"/>
+  <Cam index="0" name="0" ip="192.168.1.45" auto_ip="0" port="2345" LogInName="admin" LogInPass="" InUse ="1"/> 
+</root>

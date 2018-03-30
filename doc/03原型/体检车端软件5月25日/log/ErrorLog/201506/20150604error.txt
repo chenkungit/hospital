@@ -1,0 +1,8 @@
+
+ 
+记录时间：2015-06-04 09:47:40,471 
+线程ID:[8] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Unknown column 'Group_Id' in 'field list'
+ 

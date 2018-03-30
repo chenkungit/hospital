@@ -1,0 +1,72 @@
+
+ 
+记录时间：2015-06-10 11:12:51,770 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Unknown column 'PayGroup.bm_id' in 'where clause'
+CommandText:  SELECT Base_Unit_BM.Unit_Name,
+          Base_Unit_BM.BM_Name,
+          PayGroup.*
+     FROM Base_Unit_BM, PayGroup
+    WHERE PayGroup.bm_id = Base_Unit_BM.BM_ID
+      AND Base_Unit_BM.bm_id = '415'
+
+ 
+
+ 
+记录时间：2015-06-10 11:14:06,443 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT g.office_name,g.group_name,g.ShiShouFei as dj,count(1) as rc, (g.ShiShouF' at line 1
+CommandText: SELECT SELECT g.office_name,g.group_name,g.ShiShouFei as dj,count(1) as rc, (g.ShiShouFei* count(1)) as jg  from result_group g 
+INNER JOIN healthexam_reg r
+on g.event_no= r.Event_No
+where r.Team= '补检' 
+ and r.Team_Part='补检'GROUP BY g.office_name,g.group_name
+
+ 
+
+ 
+记录时间：2015-06-10 14:13:36,094 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Unknown column 'PayGroup.bm_id' in 'where clause'
+CommandText: SELECT Base_Unit_BM.*,
+         PayGroup.*
+    FROM Base_Unit_BM, PayGroup
+   WHERE Base_Unit_BM.BM_ID = PayGroup.bm_id
+     AND PayGroup.memo = '收费'
+     AND PayGroup.invoiceNo = '11'
+
+ 
+
+ 
+记录时间：2015-06-10 15:56:49,843 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Unknown column 'h.paytype' in 'where clause'
+CommandText: SELECT h.Event_No,h.name,h.Sex_Name,h.is_ok,h.regTime from healthexam_reg h 
+where h.paytype='统收' and  h.Team='补检' and h.Team_Part='补检'
+
+ 
+
+ 
+记录时间：2015-06-10 16:04:22,968 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Unknown column 'PayGroup.bm_id' in 'where clause'
+CommandText: SELECT PayGroup.*,
+         Base_Unit_BM.Unit_Name AS unitName,
+         Base_Unit_BM.BM_Name AS departmentName
+    FROM PayGroup, Base_Unit_BM
+   WHERE PayGroup.doctorId = '677'
+     AND PayGroup.bm_id = Base_Unit_BM.BM_ID
+     AND PayGroup.payDate >= '2015-06-10 00:00:00.000'
+     AND PayGroup.payDate <= '2015-06-10 23:59:59.999' 
+
+ 

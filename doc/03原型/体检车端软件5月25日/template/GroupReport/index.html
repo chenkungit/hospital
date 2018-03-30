@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+</head>
+
+<body>
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" style="font-size:28px; text-align:center; vertical-align:middle; line-height:36px;">&nbsp;&nbsp;&nbsp;&nbsp;[医院名称]</td>
+  </tr>
+  <tr>
+    <td align="center" style="font-size:28px; text-align:center; vertical-align:middle; line-height:36px;">&nbsp;&nbsp;&nbsp;&nbsp;[检查项目]报告</td>
+  </tr>
+</table><br/><br/>
+
+<table width="700"  align="center" cellpadding="0" cellspacing="0"  style="border:solid; border-color:#666; border-width:1px;" >
+  <tr style="font-size:16px; text-align:left; vertical-align:middle; line-height:22px;">
+    <td width="96" height="33" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">姓名</td>
+    <td width="122" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[姓名]&nbsp;</td>
+    <td width="94" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">性别</td>
+    <td colspan="2" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[性别]&nbsp;</td>
+    <td width="53" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">年龄</td>
+    <td width="119" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[年龄]&nbsp;</td>
+    <td width="114" rowspan="4" align="center" valign="middle" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;"><img src="[photo]" width="106" height="130" alt=""  onerror="this.style.display='none'" / ></td>
+  </tr>
+  <tr style="font-size:16px; text-align:left; vertical-align:middle; line-height:22px;">
+    <td height="33" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">婚否</td>
+    <td style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[婚否]&nbsp;</td>
+    <td style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">出生日期</td>
+    <td colspan="4" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[出生日期]&nbsp;</td>
+  </tr>
+  <tr style="font-size:16px; text-align:left; vertical-align:middle; line-height:22px;">
+    <td height="33" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">工作单位</td>
+    <td colspan="6" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[工作单位]&nbsp;</td>
+  </tr>
+  <tr style="font-size:16px; text-align:left; vertical-align:middle; line-height:22px;">
+    <td height="33" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">家庭地址</td>
+    <td colspan="3" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[地址]&nbsp;</td>
+    <td width="99" align="right" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px; padding:2px;">联系电话</td>
+    <td colspan="2" style="border:solid #666; border-width:0px 1px 1px 0px; padding:2px;">[电话]&nbsp;</td>
+  </tr>
+</table>
+<br/>
+<table width="700" align="center" cellpadding="0" cellspacing="0"  style="border:solid; border-color:#666; border-width:1px;" >
+<tr><td height="750px" colspan="2" align="center" style="text-align:left; vertical-align:top;">
+{循环收费项目[
+<table width="700"  align="center" border="0" cellpadding="0" cellspacing="0"   style="border:solid #999; border-width:0px 0px 1px 0px;">
+<thead>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC" style="border:solid #999; border-width:0px 0px 0px 0px; padding:5px ;"><span style="font-size:16px; line-height:20px"><strong>[收费项目名称]</strong></span></td>
+  </tr></thead>
+              <tr>
+                <td width="190"  style="border:solid #999; border-width:1px 0px 1px 0px; padding:5px;word-wrap:break-word;word-break:break-all;"><span style=" font-size:14px; line-height:18px">项目名称</span></td>
+                <td  style="border:solid #999; border-width:1px 0px 1px 0px; padding:5px; word-wrap:break-word;word-break:break-all;"><span style=" font-size:14px; line-height:18px">检查结果</span></td>
+ 	</tr>
+{循环项目[
+<tr>
+          <td width="190" style="border:solid #999; border-width:0px 0px 0px 0px; padding:5px;font-size:14px; line-height:21px;word-wrap:break-word;word-break:break-all;">&nbsp;[项目名称]&nbsp;</td>
+          <td style="border:solid #999; border-width:0px 0px 0px 0px; padding:5px;font-size:14px; line-height:21px; word-wrap:break-word;word-break:break-all;">&nbsp;[检查结果]&nbsp;</td>
+		</tr>
+                
+]循环项目}                
+                  <tr>
+                <td height="15" colspan="2">&nbsp;</td>
+        </tr> 
+      </table><br/>
+]循环收费项目}
+ 
+</td></tr>
+<tr>
+  <td width="561" style="border:solid #666; border-width:1px 1px 1px 0px; padding:2px; text-align:right">项目检查医生:&nbsp; </td>
+  <td width="135" style="border:solid #666; border-width:1px 1px 1px 0px; padding:2px;">[项目检查医生]&nbsp;</td>
+</tr>
+</table>
+
+</body>
+</html>

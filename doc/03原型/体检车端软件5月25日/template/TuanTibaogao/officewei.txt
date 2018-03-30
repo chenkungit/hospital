@@ -1,0 +1,9 @@
+﻿</td>
+  </tr>
+    <tr>
+    <td style="font-size:14px">[xiaojie]</td>
+  </tr>
+    <tr>
+      <td style="font-size:14px" align="right">检查医生：[checkdoctor]&nbsp;&nbsp;&nbsp;&nbsp;审核医生：[doctor]</td>
+    </tr>
+</table><br/><br/>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sinotao.business.dao.ClinicarCheckItemDao">
+    
+    <resultMap id="BaseResultMap" type="com.sinotao.business.dao.entity.ClinicarCheckItem" >
+        <id column="id" 			property="id" 		jdbcType="INTEGER" />
+        <result column="deleted" 	property="deleted" 	jdbcType="BIT" />
+        <result column="check_id" 	property="checkId" 	jdbcType="INTEGER" />
+        <result column="item_code" 	property="itemCode" jdbcType="VARCHAR" />
+        <result column="item_name" 	property="itemName" jdbcType="VARCHAR" />
+        <result column="dpt_code" 	property="dptCode" 	jdbcType="VARCHAR" />
+        <result column="dpt_name" 	property="dptName" 	jdbcType="VARCHAR" />
+        <result column="completed" 	property="completed" 	jdbcType="BIT" />
+        <result column="canceled" 	property="canceled" jdbcType="BIT" />
+        <result column="summary" 	property="summary" 	jdbcType="VARCHAR" />
+        <result column="conclusion" property="conclusion" 	jdbcType="VARCHAR" />
+        <result column="advice" 	property="advice" 	jdbcType="VARCHAR" />
+    </resultMap>
+    
+  <select id="selectByCheckNumberAndDptCode" resultMap="BaseResultMap">
+     SELECT t2.*
+       FROM t_clinicar_check t, t_clinicar_check_item t2
+      WHERE t.id = t2.check_id
+        AND t.check_number = #{checkNumber}
+		AND t2.dpt_code = #{dptCode}
+<!--       	AND completed=0 -->
+        AND t.deleted=0
+        AND t2.deleted=0
+      ORDER BY t2.id desc
+  </select>
+  
+</mapper>

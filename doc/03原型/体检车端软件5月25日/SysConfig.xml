@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <tjConnStr>server=123.57.61.160;uid=root;pwd=root;database=remotediag_local;allow user variables=true;</tjConnStr>
+  <lastUser>admin</lastUser>
+  <template>
+    <zyd>ZhiYinDan.html</zyd>
+  </template>
+  <print>
+    <printername>Zan 彩色图像打印机</printername>
+    <printerbarcode>Zan 彩色图像打印机</printerbarcode>
+    <printerticket>Zan 彩色图像打印机</printerticket>
+  </print>
+  <printsetting>
+    <barcodeheight>40</barcodeheight>
+    <barcodefont>宋体</barcodefont>
+    <barcodefontsize>9</barcodefontsize>
+    <txtbarcodewidth>120</txtbarcodewidth>
+    <txtbarcodeheight>80</txtbarcodeheight>
+    <ZYDbarcodeHeight>40</ZYDbarcodeHeight>
+    <ZYDbarcodFontSize>20</ZYDbarcodFontSize>
+    <zydPaperw>15</zydPaperw>
+    <zydPaperh>3</zydPaperh>
+    <cishu>1</cishu>
+  </printsetting>
+  <tw>
+    <imgcutx>0</imgcutx>
+    <imgcuty>0</imgcuty>
+    <imgcutwidth>720</imgcutwidth>
+    <imgcutheight>480</imgcutheight>
+    <sffz>0</sffz>
+    <csfontsize>17</csfontsize>
+    <tcdfontsize>16</tcdfontsize>
+  </tw>
+  <twswitch>on</twswitch>
+  <sdksrc>0</sdksrc>
+  <camera>USB2.0 Grabber</camera>
+  <cameraTW>e2eSoft VCam</cameraTW>
+  <cutRegPhoto>
+    <lx>100</lx>
+    <ly>35</ly>
+    <width>120</width>
+    <height>170</height>
+    <color>Yellow</color>
+  </cutRegPhoto>
+  <endExamConfig>
+    <dtp1>2017-01-23</dtp1>
+    <dtp2>2017-04-23</dtp2>
+    <recodTime>2017-04-23</recodTime>
+    <team>
+    </team>
+    <teamPart>
+    </teamPart>
+    <teamGroup>
+    </teamGroup>
+  </endExamConfig>
+  <lastSearchOffice>
+  </lastSearchOffice>
+  <ckbfjwc>True</ckbfjwc>
+  <ckbfjwwc>True</ckbfjwwc>
+  <ckbzjwc>True</ckbzjwc>
+  <SessionTime>1000</SessionTime>
+  <Screen>
+    <Primary>0</Primary>
+    <Second>8</Second>
+  </Screen>
+  <key>MTZIT-VMDGL-MANGM-NJJLU</key>
+</root>

@@ -1,0 +1,8 @@
+﻿  <table width="650px"  align="center" border="0" cellpadding="0" cellspacing="0"   style="border:solid #999; border-width:0px 0px 1px 0px;">
+ <thead style="display: table-header-group; "><tr>
+<td colspan="4" bgcolor="#CCCCCC" style="border:solid #999; border-width:0px 0px 0px 0px; padding:5px 0px;"><span style="font-size:14px; line-height:22px"><strong>[收费项目名称]</strong></span></td>
+  </tr>
+              <tr>
+                <td width="226"  style="border:solid #999; border-width:1px 0px 1px 0px; padding:3px 0px;word-wrap:break-word;word-break:break-all;"><span style=" font-size:14px; line-height:22px">项目名称</span></td>
+                <td width="424" colspan="3"  style="border:solid #999; border-width:1px 0px 1px 0px; padding:3px 0px; word-wrap:break-word;word-break:break-all;"><span style=" font-size:14px; line-height:22px">检查结果</span></td>
+ 	</tr>    </thead>

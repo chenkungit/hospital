@@ -1,0 +1,41 @@
+
+ 
+记录时间：2015-08-08 15:31:12,707 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-08-08 15:31:12
+[异常类型]：MySqlException
+[异常消息]：
+Unable to connect to any of the specified MySQL hosts.
+[异常信息]：
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 e:\工作文件夹\北京诊疗车\北京诊疗车\远程会诊用体检\远程会诊用体检\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:行号 1030
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 e:\工作文件夹\北京诊疗车\北京诊疗车\远程会诊用体检\远程会诊用体检\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:行号 552
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText, Dictionary`2 ParametersList) 位置 e:\工作文件夹\北京诊疗车\北京诊疗车\远程会诊用体检\远程会诊用体检\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:行号 537
+   在 PACSInterface.PACSInterface.ReadImages(String eventNo, String appno) 位置 e:\工作文件夹\北京诊疗车\北京诊疗车\远程会诊用体检\远程会诊用体检\易捷远程会诊\PACSInterface\PACSInterface.cs:行号 77
+   在 易捷远程会诊.PACS.PACSReport.GenPACSBGstr(String _eventno, String _ItemId) 位置 e:\思信文档\远程会诊\车端\远程会诊用体检\易捷远程会诊\易捷远程医疗\PACS\PACSReport.cs:行号 79
+   在 易捷远程会诊.PrintReport.PrintBGD.genCsbg(String eventno) 位置 e:\思信文档\远程会诊\车端\远程会诊用体检\易捷远程会诊\易捷远程医疗\PrintReport\PrintBGD.cs:行号 293
+   在 易捷远程会诊.PrintReport.PrintBGD.GenAllReport(String _event_no, String baogaopath) 位置 e:\思信文档\远程会诊\车端\远程会诊用体检\易捷远程会诊\易捷远程医疗\PrintReport\PrintBGD.cs:行号 105
+   在 易捷远程会诊.PrintReport.PrintBGD.PrintBGD_Load(Object sender, EventArgs e) 位置 e:\思信文档\远程会诊\车端\远程会诊用体检\易捷远程会诊\易捷远程医疗\PrintReport\PrintBGD.cs:行号 36
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

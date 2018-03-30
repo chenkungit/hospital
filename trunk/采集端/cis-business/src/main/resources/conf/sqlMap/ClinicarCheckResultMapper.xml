@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sinotao.business.dao.ClinicarCheckResultDao">
+    
+  <select id="selectLastCheckNumber" resultType="java.lang.String">
+     SELECT MAX(t.check_number)
+       FROM t_clinicar_check t, t_clinicar_check_item t2
+      WHERE t.id = t2.check_id
+<!--       	AND completed=0 -->
+     <if test="suffix!=null and suffix!=''">
+        AND t.check_number LIKE concat('%', #{suffix})
+     </if>
+     <if test="itemCode!=null and itemCode.size>0 ">
+		AND t2.item_code in 
+		<foreach item="code" index="index" collection="itemCode" open="(" separator="," close=")">  
+		  #{code}  
+		</foreach>
+     </if>
+        AND t.deleted=0
+        AND t2.deleted=0
+  </select>
+  
+  <select id="selectLastCheckItemId" resultType="java.lang.Integer">
+     SELECT MAX(t2.id)
+       FROM t_clinicar_check t, t_clinicar_check_item t2
+      WHERE t.id = t2.check_id
+<!--       	AND completed=0 -->
+     <if test="suffix!=null and suffix!=''">
+        AND t.check_number LIKE concat('%', #{suffix})
+     </if>
+     <if test="dptCode!=null and dptCode!='' ">
+		AND t2.dpt_code = #{dptCode}
+     </if>
+        AND t.deleted=0
+        AND t2.deleted=0
+  </select>
+  
+</mapper>

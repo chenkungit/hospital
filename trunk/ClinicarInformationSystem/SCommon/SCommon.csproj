@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0C96775-A236-45CB-B185-43CFFB3B93FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCommon</RootNamespace>
+    <AssemblyName>SCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>Castle\ActiveRecord\net40\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>Castle\ActiveRecord\net40\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Castle\ActiveRecord\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>DLL\Log4Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>DLL\Db\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>Castle\ActiveRecord\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Castle\ActiveRecord\net40\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UBaseLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Uc\x86\UBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>DLL\Tab\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>..\..\..\DLL\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Castle\ActiveRecord\CARBaseDao.cs" />
+    <Compile Include="Castle\ActiveRecord\CARBaseModel.cs" />
+    <Compile Include="Castle\ActiveRecord\ConfigFactroy.cs" />
+    <Compile Include="Castle\ActiveRecord\TransactionTool.cs" />
+    <Compile Include="SAttribute\SEnumAttribute.cs" />
+    <Compile Include="SAttribute\SModelAttribute.cs" />
+    <Compile Include="SBase\SBaseBiz.cs" />
+    <Compile Include="SBase\SBaseDao.cs" />
+    <Compile Include="SBase\SBaseModel.cs" />
+    <Compile Include="SControl\SBaseDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControl\SBaseDockForm.Designer.cs">
+      <DependentUpon>SBaseDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEnums\SEnums.cs" />
+    <Compile Include="SHelper\SConvertHelper.cs" />
+    <Compile Include="SHelper\SNetHelper.cs" />
+    <Compile Include="SQL\MySQLHelper.cs" />
+    <Compile Include="SHelper\STelnetHelper.cs" />
+    <Compile Include="SInit.cs" />
+    <Compile Include="SControl\SBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControl\SBaseForm.Designer.cs">
+      <DependentUpon>SBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SAop\STransactionAop.cs" />
+    <Compile Include="SAttribute\STransactionAttribute.cs" />
+    <Compile Include="SModel\ObjectPropertyCompare.cs" />
+    <Compile Include="SModel\SortableBindingList.cs" />
+    <Compile Include="SQL\SQLHelperParameterCache.cs" />
+    <Compile Include="SQL\SqlUtil.cs" />
+    <Compile Include="SUtil\SAngleUtil.cs" />
+    <Compile Include="SUtil\SComboBoxUtil.cs" />
+    <Compile Include="SUtil\SDataTableUtil.cs" />
+    <Compile Include="SUtil\SEnumUtil.cs" />
+    <Compile Include="SUtil\SNullUtil.cs" />
+    <Compile Include="SUtil\SConstants.cs" />
+    <Compile Include="SUtil\SGridViewUtil.cs" />
+    <Compile Include="SUtil\SImageUtil.cs" />
+    <Compile Include="SUtil\SPictureBoxUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SUtil\SPagintion.cs" />
+    <Compile Include="SUtil\SResult.cs" />
+    <Compile Include="SUtil\SStructUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SControl\SBaseForm.resx">
+      <DependentUpon>SBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControl\SBaseDockForm.resx">
+      <DependentUpon>SBaseDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

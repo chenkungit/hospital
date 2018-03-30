@@ -1,0 +1,6 @@
+﻿  <tr>
+                <td colspan="3" style="border:solid #999; border-width:1px 0px 1px 0px; padding:3px 0px;font-size:14px; line-height:18px; word-wrap:break-word;word-break:break-all; text-align:right;">项目检查医生：&nbsp;&nbsp;</td>
+        <td colspan="2" style="border:solid #999; border-width:1px 1px 1px 1px; padding:3px 0px;font-size:14px; line-height:18px;word-wrap:break-word;word-break:break-all;">[项目检查医生]　&nbsp;</td> 
+  </tr>
+                
+                </table>

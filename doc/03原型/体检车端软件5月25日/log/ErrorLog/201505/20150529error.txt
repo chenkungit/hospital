@@ -1,0 +1,25 @@
+
+ 
+记录时间：2015-05-29 17:21:02,851 
+线程ID:[19] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Unknown column 'base_wujia.FPRICE' in 'field list'
+CommandText: 
+SELECT 
+Base_WuJia.LOCAL_ID,
+base_wujia.ITEM_ID,
+base_wujia.ITEM_CNNAME,
+base_wujia.JIANPIN,
+base_wujia.PRICE,
+base_wujia.PKG_UNIT,
+base_wujia.PKG_NAME,
+base_wujia.DISCOUNT_TYPE ,
+base_wujia.DISCOUNT_VALUE,
+1 AS 'itemQuantity',
+base_wujia.FPRICE AS 'totalPrice'  
+FROM Base_WuJia
+WHERE 1=2
+ OR Base_WuJia.LOCAL_ID='70006835'
+
+ 

@@ -1,0 +1,107 @@
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.NotFoundBehaviour 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CollectionIDType 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.PrimaryKeyType 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.PropertyAccess 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.RelationType 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ByteCode.LazyInitializer 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ByteCode.ProxyFactory 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.NHibernateDelegate 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.ActiveRecordLinq 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.SessionFactoryHolderDelegate 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ModelsDelegate 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ModelDelegate 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.EventListenerRegistrationDelegate 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ActiveRecordStarter 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.RootTypeHandler 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.SessionScopeType 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Scopes.ThreadScopeInfo 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.TransactionMode 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.OnDispose 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.OptimisticLocking 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Polymorphism 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CacheEnum 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.OuterJoinEnum 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.FetchEnum 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.FetchWhen 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CascadeEnum 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ManyRelationCascadeEnum 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.Configure 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.DatabaseType 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.DefaultFlushType 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ConversationFlushMode 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CriteriaHelper 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.Constants 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.Inflector 生成存根: 类型没有系列可见的构造函数。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.ModelBuilderExtensionComposite 生成存根: 类型已密封。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.NHibernateNullablesSupport 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.QueryLanguage 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Scopes.KeyHolder 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.FlushAction 生成存根: 类型是一个值类型。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Scopes.ScopeUtil 生成存根: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.NotFoundBehaviour 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CollectionIDType 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.PrimaryKeyType 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.PropertyAccess 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.RelationType 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ByteCode.LazyInitializer 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ByteCode.ProxyFactory 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.NHibernateDelegate 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.SessionFactoryHolderDelegate 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ModelsDelegate 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ModelDelegate 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.EventListenerRegistrationDelegate 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ActiveRecordStarter+<>c__DisplayClass6 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.IValidationProvider 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.IConfigurationSource 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.XmlConfigurationSource+<>c__DisplayClass1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.IVisitable 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.IVisitor 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.SemanticVerifierVisitor+<>c__DisplayClass1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.XmlGenerationVisitor+TableScope 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.RootTypeHandler 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.ISessionFactoryHolder 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.IThreadScopeInfo 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.IActiveRecordQuery 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ISessionScope 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.SessionScopeType 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.TransactionMode 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.OnDispose 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.OptimisticLocking 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Polymorphism 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CacheEnum 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.OuterJoinEnum 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.FetchEnum 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.FetchWhen 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CascadeEnum 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ManyRelationCascadeEnum 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ActiveRecordValidator+<GetNestedPropertiesToValidate>d__0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.DatabaseType 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.IActiveRecordConfiguration 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.DefaultFlushType 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.INHContributor 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.IStorageConfiguration 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.IMappingSpecification 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Config.IDatabaseConfiguration 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.ConversationFlushMode 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.IConversation 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.IScopeConversation 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.EventListener.EventListenerContributor+<>c__DisplayClassa 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.NHEventListeners+<Enumerate>d__4`1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.CriteriaHelper 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.InterceptorFactory+CreateInterceptor 生成填充码: 类型是一个委托。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.Constants 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.IModelBuilderExtension 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.Inflector+Rule 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Internal.NHibernateNullablesSupport 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.IWebThreadScopeInfo 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.QueryLanguage 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.IActiveRecordQuery`1 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.Modifiers.IQueryModifier 生成填充码: 类型是一个接口。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.Modifiers.QueryParameter+ParameterFlags 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.ProjectionQuery`2+TypedResultTransformer`1 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.ScalarProjectionQuery`2+<Enumerate>d__0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Queries.SimpleQuery`1+<GenericEnumerate>d__0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Scopes.KeyHolder 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.FlushAction 生成填充码: 类型是一个枚举。
+D:\SINOTAO\trunk\医院端\cis-business\Fakes\Castle.ActiveRecord.fakes : warning : 无法为 Castle.ActiveRecord.Framework.Scopes.ScopeUtil 生成填充码: 类型对 exported or assembly(Castle.ActiveRecord.Fakes) 不可见。

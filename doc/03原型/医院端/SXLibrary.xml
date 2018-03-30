@@ -1,0 +1,3183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SXLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:SXLibrary.DBType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBType.SQLServer">
+            <summary>
+            SQL Server string connStr = "server= 127.0.0.1;uid=sa;pwd=sa;database=MyDB"
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBType.OleDb">
+            <summary>
+            Access string connStr = "Provider=Microsoft.Jet.OleDb.4.0;Data Source=E:\数据库\My.mdb;"
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBType.ODBC">
+            <summary>
+            ODBC数据源 string connStr = "DSN=XXX;uid=sa;pwd=sa;"
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBType.Oracle">
+            <summary>
+            Oracle  string connStr = "Data Source=MyDataSource;User ID=user;Password=user";
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBType.MySQL">
+            <summary>
+            MySQL    string connStr = "server= 127.0.0.1;uid=sa;pwd=sa;database=MyDB;allow user variables=true;"
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBType.SQLite">
+            <summary> 
+            SQLite  string connStr = "Data Source={0};";
+            带密码 += Password=myPassword;
+            </summary>
+        </member>
+        <member name="T:SXLibrary.TranList">
+            <summary>
+            SQL带参数列表，用于事务等
+            </summary>
+        </member>
+        <member name="M:SXLibrary.TranList.Add(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="cmdtxt"></param>
+            <param name="dc"></param>
+        </member>
+        <member name="T:SXLibrary.DBHelper">
+            <summary>
+            通用数据库访问类 DBHelper类
+            不同类型的数据源
+            </summary>
+        </member>
+        <member name="F:SXLibrary.DBHelper._CommandTimeout">
+            <summary>
+            执行超时
+            </summary>
+        </member>
+        <member name="M:SXLibrary.DBHelper.#ctor(System.String,SXLibrary.DBType)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="ConString">数据库连接字符串</param> 
+            <param name="DbType">访问的数据库类型</param>
+        </member>
+        <member name="M:SXLibrary.DBHelper.#ctor(System.String,SXLibrary.DBType,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ConString"></param>
+            <param name="DbType"></param>
+            <param name="ConnectionTimeout"></param>
+            <param name="CommandTimeout"></param>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetProvider">
+            <summary>
+            根据数据库类型获取数据库实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteNonQuery(System.String)">
+            <summary>
+            执行SQL语句并返回受影响的行的数目
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>受影响的行的数目</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteNonQuery(System.String,System.Data.CommandType)">
+            <summary>
+            执行SQL语句并返回受影响的行的数目
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>受影响的行的数目</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteNonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            执行SQL语句并返回受影响的行的数目
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="ParametersList">参数</param>
+            <returns>受影响的行的数目</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            执行SQL语句并返回受影响的行的数目
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <param name="ParametersList">参数</param>
+            <returns>受影响的行的数目</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteReader(System.String)">
+            <summary>
+            执行SQL语句并返回数据行
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>数据读取器接口</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteReader(System.String,System.Data.CommandType)">
+            <summary>
+            执行SQL语句并返回数据行
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>数据读取器接口</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteReader(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            执行SQL语句并返回数据行
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="ParametersList">参数</param>
+            <returns>数据读取器接口</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteReader(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            执行SQL语句并返回数据行
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <param name="ParametersList">参数</param>
+            <returns>数据读取器接口</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneResult(System.String)">
+            <summary>
+            执行SQL语句并返回单值对象
+            即结果集中第一行的第一条数据
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>单值对象－结果集中第一行的第一条数据</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneString(System.String)">
+            <summary>
+            执行SQL语句并返回单值
+            即结果集中第一行的第一条数据
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>单值对象－结果集中第一行的第一条数据</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneResult(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            执行SQL语句并返回单值对象
+            即结果集中第一行的第一条数据
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="ParametersList">参数</param>
+            <returns>单值对象－结果集中第一行的第一条数据</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneString(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            执行SQL语句并返回单值
+            即结果集中第一行的第一条数据
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="dc">数据库命令字符串</param>
+            <returns>单值对象－结果集中第一行的第一条数据</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneResult(System.String,System.Data.CommandType)">
+            <summary>
+            执行SQL语句并返回单值对象
+            即结果集中第一行的第一条数据
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>单值对象－结果集中第一行的第一条数据</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneString(System.String,System.Data.CommandType)">
+            <summary>
+            执行SQL语句并返回单值
+            即结果集中第一行的第一条数据
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>单值对象－结果集中第一行的第一条数据</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneResult(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="cmdText"></param>
+            <param name="cmdType"></param>
+            <param name="ParametersList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataSet(System.String)">
+            <summary>
+            填充一个数据集对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>数据集对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataSet(System.String,System.Data.CommandType)">
+            <summary>
+            填充一个数据集对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>数据集对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataSet(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            填充一个数据集对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="ParametersList">参数</param>
+            <returns>数据集对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataSet(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            填充一个数据集对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <param name="ParametersList">参数</param>
+            <returns>数据集对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataTable(System.String)">
+            <summary>
+            填充一个数据表对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataTable(System.String,System.Data.CommandType)">
+            <summary>
+            填充一个数据表对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            填充一个数据表对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="ParametersList">参数</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetDataTable(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            填充一个数据表对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <param name="ParametersList">参数</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneDataRow(System.String)">
+            <summary>
+            填充一个DataRow对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneDataRow(System.String,System.Data.CommandType)">
+            <summary>
+            填充一个DataRow对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneDataRow(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            填充一个DataRow对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="ParametersList">ParametersList</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetOneDataRow(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            填充一个DataRow对象并返回之
+            </summary>
+            <param name="cmdText">数据库命令字符串</param>
+            <param name="cmdType">命令执行方式</param>
+            <param name="ParametersList">ParametersList</param>
+            <returns>数据表对象</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteProcedure(System.String,System.Data.Common.DbParameter[])">
+            <summary>
+            执行带返回参数的存储过程
+            </summary>
+            <param name="ProcedureName">存储过程名</param>
+            <param name="ParametersList">参数列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetProcedureDataTable(System.String,System.Data.Common.DbParameter[])">
+            <summary>
+            执行带返回参数的存储过程
+            </summary>
+            <param name="ProcedureName">存储过程名</param>
+            <param name="ParametersList">参数列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.GetProcedureDataSet(System.String,System.Data.Common.DbParameter[])">
+            <summary>
+            执行带返回参数的存储过程
+            </summary>
+            <param name="ProcedureName">存储过程名</param>
+            <param name="ParametersList">参数列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteSqlList(System.Collections.Generic.List{System.String})">
+            <summary>
+            执行多条Sql命令 事务 
+            </summary>
+            <param name="cmdTextList">Sql命令数组</param>
+            <returns>正确执行返回True，错误执行为False,默认为false</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteSqlList(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="cmdTextList"></param>
+            <param name="UseTransaction"></param>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteTransaction(SXLibrary.TranList)">
+            <summary>
+            执行多条Sql命令带参数 事务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.ExecuteTransaction(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}})">
+            <summary>
+            执行多条Sql命令带参数 事务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.DataTableToCsv(System.Data.DataTable)">
+             <summary>
+            将DataTable转换为标准的CSV
+             </summary>
+             <param name="table">数据表</param>
+             <returns>返回标准的CSV</returns>
+        </member>
+        <member name="M:SXLibrary.DBHelper.PrepareCommand(System.Data.Common.DbConnection,System.Data.Common.DbCommand,System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            准备执行命令
+            </summary>
+            <param name="conn">DbConnection</param>
+            <param name="cmd">DbCommand</param>
+            <param name="cmdText">sql命令字符串</param>
+            <param name="cmdType">执行方式</param>
+            <param name="ParametersList">参数</param>
+        </member>
+        <member name="M:SXLibrary.DBHelper.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="P:SXLibrary.DBHelper.DatabaseType">
+            <summary>
+            获取数据库类型属性
+            </summary>
+        </member>
+        <member name="P:SXLibrary.DBHelper.ConnectionString">
+            <summary>
+            获取数据库连接字符串属性
+            </summary>
+        </member>
+        <member name="T:SXLibrary.ComputerInfo">
+            <summary>
+            计算机信息辅助类
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetOSbit">
+            <summary>
+            获取操作系统32位还是64位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.SetDateTimeFormat">
+            <summary>
+            修改系统时间样式
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetCpuID">
+            <summary>
+            获取CPU序列号
+            </summary>
+            <returns>CPU序列号</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetMacAddress">
+            <summary>
+            获取网卡MAC地址
+            </summary>
+            <returns>网卡MAC地址</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetIPAddress">
+            <summary>
+            获取IP地址
+            </summary>
+            <returns>IP地址</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetDiskSerialNumber">
+            <summary>
+            获取硬盘序列号
+            </summary>
+            <returns>硬盘序列号</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetLoginUserName">
+            <summary>
+            获取操作系统的登录用户名
+            </summary>
+            <returns>操作系统的登录用户名</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetComputerType">
+            <summary>
+            获取PC类型
+            </summary>
+            <returns>PC类型</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetTotalPhysicalMemory">
+            <summary>
+            获取物理内存
+            </summary>
+            <returns>物理内存</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetComputerName">
+            <summary>
+            获取计算机名称
+            </summary>
+            <returns>计算机名称</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetIEVersion">
+            <summary>
+            获取IE版本号
+            </summary>
+            <returns>IE版本号</returns>
+        </member>
+        <member name="M:SXLibrary.ComputerInfo.GetLocalPrinters">
+            <summary>
+            获取本机的打印机列表。列表中的第一项就是默认打印机。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.bindTreeView(System.Windows.Forms.TreeView,System.Data.DataTable,System.String,System.String,System.String,System.String,System.Windows.Forms.TreeNode)">
+            <summary>
+            绑定treeview
+            </summary>
+            <param name="tv">目标TreeView</param>
+            <param name="dt">来源数据</param>
+            <param name="keyName">主键</param>
+            <param name="_parentName">分级id列 列明</param>
+            <param name="_parentValue">分级id列 筛选条件 </param>
+            <param name="displayName">用于显示列名</param>
+            <param name="tn">要添加到的TreeNode节点，为null添加根节点</param>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.ShowOnMonitor(System.Windows.Forms.Form,System.Int32,System.Windows.Forms.FormWindowState)">
+            <summary>
+            窗体显示到那个显示器
+            </summary>
+            <param name="thisForm">窗体</param>
+            <param name="MonitorNo">显示器编号</param>
+            <param name="fws">FormWindowState</param>
+        </member>
+        <member name="T:SXLibrary.ControlHelpers.myTextBoxRegex">
+            <summary>
+            textBox验证
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.myTextBoxRegex.OnlyEnterPlusInt(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            只能输入正整数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.myTextBoxRegex.OnlyEnterInt(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            只能输入整数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.myTextBoxRegex.OnlyEnterPlusNumber(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            只能输入正实数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.myTextBoxRegex.OnlyEnterNumber(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            只能输入数字（含负号小数点）
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SXLibrary.ControlHelpers.DgvHelper">
+            <summary>
+            DataGridView辅助类
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.DgvHelper.DgvToDt(System.Windows.Forms.DataGridView)">
+            <summary>
+            datagridview 转成datatable
+            </summary>
+            <param name="dv">datagridview</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.DgvHelper.DataGridView_CellPainting(System.Object,System.Windows.Forms.DataGridViewCellPaintingEventArgs,System.Windows.Forms.DataGridView)">
+            <summary>
+            重绘dataGridView 合并第一列相同的内容的单元格
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="e"> DataGridViewCellPaintingEventArgs e</param>
+            <param name="dgvName">DataGridView dgvName</param>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.DgvHelper.DGVFillRowNo_RowPostPaint(System.Object,System.Windows.Forms.DataGridViewRowPostPaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SXLibrary.ControlHelpers.HotKey">
+            <summary>
+            注册热键
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.HotKey.RegisterHotKey(System.IntPtr,System.Int32,SXLibrary.ControlHelpers.HotKey.KeyModifiers,System.Windows.Forms.Keys)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd">要定义热键的窗口的句柄</param>
+            <param name="id">定义热键ID（不能与其它ID重复） </param>
+            <param name="fsModifiers">标识热键是否在按Alt、Ctrl、Shift、Windows等键时才会生效</param>
+            <param name="vk">定义热键的内容 keys</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ControlHelpers.HotKey.UnregisterHotKey(System.IntPtr,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd">要取消热键的窗口的句柄</param>
+            <param name="id">要取消热键的ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.ControlHelpers.ComboBoxItem">
+            <summary>
+            自定义一个ComboBoxItem
+            </summary>
+        </member>
+        <member name="T:SXLibrary.DataTableHelper">
+            <summary>
+            DataTable操作
+            </summary>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.GroupDataRows(System.Collections.Generic.IEnumerable{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataTable},System.String[],System.Int32,System.Data.DataTable)">
+            <summary>
+            根据条件分组，保留所有列。 
+            </summary>
+            <param name="source"></param>
+            <param name="destination"></param>
+            <param name="groupByFields"></param>
+            <param name="fieldIndex"></param>
+            <param name="schema"></param>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.GetMoveRowTable(System.Data.DataTable,System.Int32,System.Int32,System.Boolean)">
+            <summary>   
+            将DataTable按起始位置和移动及移动方向进行移动并返回新的DataTable   
+            </summary>   
+            <param name="dt">要移动的DataTable</param>   
+            <param name="StartRow">要移动的行（索引从1开始）</param>   
+            <param name="MoveCount">要移动的行数</param>   
+            <param name="MoveUp">是否上移（true为上移false为下移）</param>           
+            <returns>将移动完成后的DataTable返回，如果移动有误的话将返回原Table</returns>   
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.LeftOuterOrJoin(System.Data.DataTable,System.Data.DataTable,System.Data.DataColumn[],System.Data.DataColumn[],System.Data.DataColumn[],System.Boolean)">
+            <summary>
+            返回两个表的关联数据，关联后的表中只包含第一个表的字段和第二个表需要的字段
+            </summary>
+            <param name="FirstTable">第一个表（左表）</param>
+            <param name="SecondTable">第二个表（右表）</param>
+            <param name="FJC">第一个表要与第二个表关联的字段</param>
+            <param name="SJC">第二个表要与第一个表关联的字段</param>
+            <param name="SJCNeed">第二个表中需要保留的字段</param>
+            <param name="IsLeftOuter">是否是左外连接，否则为内连接</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.LeftOuterOrJoin(System.Data.DataTable,System.Data.DataTable,System.Data.DataColumn[],System.Data.DataColumn[],System.Boolean)">
+            <summary>
+            返回两个表的关联数据
+            </summary>
+            <param name="FirstTable">第一个表（左表）</param>
+            <param name="SecondTable">第二个表（右表）</param>
+            <param name="FJC">第一个表要与第二个表关联的字段</param>
+            <param name="SJC">第二个表要与第一个表关联的字段</param>
+            <param name="IsLeftOuter">是否是左外连接，否则为内连接</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.TableToIEnumerable(System.Data.DataTable)">
+            <summary>
+            将Datatable封装成泛型
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.SelectDistinct(System.Data.DataTable,System.String[])">
+            <summary> 
+            按照fieldName从sourceTable中选择出不重复的行， 
+            相当于select distinct fieldName1,fieldName2,fieldNamen from sourceTable 
+            </summary> 
+            <param name="sourceTable">源DataTable</param> 
+            <param name="fieldNames">列名数组</param> 
+            <returns>一个新的不含重复行的DataTable，列只包括fieldNames中指明的列</returns> 
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.dt_Select(System.Data.DataTable,System.String)">
+            <summary>
+            查询DataTable中符合条件的内容给新的dt
+            </summary>
+            <param name="srcdt"></param>
+            <param name="conditions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.dt_Select(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="srcdt"></param>
+            <param name="conditions"></param>
+            <param name="newTableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.DataTableHelper.SplitDataTable(System.Data.DataTable,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dtSrc"></param>
+            <param name="SplitRowCount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.DosCmd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.DosCmd.Execute(System.String,System.Int32)">
+            <summary>
+            执行dos命令
+            </summary>
+            <param name="dosCommand"></param>
+            <param name="milliseconds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.ExcelObj">
+            <summary>
+            静态方法
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ExcelObj.WriteToExcelCell(System.String,System.Collections.Generic.List{System.Tuple{System.Int32,System.Int32,System.Object,System.Type}},System.String)">
+            <summary>
+            插入到excel的cell
+            </summary>
+            <param name="fileName">excel文件名</param>
+            <param name="dst">目标 (行，列，值)</param>
+            <param name="sheetName">默认sheetName,可以不写</param>
+        </member>
+        <member name="M:SXLibrary.ExcelObj.DtToTupe(System.Int32,System.Int32,System.Data.DataTable,System.Boolean)">
+            <summary>
+            dt转换到tuple
+            </summary>
+            <param name="Xcell">顶点行</param>
+            <param name="Ycell">顶点列</param>
+            <param name="dt">datatable</param>
+            <param name="UseFirstRowColumnsName">是否使用dt的列名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelObj.DtToExcel(System.String,System.Data.DataTable,System.Boolean)">
+            <summary>
+            datatable输出到excel
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="dt">datatable</param>
+            <param name="UseFirstRowColumnsName">是否使用dt的列名</param>
+        </member>
+        <member name="M:SXLibrary.ExcelObj.ImportExcelFile(System.String,System.Boolean)">
+            <summary>
+            excel转换成datatable
+            </summary>
+            <param name="filePath">文件路径</param>
+            <param name="UseFirstRowColumnsName">是否使用dt的列名</param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.ExcelHelper">
+            <summary>
+            实例方法
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.GetExcelRowCount">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.GetExcelRowCount(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sheetIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.GetExcelRowCount(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.GetExcelColumnsCount(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.GetExcelColumnsCount(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="sheetIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.GetExcelColumnsCount(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.ConvertExcelToDatatable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="FileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.ConvertExcelToDatatable(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="FileName"></param>
+            <param name="UseFirstRowColumnsName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetCellValue(System.Int32,System.Int32,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="RowIndex"></param>
+            <param name="ColumnIndex"></param>
+            <param name="CellContent"></param>
+            <param name="CellType"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetCellValue(System.Int32,System.Int32,System.Object,System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="RowIndex"></param>
+            <param name="ColumnIndex"></param>
+            <param name="CellContent"></param>
+            <param name="CellType"></param>
+            <param name="sheetName"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.LoadDataTable(System.Data.DataTable)">
+            <summary>
+            datatable输出到excel
+            </summary>
+            <param name="dt">datatable</param>
+            <param name="UseFirstRowColumnsName">是否使用dt的列名</param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.LoadDataTable(System.Data.DataTable,System.Boolean)">
+            <summary>
+            datatable输出到excel
+            </summary>
+            <param name="dt">datatable</param>
+            <param name="UseFirstRowColumnsName">是否使用dt的列名</param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.LoadDataTable(System.Data.DataTable,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            datatable输出到excel
+            </summary>
+            <param name="dt">datatable</param>
+            <param name="UseFirstRowColumnsName">是否使用dt的列名</param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.Save(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SaveFullPath"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.MergeCell(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowstart"></param>
+            <param name="rowend"></param>
+            <param name="colstart"></param>
+            <param name="colend"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.MergeCell(System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            合并单元格
+            </summary>
+            <param name="rowstart">开始行的索引</param>
+            <param name="rowend">结束行的索引</param>
+            <param name="colstart">开始列的索引</param>
+            <param name="colend">结束列的索引</param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.DrawCellBorder(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowindex"></param>
+            <param name="cellIndex"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.DrawCellBorder(System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rowindex"></param>
+            <param name="cellIndex"></param>
+            <param name="sheetName"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.DrawCellBorderRange(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowstart"></param>
+            <param name="rowend"></param>
+            <param name="colStart"></param>
+            <param name="colend"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.DrawCellBorderRange(System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rowstart"></param>
+            <param name="rowend"></param>
+            <param name="colStart"></param>
+            <param name="colend"></param>
+            <param name="sheetName"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetColumnsAutoSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetColumnsAutoSize(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sheetName"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetColumnWidth(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ColumnIndex"></param>
+            <param name="ColumnWidth"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetColumnWidth(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sheetName"></param>
+            <param name="ColumnIndex"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetRowHeight(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="RowIndex"></param>
+            <param name="RowHeight"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetRowHeight(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sheetName"></param>
+            <param name="RowIndex"></param>
+            <param name="RowHeight"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetDefaultCellSize(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="RowHeight"></param>
+            <param name="ColumnsWidth"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetDefaultCellSize(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sheetName"></param>
+            <param name="RowHeight"></param>
+            <param name="ColumnsWidth"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.SetCellFontStyle(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="sheetName"></param>
+            <param name="rowIndex"></param>
+            <param name="cellIndex"></param>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+            <param name="withBorder"></param>
+        </member>
+        <member name="M:SXLibrary.ExcelHelper.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SXLibrary.FileObj">
+            <summary>
+            文件操作
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FileObj.GetPostfixStr(System.String)">
+            <summary>
+            取后缀名
+            </summary>
+            <param name="filename">文件名</param>
+            <returns>.gif|.html格式</returns>
+        </member>
+        <member name="M:SXLibrary.FileObj.WriteFile(System.String,System.String,System.Boolean)">
+            <summary>
+            写文件
+            </summary>
+            <param name="Path">文件路径</param>
+            <param name="Strings">文件内容</param>
+            <param name="Append">是否追加，false为更新，true为追加</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.WriteFile(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            写文件
+            </summary>
+            <param name="Path">文件路径</param>
+            <param name="Strings">文件内容</param>
+            <param name="Append">是否追加，false为更新，true为追加</param>
+            <param name="encode">编码</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.ReadFile(System.String)">
+            <summary>
+            读文件 默认为utf-8
+            </summary>
+            <param name="Path">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.FileObj.ReadFile(System.String,System.Text.Encoding)">
+            <summary>
+            读文件
+            </summary>
+            <param name="Path">文件路径</param>
+            <param name="encode">文件编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.FileObj.FileCoppy(System.String,System.String)">
+            <summary>
+            拷贝文件
+            </summary>
+            <param name="OrignFile">原始文件</param>
+            <param name="NewFile">新文件路径</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.FileDel(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="Path">路径</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.FileMove(System.String,System.String)">
+            <summary>
+            移动文件
+            </summary>
+            <param name="OrignFile">原始路径</param>
+            <param name="NewFile">新路径</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.FolderCreate(System.String,System.String)">
+            <summary>
+            在当前目录下创建目录
+            </summary>
+            <param name="OrignFolder">当前目录</param>
+            <param name="NewFloder">新目录</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.FolderCreate(System.String)">
+            <summary>
+            创建文件夹
+            </summary>
+            <param name="Path"></param>
+        </member>
+        <member name="M:SXLibrary.FileObj.CopyDir(System.String,System.String)">
+            <summary>
+            指定文件夹下面的所有内容copy到目标文件夹下面
+            </summary>
+            <param name="srcPath">原始路径</param>
+            <param name="dstPath">目标文件夹</param>
+        </member>
+        <member name="M:SXLibrary.FileObj.GetDirectoryLength(System.String)">
+            <summary>
+            获取文件夹大小
+            </summary>
+            <param name="dirPath">文件夹路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.FileObj.getMD5Hash(System.String)">
+            <summary>
+            hash文件算法
+            </summary>
+            <param name="pathName">文件Full路径</param>
+            <returns>hash值</returns>
+        </member>
+        <!-- 对于成员“M:SXLibrary.FileObj.FindFile(System.String,System.Collections.Generic.List{System.IO.FileInfo}@)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SXLibrary.FileObj.DeleteFolder(System.String)">
+            <summary>
+            递归删除文件夹内文件
+            </summary>
+            <param name="path">路径</param>
+        </member>
+        <member name="T:SXLibrary.FTP.FileStruct">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SXLibrary.FTP.FileListStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SXLibrary.FTP.clsFTP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP.Request">
+            <summary>
+            FTP请求对象
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP.Response">
+            <summary>
+            FTP响应对象
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._Uri">
+            <summary>
+            FTP服务器地址
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._DirectoryPath">
+            <summary>
+            当前工作目录
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._UserName">
+            <summary>
+            FTP登录用户
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._ErrorMsg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._Password">
+            <summary>
+            FTP登录密码
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._Proxy">
+            <summary>
+            连接FTP服务器的代理服务
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._isDeleteTempFile">
+            <summary>
+            是否需要删除临时文件
+            </summary>
+        </member>
+        <member name="F:SXLibrary.FTP.clsFTP._UploadTempFile">
+            <summary>
+            异步上传所临时生成的文件
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.#ctor(System.Uri,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="FtpUri">FTP地址</param>
+            <param name="strUserName">登录用户名</param>
+            <param name="strPassword">登录密码</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.#ctor(System.Uri,System.String,System.String,System.Net.WebProxy)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="FtpUri">FTP地址</param>
+            <param name="strUserName">登录用户名</param>
+            <param name="strPassword">登录密码</param>
+            <param name="objProxy">连接代理</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.Open(System.Uri,System.String)">
+            <summary>
+            建立FTP链接,返回响应对象
+            </summary>
+            <param name="uri">FTP地址</param>
+            <param name="FtpMathod">操作命令</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.OpenRequest(System.Uri,System.String)">
+            <summary>
+            建立FTP链接,返回请求对象
+            </summary>
+            <param name="uri">FTP地址</param>
+            <param name="FtpMathod">操作命令</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DownloadFile(System.String,System.String)">
+            <summary>
+            从FTP服务器下载文件，使用与远程文件同名的文件名来保存文件
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+            <param name="LocalPath">本地路径</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DownloadFile(System.String,System.String,System.String)">
+            <summary>
+            从FTP服务器下载文件，指定本地路径和本地文件名
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+            <param name="LocalPath">本地路径</param> 
+            <param name="LocalFileName">保存本地的文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DownloadFile(System.String)">
+            <summary>
+            从FTP服务器下载文件，返回文件二进制数据
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DownloadFileAsync(System.String,System.String,System.String)">
+            <summary>
+            从FTP服务器异步下载文件，指定本地路径和本地文件名
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>        
+            <param name="LocalPath">保存文件的本地路径,后面带有"\"</param>
+            <param name="LocalFileName">保存本地的文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DownloadFileAsync(System.String,System.String)">
+            <summary>
+            从FTP服务器异步下载文件，指定本地完整路径文件名
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+            <param name="LocalFullPath">本地完整路径文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.client_DownloadFileCompleted(System.Object,System.ComponentModel.AsyncCompletedEventArgs)">
+            <summary>
+            异步下载文件完成之后触发的事件
+            </summary>
+            <param name="sender">下载对象</param>
+            <param name="e">数据信息对象</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.client_DownloadProgressChanged(System.Object,System.Net.DownloadProgressChangedEventArgs)">
+            <summary>
+            异步下载进度发生改变触发的事件
+            </summary>
+            <param name="sender">下载对象</param>
+            <param name="e">进度信息对象</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFile(System.String)">
+            <summary>
+            上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFile(System.String,System.Boolean)">
+            <summary>
+            上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件</param>
+            <param name="OverWriteRemoteFile">是否覆盖远程服务器上面同名的文件</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFile(System.String,System.String)">
+            <summary>
+            上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFile(System.String,System.String,System.Boolean)">
+            <summary>
+            上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件名</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+            <param name="OverWriteRemoteFile">是否覆盖远程服务器上面同名的文件</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFile(System.Byte[],System.String)">
+            <summary>
+            上传文件到FTP服务器
+            </summary>
+            <param name="FileBytes">上传的二进制数据</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFile(System.Byte[],System.String,System.Boolean)">
+            <summary>
+            上传文件到FTP服务器
+            </summary>
+            <param name="FileBytes">文件二进制内容</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+            <param name="OverWriteRemoteFile">是否覆盖远程服务器上面同名的文件</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFileAsync(System.String)">
+            <summary>
+            异步上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFileAsync(System.String,System.Boolean)">
+            <summary>
+            异步上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件</param>
+            <param name="OverWriteRemoteFile">是否覆盖远程服务器上面同名的文件</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFileAsync(System.String,System.String)">
+            <summary>
+            异步上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFileAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            异步上传文件到FTP服务器
+            </summary>
+            <param name="LocalFullPath">本地带有完整路径的文件名</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+            <param name="OverWriteRemoteFile">是否覆盖远程服务器上面同名的文件</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFileAsync(System.Byte[],System.String)">
+            <summary>
+            异步上传文件到FTP服务器
+            </summary>
+            <param name="FileBytes">上传的二进制数据</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.UploadFileAsync(System.Byte[],System.String,System.Boolean)">
+            <summary>
+            异步上传文件到FTP服务器
+            </summary>
+            <param name="FileBytes">文件二进制内容</param>
+            <param name="RemoteFileName">要在FTP服务器上面保存文件名</param>
+            <param name="OverWriteRemoteFile">是否覆盖远程服务器上面同名的文件</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.client_UploadFileCompleted(System.Object,System.Net.UploadFileCompletedEventArgs)">
+            <summary>
+            异步上传文件完成之后触发的事件
+            </summary>
+            <param name="sender">下载对象</param>
+            <param name="e">数据信息对象</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.client_UploadProgressChanged(System.Object,System.Net.UploadProgressChangedEventArgs)">
+            <summary>
+            异步上传进度发生改变触发的事件
+            </summary>
+            <param name="sender">下载对象</param>
+            <param name="e">进度信息对象</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ListFilesAndDirectories">
+            <summary>
+            列出FTP服务器上面当前目录的所有文件和目录
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ListFiles">
+            <summary>
+            列出FTP服务器上面当前目录的所有文件
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ListDirectories">
+            <summary>
+            列出FTP服务器上面当前目录的所有的目录
+            </summary>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.GetList(System.String)">
+            <summary>
+            获得文件和目录列表
+            </summary>
+            <param name="datastring">FTP返回的列表字符信息</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ParseFileStructFromWindowsStyleRecord(System.String)">
+            <summary>
+            从Windows格式中返回文件信息
+            </summary>
+            <param name="Record">文件信息</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.GuessFileListStyle(System.String[])">
+            <summary>
+            判断文件列表的方式Window方式还是Unix方式
+            </summary>
+            <param name="recordList">文件信息列表</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ParseFileStructFromUnixStyleRecord(System.String)">
+            <summary>
+            从Unix格式中返回文件信息
+            </summary>
+            <param name="Record">文件信息</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP._cutSubstringFromStringWithTrim(System.String@,System.Char,System.Int32)">
+            <summary>
+            按照一定的规则进行字符串截取
+            </summary>
+            <param name="s">截取的字符串</param>
+            <param name="c">查找的字符</param>
+            <param name="startIndex">查找的位置</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DirectoryExist(System.String)">
+            <summary>
+            判断当前目录下指定的子目录是否存在
+            </summary>
+            <param name="RemoteDirectoryName">指定的目录名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.FileExist(System.String)">
+            <summary>
+            判断一个远程文件是否存在服务器当前目录下面
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.DeleteFile(System.String)">
+            <summary>
+            从FTP服务器上面删除一个文件
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ReName(System.String,System.String)">
+            <summary>
+            更改一个文件的名称或一个目录的名称
+            </summary>
+            <param name="RemoteFileName">原始文件或目录名称</param>
+            <param name="NewFileName">新的文件或目录的名称</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.CopyFileToAnotherDirectory(System.String,System.String)">
+            <summary>
+            把当前目录下面的一个文件拷贝到服务器上面另外的目录中，注意，拷贝文件之后，当前工作目录还是文件原来所在的目录
+            </summary>
+            <param name="RemoteFile">当前目录下的文件名</param>
+            <param name="DirectoryName">新目录名称。
+            说明：如果新目录是当前目录的子目录，则直接指定子目录。如: SubDirectory1/SubDirectory2 ；
+            如果新目录不是当前目录的子目录，则必须从根目录一级一级的指定。如： ./NewDirectory/SubDirectory1/SubDirectory2
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.MoveFileToAnotherDirectory(System.String,System.String)">
+            <summary>
+            把当前目录下面的一个文件移动到服务器上面另外的目录中，注意，移动文件之后，当前工作目录还是文件原来所在的目录
+            </summary>
+            <param name="RemoteFile">当前目录下的文件名</param>
+            <param name="DirectoryName">新目录名称。
+            说明：如果新目录是当前目录的子目录，则直接指定子目录。如: SubDirectory1/SubDirectory2 ；
+            如果新目录不是当前目录的子目录，则必须从根目录一级一级的指定。如： ./NewDirectory/SubDirectory1/SubDirectory2
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.MakeDirectory(System.String)">
+            <summary>
+            在FTP服务器上当前工作目录建立一个子目录
+            </summary>
+            <param name="DirectoryName">子目录名称</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.RemoveDirectory(System.String)">
+            <summary>
+            从当前工作目录中删除一个子目录
+            </summary>
+            <param name="DirectoryName">子目录名称</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.IsValidPathChars(System.String)">
+            <summary>
+            判断目录名中字符是否合法
+            </summary>
+            <param name="DirectoryName">目录名称</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.IsValidFileChars(System.String)">
+            <summary>
+            判断文件名中字符是否合法
+            </summary>
+            <param name="FileName">文件名称</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.GotoDirectory(System.String)">
+            <summary>
+            进入一个目录
+            </summary>
+            <param name="DirectoryName">
+            新目录的名字。 
+            说明：如果新目录是当前目录的子目录，则直接指定子目录。如: SubDirectory1/SubDirectory2 ； 
+            如果新目录不是当前目录的子目录，则必须从根目录一级一级的指定。如： ./NewDirectory/SubDirectory1/SubDirectory2
+            </param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.EnterOneSubDirectory(System.String)">
+            <summary>
+            从当前工作目录进入一个子目录
+            </summary>
+            <param name="DirectoryName">子目录名称</param>
+        </member>
+        <member name="M:SXLibrary.FTP.clsFTP.ComeoutDirectory">
+            <summary>
+            从当前工作目录往上一级目录
+            </summary>
+        </member>
+        <member name="P:SXLibrary.FTP.clsFTP.Uri">
+            <summary>
+            FTP服务器地址
+            </summary>
+        </member>
+        <member name="P:SXLibrary.FTP.clsFTP.DirectoryPath">
+            <summary>
+            当前工作目录
+            </summary>
+        </member>
+        <member name="P:SXLibrary.FTP.clsFTP.UserName">
+            <summary>
+            FTP登录用户
+            </summary>
+        </member>
+        <member name="P:SXLibrary.FTP.clsFTP.ErrorMsg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:SXLibrary.FTP.clsFTP.Password">
+            <summary>
+            FTP登录密码
+            </summary>
+        </member>
+        <member name="P:SXLibrary.FTP.clsFTP.Proxy">
+            <summary>
+            连接FTP服务器的代理服务
+            </summary>
+        </member>
+        <member name="E:SXLibrary.FTP.clsFTP.DownloadProgressChanged">
+            <summary>
+            异步下载进度发生改变触发的事件
+            </summary>
+        </member>
+        <member name="E:SXLibrary.FTP.clsFTP.DownloadDataCompleted">
+            <summary>
+            异步下载文件完成之后触发的事件
+            </summary>
+        </member>
+        <member name="E:SXLibrary.FTP.clsFTP.UploadProgressChanged">
+            <summary>
+            异步上传进度发生改变触发的事件
+            </summary>
+        </member>
+        <member name="E:SXLibrary.FTP.clsFTP.UploadFileCompleted">
+            <summary>
+            异步上传文件完成之后触发的事件
+            </summary>
+        </member>
+        <member name="T:SXLibrary.FTP.clsFTP.De_DownloadProgressChanged">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SXLibrary.FTP.clsFTP.De_DownloadDataCompleted">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SXLibrary.FTP.clsFTP.De_UploadProgressChanged">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SXLibrary.FTP.clsFTP.De_UploadFileCompleted">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SXLibrary.HZToPY">
+            <summary>
+            汉字拼音转换类
+            </summary>
+        </member>
+        <member name="F:SXLibrary.HZToPY.otherChinese">
+            <summary>
+            二级汉字数组
+            </summary>
+        </member>
+        <member name="F:SXLibrary.HZToPY.otherPinYin">
+            <summary>
+            二级汉字对应拼音数组
+            </summary>
+        </member>
+        <member name="M:SXLibrary.HZToPY.ToPinyinFirstChar(System.Char)">
+            <summary>
+            取拼音第一个字段
+            </summary>        
+            <param name="ch"></param>        
+            <returns></returns>        
+        </member>
+        <member name="M:SXLibrary.HZToPY.ToPinyinFirstChar(System.String)">
+            <summary>
+            取拼音第一个字段
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.HZToPY.ToPinyin(System.Char)">
+            <summary>
+            获取单字拼音
+            </summary>
+            <param name="ch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.HZToPY.ToPinyin(System.String)">
+            <summary>
+            把汉字转换成拼音(全拼)
+            </summary>
+            <param name="str">汉字字符串</param>
+            <returns>转换后的拼音(全拼)字符串</returns>
+        </member>
+        <member name="T:SXLibrary.ImageProcess">
+            <summary>
+            图片处理及辅助类
+            </summary>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.BitmapResize(System.Drawing.Bitmap,System.Int32,System.Int32,System.String)">
+            <summary>
+            图片缩放
+            季 2013/08/24 sixinsoft
+            </summary>
+            <param name="src">源图</param>
+            <param name="width">输出图宽度</param>
+            <param name="height">输出图高度</param>
+            <param name="mode">生成输出图的方式(HW,W,H,CUT)</param>
+            <returns>输出图</returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.imageCloneFromFile(System.String)">
+            <summary>
+            从文件读取的图片Clone  防止使用后无法删除
+            </summary>
+            <param name="path">图片文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToByteArray(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Image转换为byte[]
+            季 2013/08/24 sixinsoft
+            </summary>
+            <param name="img">Image对象</param>
+            <param name="format">返回的图片格式</param>
+            <returns>byte[]图片数据</returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToByteArray(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Image转换为byte[]
+            季 2013/08/24 sixinsoft
+            </summary>
+            <param name="imgPath"> 地址 </param>
+            <param name="format">返回的图片格式</param>
+            <returns>byte[]图片数据</returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.byteArrayToImage(System.Byte[])">
+            <summary>
+            字节数组生成图片
+            </summary>
+            <param name="Bytes">字节数组</param>
+            <returns>图片</returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.saveImageToFile(System.Drawing.Image,System.String)">
+            <summary>
+            保存图片到硬盘
+            </summary>
+            <param name="imgSrc"></param>
+            <param name="dstFilePath"></param>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.saveImageToFile(System.Drawing.Image,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            保存图片到硬盘
+            </summary>
+            <param name="imgSrc"></param>
+            <param name="dstFilePath"></param>
+            <param name="imgFormat"></param>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.BitmapResize(System.Byte[],System.Int32,System.Int32,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            byte[]形式的位图的缩放
+            </summary>
+            <param name="src">源byte[]</param>
+            <param name="width">目标宽</param>
+            <param name="height">目标高</param>
+            <param name="mode">缩放模式</param>
+            <param name="format">输出格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.BitmapResize(System.String,System.String,System.Int32,System.Int32,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            从指定路径取得bitmap，缩放后存入另一路径
+            </summary>
+            <param name="srcPath">源文件路径</param>
+            <param name="dstPath">目标文件路径</param>
+            <param name="width">缩放后的宽度</param>
+            <param name="height">缩放后的高度</param>
+            <param name="mode">缩放模式</param>
+            <param name="format">保存格式</param>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToBase64(System.Drawing.Image)">
+            <summary>
+            
+            </summary>
+            <param name="image"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToBase64(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="image"></param>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToBase64(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="imgPath"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToBase64(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="imgPath"></param>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.ImageToBase64(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="byteImg"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.GetBase64ImgTag(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="base64ImgString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.ImageProcess.KiCut(System.Drawing.Bitmap,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            剪裁 -- 用GDI+
+            </summary>
+            <param name="b">原始Bitmap</param>
+            <param name="StartX">开始坐标X</param>
+            <param name="StartY">开始坐标Y</param>
+            <param name="iWidth">宽度</param>
+            <param name="iHeight">高度</param>
+            <returns>剪裁后的Bitmap</returns>
+        </member>
+        <member name="T:SXLibrary.InvokeHelper">
+            <summary>  
+            A thread-safe control invoker helper class.  
+            </summary>  
+        </member>
+        <member name="M:SXLibrary.InvokeHelper.Invoke(System.Windows.Forms.Control,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="methodName"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.InvokeHelper.Get(System.Windows.Forms.Control,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.InvokeHelper.Get(System.Windows.Forms.Control,System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="noncontrol"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.InvokeHelper.Set(System.Windows.Forms.Control,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="propertyName"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:SXLibrary.InvokeHelper.Set(System.Windows.Forms.Control,System.Object,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="noncontrol"></param>
+            <param name="propertyName"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:SXLibrary.JSON.DataTableToArrayJSON(System.Data.DataTable,System.Int32)">
+            <summary> 
+            将SQL执行后生成的DataTable转换为数组JSON
+            </summary> 
+            <example></example>
+            <remarks>2013年9月6日11:25:17 sixinsoft 季</remarks>
+            <param name="DataTable">欲转换的DataTable</param>
+            <param name="defaultSize">内置的StringBuilder的默认尺寸（以字节为单位）</param>
+            <returns>生成的JSON</returns>
+        </member>
+        <member name="M:SXLibrary.JSON.jsonToDs(System.String,System.Data.DataSet@,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            json转换成dataset 
+            </summary>
+            <param name="jsonStr">json字符串</param>
+            <param name="ds"> ref 要赋值的dataset</param>
+            <param name="tableName">要插入的表名称 递归使用，初始为""</param>
+            <param name="dcjson">如果有下级类别，递归给自己，初始为null</param>
+        </member>
+        <member name="M:SXLibrary.JSON.ArrayJSONToStringArrayArray(System.String)">
+            <summary> 
+            将数组JSON转换为string[][]
+            </summary> 
+            <example></example>
+            <remarks>2013年9月6日11:26:39 sixinsoft 季</remarks>
+            <param name="string">欲转换的JSON</param>
+            <returns>生成的string[][]</returns>
+        </member>
+        <member name="T:SXLibrary.JSMessage">
+            <summary>
+            信息输出通用方法
+            </summary>
+        </member>
+        <member name="M:SXLibrary.JSMessage.Write(System.String)">
+            <summary>
+            一般输出
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.ShowJS(System.Web.UI.Page,System.String)">
+            <summary>
+            显示一段自定义的输出代码
+            </summary>
+            <param name="MyPage"></param>
+            <param name="strCode"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.Location">
+            <summary>
+            页面重载
+            </summary>
+        </member>
+        <member name="M:SXLibrary.JSMessage.Show(System.String)">
+            <summary>
+            显示一个弹出窗口
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.ShowClose(System.String)">
+            <summary>
+            显示一个弹出窗口，并关闭当前页
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.ShowLocation(System.String)">
+            <summary>
+            显示一个弹出窗口，并转向当前页(刷新)
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.ShowRedirect(System.String,System.String)">
+            <summary>
+            显示一个弹出窗口，并转向目标页(导航)
+            </summary>
+            <param name="str"></param>
+            <param name="url"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.ShowPre(System.String)">
+            <summary>
+            显示一个弹出窗口，并转向上一页
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:SXLibrary.JSMessage.RedirectPage(System.String)">
+            <summary>
+            重定向
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:SXLibrary.LogConsole.WriteColor``1(System.ConsoleColor,System.ConsoleColor,``0)">
+            <summary> 
+            向控制台输出带颜色的字串
+            </summary> 
+            <example></example>
+            <remarks>2013年9月10日15:00:01 sixinsoft 季</remarks>
+            <param name="fore">字符色</param>
+            <param name="back">背景色</param>
+            <param name="length">要输出的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.LogConsole.WriteLineColor``1(System.ConsoleColor,System.ConsoleColor,``0)">
+            <summary> 
+            向控制台输出带颜色的字串，带换行
+            </summary> 
+            <example></example>
+            <remarks>2013年9月10日15:00:01 sixinsoft 季</remarks>
+            <param name="fore">字符色</param>
+            <param name="back">背景色</param>
+            <param name="length">要输出的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.MySecurity">
+            <summary>
+            加密解密
+            </summary>
+        </member>
+        <member name="M:SXLibrary.MySecurity.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.MySecurity.md5_Encode(System.String)">
+            <summary>
+            MD5加密函数
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>加密后的字符串</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.simple_Encode(System.String)">
+            <summary>
+            简单加密函数
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>返回加密后的字符串</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.simple_Decode(System.String)">
+            <summary>
+            简单解密函数
+            </summary>
+            <param name="str">要解密的字符串</param>
+            <returns>返回解密后的字符串</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.SEncryptString(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="inputStr">输入字符串</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns>输出加密后字符串</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.SDecryptString(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="inputStr">要解密的字符串</param>
+            <param name="keyStr">密钥</param>
+            <returns>解密后的结果</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.EncryptString(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="inputStr">输入字符串</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns>输出加密后字符串</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.DecryptString(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="inputStr">要解密的字符串</param>
+            <param name="keyStr">密钥</param>
+            <returns>解密后的结果</returns>
+        </member>
+        <member name="M:SXLibrary.MySecurity.EncryptFile(System.String,System.String,System.String)">
+            <summary>
+            加密文件
+            </summary>
+            <param name="filePath">输入文件路径</param>
+            <param name="savePath">加密后输出文件路径</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns></returns> 
+        </member>
+        <member name="M:SXLibrary.MySecurity.DecryptFile(System.String,System.String,System.String)">
+            <summary>
+            解密文件
+            </summary>
+            <param name="filePath">输入文件路径</param>
+            <param name="savePath">解密后输出文件路径</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns></returns> 
+        </member>
+        <member name="T:SXLibrary.PrintObj.PrintHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            实例化打印
+            </summary>
+            <param name="_printerName">打印机名称</param>
+            <param name="_PaperSizeWidth">纸张宽 像素</param>
+            <param name="_PaperSizeHight">纸张高 像素，如果不设定多高 赋值0</param>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.AddTxtToPrintList(System.String,System.Drawing.Font,System.Drawing.Brush,System.Int32,System.Int32)">
+            <summary>
+            向打印任务列表添加文字
+            </summary>
+            <param name="_Content">文字内容</param>
+            <param name="_Font">字体</param>
+            <param name="_Brush">笔刷</param>
+            <param name="_x">顶点X</param>
+            <param name="_y">定点Y</param>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.AddImageToPrintList(System.Drawing.Image,System.Single,System.Single)">
+            <summary>
+            向打印任务列表添加图像
+            </summary>
+            <param name="_Image">图像Image</param>
+            <param name="_x">顶点X</param>
+            <param name="_y">顶点Y</param>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.AddLineToPrintList(System.Drawing.Pen,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            向打印任务列表添加线条
+            </summary>
+            <param name="_Pen">Pen</param>
+            <param name="_startX">开始顶点X</param>
+            <param name="_startY">开始顶点Y</param>
+            <param name="_endX">结束顶点X</param>
+            <param name="_endY">结束顶点Y</param>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.Print">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.MeasureStrSize(System.String,System.Drawing.Font)">
+            <summary>
+            计算字体大小
+            </summary>
+            <param name="Str"></param>
+            <param name="StrFont"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.PrintObj.PrintHelper.MeasureStrLins(System.String,System.Drawing.Font,System.Int32)">
+            <summary>
+            根据页面宽度自动分行
+            </summary>
+            <param name="Str">文字</param>
+            <param name="StrFont">字体大小</param>
+            <param name="LineWidth">行宽</param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:SXLibrary.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:SXLibrary.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:SXLibrary.Properties.Resources.log4netconfig">
+             <summary>
+               查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;configuration&gt;
+            	&lt;configSections&gt;
+            		&lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler, log4net&quot;/&gt;
+            	&lt;/configSections&gt;
+            	&lt;log4net&gt;
+            		&lt;root&gt;
+            			&lt;level value=&quot;ALL&quot; /&gt;
+            			&lt;appender-ref ref=&quot;DebugLog&quot; /&gt;
+            			&lt;appender-ref ref=&quot;InfoLog&quot; /&gt;
+            			&lt;appender-ref ref=&quot;ErrorLog&quot; /&gt;
+            		&lt;/root&gt;
+            		&lt;appender name=&quot;InfoLog&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;
+            			&lt;file value=&quot;log\\Infolog\\&quot; /&gt;
+            			&lt;appendToFile value=&quot;true&quot; /&gt;
+            			&lt;datePat [字符串的其余部分被截断]&quot;; 的本地化字符串。
+             </summary>
+        </member>
+        <member name="T:SXLibrary.SerializeHelper">
+            <summary>
+            序列化对象
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerializeHelper.SerializeBinary(System.Object,System.Boolean)">
+             <summary>    
+             序列化为二进制字节数组 
+             </summary>    
+             <param  name="request">要序列化的对象</param>   
+             <param  name="Gzip">是否压缩 </param>   
+             <returns>字节数组</returns>    
+        </member>
+        <member name="M:SXLibrary.SerializeHelper.DeserializeBinary(System.Byte[],System.Boolean)">
+             <summary>    
+             反序列化二进制到object 
+             </summary>    
+             <param  name="buf">字节数组 </param>   
+             <param  name="Gzip">是否压缩 </param>   
+             <returns>得到的对象 </returns>    
+        </member>
+        <member name="M:SXLibrary.SerializeHelper.EncodeObjectToBase64(System.Object)">
+            <summary>
+            压缩编码object到Base64
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerializeHelper.DecodeBase64ToObject(System.String)">
+            <summary>
+            解压缩编码到object  
+            </summary>
+            <param name="base64Str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerializeHelper.GZipDecompress(System.Byte[])">
+            <summary>
+            GZip解压函数
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerializeHelper.GZipCompress(System.Byte[])">
+            <summary>
+            GZip压缩函数
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.SerialPortHelper">
+            <summary>
+            串口通讯帮助类
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.#ctor">
+            <summary>
+            构造函数默认COM1 9600 n 8 1 
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.#ctor(System.String,System.Int32,System.IO.Ports.Parity,System.Int32,System.IO.Ports.StopBits)">
+            <summary>
+            构造函数,可以自定义串口的初始化参数
+            </summary>
+            <param name="comPortName">需要操作的COM口名称</param>
+            <param name="baudRate">COM的速度</param>
+            <param name="parity">奇偶校验位</param>
+            <param name="dataBits">数据长度</param>
+            <param name="stopBits">停止位</param>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.Finalize">
+            <summary>
+            析构函数，关闭串口
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.setSerialPort(System.String,System.Int32,System.IO.Ports.Parity,System.Int32,System.IO.Ports.StopBits)">
+            <summary>
+            设置串口参数
+            </summary>
+            <param name="comPortName">需要操作的COM口名称</param>
+            <param name="baudRate">COM的速度</param>
+            <param name="Parity">校验位</param>
+            <param name="dataBits">数据长度</param>
+            <param name="stopBits">停止位</param>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.setSerialPort">
+            <summary>
+            设置串口资源,还需重载多个设置串口的函数
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.openPort">
+            <summary>
+            打开串口资源
+            <returns>返回bool类型</returns>
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.closePort">
+            <summary>
+            关闭串口资源,操作完成后,一定要关闭串口
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper._serialPort_DataReceived(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
+            <summary>
+            接收串口数据事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper._serialPort_ErrorReceived(System.Object,System.IO.Ports.SerialErrorReceivedEventArgs)">
+            <summary>
+            接收数据出错事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.SendData(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            数据发送
+            </summary>
+            <param name="data">要发送的数据字节</param>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.SendCommand(System.Byte[],System.Byte[]@,System.Int32)">
+            <summary>
+            发送命令
+            </summary>
+            <param name="SendData">发送数据</param>
+            <param name="ReceiveData">接收数据</param>
+            <param name="Overtime">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.getSerials">
+            <summary>
+            获得当前电脑上的所有串口资源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.ByteToString(System.Byte[])">
+            <summary>
+            把字节型转换成十六进制字符串
+            </summary>
+            <param name="InBytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.StringToByte(System.String)">
+            <summary>
+            把十六进制字符串转换成字节型(方法1)
+            </summary>
+            <param name="InString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.strToToHexByte(System.String)">
+            <summary>
+            字符串转16进制字节数组(方法2)
+            </summary>
+            <param name="hexString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.SerialPortHelper.byteToHexStr(System.Byte[])">
+            <summary>
+            字节数组转16进制字符串
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SXLibrary.SerialPortHelper.EndTag">
+            <summary>
+            结束标记 可以是  (byte) 也可以是 string 
+            </summary>
+        </member>
+        <member name="E:SXLibrary.SerialPortHelper.DataReceived">
+            <summary>
+            收到数据事件
+            </summary>
+        </member>
+        <member name="T:SXLibrary.SerialPortHelper.SerialPortDataReceiveEventArgs">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <param name="bits"></param>
+        </member>
+        <member name="T:SXLibrary.StringObj">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:SXLibrary.StringObj.ToSBC(System.String)">
+            <summary>
+            转全角的函数(SBC case)
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.ToDBC(System.String)">
+            <summary>
+             转半角的函数(SBC case)
+            </summary>
+            <param name="input">输入</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.GetStrArray(System.String,System.Char,System.Boolean)">
+            <summary>
+            把字符串按照分隔符转换成 List
+            </summary>
+            <param name="str">源字符串</param>
+            <param name="speater">分隔符</param>
+            <param name="toLower">是否转换为小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.GetArrayStr(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            <![CDATA[把 List<string> 按照分隔符组装成 string]]>
+            </summary>
+            <param name="list"></param>
+            <param name="speater"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.GetSubStringList(System.String,System.Char)">
+            <summary>
+            把字符串按照指定分隔符装成 List 去除重复
+            </summary>
+            <param name="o_str"></param>
+            <param name="sepeater"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.SplitMulti(System.String,System.String)">
+            <summary>
+            分割字符串
+            </summary>
+            <param name="str"></param>
+            <param name="splitstr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.ChatTOAsc(System.String)">
+            <summary>
+            转换为ASC
+            </summary>
+            <param name="character"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.HtmlToTxt(System.String)">
+            <summary>
+            HTML转行成TEXT
+            </summary>
+            <param name="strHtml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.GetShortNo(System.Int32,System.Int32)">
+            <summary>
+            转换为段字符
+            </summary>
+            <param name="num"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.GetShortNum(System.String)">
+            <summary>
+            解析段字符
+            </summary>
+            <param name="strNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.GetRandomArray(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            返回不重复随机数数组
+            </summary>
+            <param name="Number">随机数个数</param>
+            <param name="minNum">随机数下限</param>
+            <param name="maxNum">随机数上限</param>
+            <returns></returns>
+        </member>
+        <member name="T:SXLibrary.StringObj.NumberToChinese">
+            <summary>
+            数字转汉字大写表示
+            </summary>
+        </member>
+        <member name="M:SXLibrary.StringObj.NumberToChinese.Convert(System.Decimal)">
+            <summary>
+            将数字转换为汉字大写表示
+            </summary>
+            <param name="dec">欲转换的decimal</param>
+            <returns>汉字大写字符串</returns>
+        </member>
+        <member name="M:SXLibrary.StringObj.NumberToChinese.ConvertToChnNum(System.Decimal)">
+            <summary>
+            将数字转换为汉字大写表示
+            </summary>
+            <param name="dec">欲转换的decimal</param>
+            <returns>汉字大写字符串</returns>
+        </member>
+        <member name="T:SXLibrary.SyncDateTime">
+            <summary>
+            同步时间
+            </summary>
+        </member>
+        <member name="M:SXLibrary.SyncDateTime.SetSystime(System.DateTime)">
+            <summary>
+            同步服务器时间
+            </summary>
+            <param name="_DataTime">服务器时间</param>
+        </member>
+        <member name="T:TCPHelper.Coder">
+            <summary> 
+            通讯编码格式提供者,为通讯服务提供编码和解码服务 
+            你可以在继承类中定制自己的编码方式如:数据加密传输等 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.Coder._encodingMothord">
+            <summary> 
+            编码方式 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.Coder.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TCPHelper.Coder.#ctor(TCPHelper.Coder.EncodingMothord)">
+            <summary>
+            
+            </summary>
+            <param name="encodingMothord"></param>
+        </member>
+        <member name="M:TCPHelper.Coder.GetEncodingString(System.Byte[],System.Int32,System.Int32)">
+            <summary> 
+            通讯数据解码 
+            </summary> 
+            <param name="dataBytes">需要解码的数据</param> 
+            <returns>编码后的数据</returns> 
+        </member>
+        <member name="M:TCPHelper.Coder.GetTextBytes(System.String)">
+            <summary> 
+            数据编码 
+            </summary> 
+            <param name="datagram">需要编码的报文</param> 
+            <returns>编码后的数据</returns> 
+        </member>
+        <member name="T:TCPHelper.Coder.EncodingMothord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TCPHelper.DatagramResolver">
+            <summary> 
+            数据报文分析器,通过分析接收到的原始数据,得到完整的数据报文. 
+            继承该类可以实现自己的报文解析方法. 
+            通常的报文识别方法包括:固定长度,长度标记,标记符等方法 
+            本类的现实的是标记符的方法,你可以在继承类中实现其他的方法 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.DatagramResolver.endTag">
+            <summary> 
+            报文结束标记 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.DatagramResolver.#ctor">
+            <summary> 
+            受保护的默认构造函数,提供给继承类使用 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.DatagramResolver.#ctor(System.String)">
+            <summary> 
+            构造函数 
+            </summary> 
+            <param name="endTag">报文结束标记</param> 
+        </member>
+        <member name="M:TCPHelper.DatagramResolver.Resolve(System.String@)">
+            <summary> 
+            解析报文 
+            </summary> 
+            <param name="rawDatagram">原始数据,返回未使用的报文片断, 
+            该片断会保存在Session的Datagram对象中</param> 
+            <returns>报文数组,原始数据可能包含多个报文</returns> 
+        </member>
+        <member name="P:TCPHelper.DatagramResolver.EndTag">
+            <summary> 
+            返回结束标记 
+            </summary> 
+        </member>
+        <member name="T:TCPHelper.NetEvent">
+            <summary> 
+            网络通讯事件模型委托 
+            </summary> 
+        </member>
+        <member name="T:TCPHelper.NetEventArgs">
+            <summary> 
+            服务器程序的事件参数,包含了激发该事件的会话对象 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.NetEventArgs._client">
+            <summary> 
+            客户端与服务器之间的会话 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.NetEventArgs.#ctor(TCPHelper.Session)">
+            <summary> 
+            构造函数 
+            </summary> 
+            <param name="client">客户端会话</param> 
+        </member>
+        <member name="P:TCPHelper.NetEventArgs.Client">
+            <summary> 
+            获得激发该事件的会话对象 
+            </summary> 
+        </member>
+        <member name="T:TCPHelper.Session">
+            <summary> 
+            客户端与服务器之间的会话类 
+            
+            说明: 
+            会话类包含远程通讯端的状态,这些状态包括Socket,报文内容, 
+            客户端退出的类型(正常关闭,强制退出两种类型) 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.Session._id">
+            <summary> 
+            会话ID 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.Session._datagram">
+            <summary> 
+            客户端发送到服务器的报文 
+            注意:在有些情况下报文可能只是报文的片断而不完整 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.Session._cliSock">
+            <summary> 
+            客户端的Socket 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.Session._exitType">
+            <summary> 
+            客户端的退出类型 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.Session.GetHashCode">
+            <summary> 
+            使用Socket对象的Handle值作为HashCode,它具有良好的线性特征. 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="M:TCPHelper.Session.Equals(System.Object)">
+            <summary> 
+            返回两个Session是否代表同一个客户端 
+            </summary> 
+            <param name="obj"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:TCPHelper.Session.ToString">
+            <summary> 
+            重载ToString()方法,返回Session对象的特征 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="M:TCPHelper.Session.#ctor(System.Net.Sockets.Socket)">
+            <summary> 
+            构造函数 
+            </summary> 
+            <param name="cliSock">会话使用的Socket连接</param> 
+        </member>
+        <member name="M:TCPHelper.Session.Close">
+            <summary> 
+            关闭会话 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.Session.ID">
+            <summary> 
+            返回会话的ID 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.Session.Datagram">
+            <summary> 
+            存取会话的报文 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.Session.ClientSocket">
+            <summary> 
+            获得与客户端会话关联的Socket对象 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.Session.TypeOfExit">
+            <summary> 
+            存取客户端的退出方式 
+            </summary> 
+        </member>
+        <member name="T:TCPHelper.Session.ExitType">
+            <summary> 
+            退出类型枚举 
+            </summary> 
+        </member>
+        <member name="T:TCPHelper.SessionId">
+            <summary> 
+            唯一的标志一个Session,辅助Session对象在Hash表中完成特定功能 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.SessionId._id">
+            <summary> 
+            与Session对象的Socket对象的Handle值相同,必须用这个值来初始化它 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.SessionId.#ctor(System.Int32)">
+            <summary> 
+            构造函数 
+            </summary> 
+            <param name="id">Socket的Handle值</param> 
+        </member>
+        <member name="M:TCPHelper.SessionId.Equals(System.Object)">
+            <summary> 
+            重载.为了符合Hashtable键值特征 
+            </summary> 
+            <param name="obj"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:TCPHelper.SessionId.GetHashCode">
+            <summary> 
+            重载.为了符合Hashtable键值特征 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="M:TCPHelper.SessionId.ToString">
+            <summary> 
+            重载,为了方便显示输出 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="P:TCPHelper.SessionId.ID">
+            <summary> 
+            返回ID值 
+            </summary> 
+        </member>
+        <member name="T:TCPHelper.TcpCli">
+            <summary> 
+            提供Tcp网络连接服务的客户端类 
+            
+            原理: 
+            1.使用异步Socket通讯与服务器按照一定的通讯格式通讯,请注意与服务器的通 
+            讯格式一定要一致,否则可能造成服务器程序崩溃,整个问题没有克服,怎么从byte[] 
+            判断它的编码格式 
+            2.支持带标记的数据报文格式的识别,以完成大数据报文的传输和适应恶劣的网 
+            络环境. 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpCli.DefaultBufferSize">
+            <summary> 
+            接收数据缓冲区大小64K 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpCli._session">
+            <summary> 
+            客户端与服务器之间的会话类 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpCli._isConnected">
+            <summary> 
+            客户端是否已经连接服务器 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpCli._resolver">
+            <summary> 
+            报文解析器 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpCli._coder">
+            <summary> 
+            通讯格式编码解码器 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpCli._recvDataBuffer">
+            <summary> 
+            接收数据缓冲区 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.#ctor">
+            <summary> 
+            默认构造函数,使用默认的编码格式 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.#ctor(TCPHelper.Coder)">
+            <summary> 
+            构造函数,使用一个特定的编码器来初始化 
+            </summary> 
+            <param name="coder">报文编码器</param> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.Connect(System.String,System.Int32)">
+            <summary> 
+            连接服务器 
+            </summary> 
+            <param name="ip">服务器IP地址</param> 
+            <param name="port">服务器端口</param> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.SendText(System.String)">
+            <summary> 
+            发送数据报文 
+            </summary> 
+            <param name="datagram"></param> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.Close">
+            <summary> 
+            关闭连接 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.SendDataEnd(System.IAsyncResult)">
+            <summary> 
+            数据发送完成处理函数 
+            </summary> 
+            <param name="iar"></param> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.Connected(System.IAsyncResult)">
+            <summary> 
+            建立Tcp连接后处理过程 
+            </summary> 
+            <param name="iar">异步Socket</param> 
+        </member>
+        <member name="M:TCPHelper.TcpCli.RecvData(System.IAsyncResult)">
+            <summary> 
+            数据接收处理函数 
+            </summary> 
+            <param name="iar">异步Socket</param> 
+        </member>
+        <member name="E:TCPHelper.TcpCli.ConnectedServer">
+            <summary> 
+            已经连接服务器事件 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpCli.ReceivedDatagram">
+            <summary> 
+            接收到数据报文事件 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpCli.DisConnectedServer">
+            <summary> 
+            连接断开事件 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpCli.ClientSession">
+            <summary> 
+            返回客户端与服务器之间的会话对象 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpCli.IsConnected">
+            <summary> 
+            返回客户端与服务器之间的连接状态 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpCli.Resovlver">
+            <summary> 
+            数据报文分析器 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpCli.ServerCoder">
+            <summary> 
+            编码解码器 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpCli.connentException">
+            <summary>
+            连接失败事件
+            </summary>
+        </member>
+        <member name="T:TCPHelper.TcpCli.ConnectException">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="T:TCPHelper.TcpSvr">
+            <summary> 
+            提供TCP连接服务的服务器类 
+            
+            特点: 
+            1.使用hash表保存所有已连接客户端的状态，收到数据时能实现快速查找.每当 
+            有一个新的客户端连接就会产生一个新的会话(Session).该Session代表了客 
+            户端对象. 
+            2.使用异步的Socket事件作为基础，完成网络通讯功能. 
+            3.支持带标记的数据报文格式的识别,以完成大数据报文的传输和适应恶劣的网 
+              络环境.初步规定该类支持的最大数据报文为640K(即一个数据包的大小不能大于 
+              640K,否则服务器程序会自动删除报文数据,认为是非法数据),防止因为数据报文 
+              无限制的增长而导致服务器崩溃 
+            4.通讯格式默认使用Encoding.Default格式这样就可以和以前32位程序的客户端 
+            通讯.也可以使用U-16和U-8的的通讯方式进行.可以在该DatagramResolver类的 
+            继承类中重载编码和解码函数,自定义加密格式进行通讯.总之确保客户端与服务 
+            器端使用相同的通讯格式 
+            5.使用C# native code,将来出于效率的考虑可以将C++代码写成的32位dll来代替 
+            C#核心代码, 但这样做缺乏可移植性,而且是Unsafe代码(该类的C++代码也存在) 
+            6.可以限制服务器的最大登陆客户端数目 
+            7.比使用TcpListener提供更加精细的控制和更加强大异步数据传输的功能,可作为 
+            TcpListener的替代类 
+            8.使用异步通讯模式,完全不用担心通讯阻塞和线程问题,无须考虑通讯的细节 
+            
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr.DefaultMaxClient">
+            <summary> 
+            默认的服务器最大连接客户端端数据 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr.DefaultBufferSize">
+            <summary> 
+            接收数据缓冲区大小64K 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr.MaxDatagramSize">
+            <summary> 
+            最大数据报文大小 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._resolver">
+            <summary> 
+            报文解析器 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._coder">
+            <summary> 
+            通讯格式编码解码器 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._serverIP">
+            <summary>
+            服务器程序监听的IP地址
+            </summary>
+        </member>
+        <member name="F:TCPHelper.TcpSvr._port">
+            <summary> 
+            服务器程序使用的端口 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._maxClient">
+            <summary> 
+            服务器程序允许的最大客户端连接数 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._isRun">
+            <summary> 
+            服务器的运行状态 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._recvDataBuffer">
+            <summary> 
+            接收数据缓冲区 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._svrSock">
+            <summary> 
+            服务器使用的异步Socket类, 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._sessionTable">
+            <summary> 
+            保存所有客户端会话的哈希表 
+            </summary> 
+        </member>
+        <member name="F:TCPHelper.TcpSvr._clientCount">
+            <summary> 
+            当前的连接的客户端数 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.#ctor(System.Net.IPAddress,System.UInt16,System.UInt16,TCPHelper.Coder)">
+            <summary>
+            
+            </summary>
+            <param name="serverIP"></param>
+            <param name="port"></param>
+            <param name="maxClient"></param>
+            <param name="coder"></param>
+        </member>
+        <member name="M:TCPHelper.TcpSvr.#ctor(System.Net.IPAddress,System.UInt16,System.UInt16)">
+            <summary>
+            
+            </summary>
+            <param name="serverIP"></param>
+            <param name="port"></param>
+            <param name="maxClient"></param>
+        </member>
+        <member name="M:TCPHelper.TcpSvr.#ctor(System.Net.IPAddress,System.UInt16)">
+            <summary>
+            
+            </summary>
+            <param name="serverIP"></param>
+            <param name="port"></param>
+        </member>
+        <member name="M:TCPHelper.TcpSvr.Start">
+            <summary> 
+            启动服务器程序,开始监听客户端请求 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.Stop">
+            <summary> 
+            停止服务器程序,所有与客户端的连接将关闭 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.CloseAllClient">
+            <summary> 
+            关闭所有的客户端会话,与所有的客户端连接会断开 
+            </summary> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.CloseSession(TCPHelper.Session)">
+            <summary> 
+            关闭一个与客户端之间的会话 
+            </summary> 
+            <param name="closeClient">需要关闭的客户端会话对象</param> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.SendText(TCPHelper.Session,System.String)">
+            <summary> 
+            发送数据 
+            </summary> 
+            <param name="recvDataClient">接收数据的客户端会话</param> 
+            <param name="datagram">数据报文</param> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.CloseClient(System.Net.Sockets.Socket,TCPHelper.Session.ExitType)">
+            <summary> 
+            关闭一个客户端Socket,首先需要关闭Session 
+            </summary> 
+            <param name="client">目标Socket对象</param> 
+            <param name="exitType">客户端退出的类型</param> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.AcceptConn(System.IAsyncResult)">
+            <summary> 
+            客户端连接处理函数 
+            </summary> 
+            <param name="iar">欲建立服务器连接的Socket对象</param> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.FindSession(System.Net.Sockets.Socket)">
+            <summary> 
+            通过Socket对象查找Session对象 
+            </summary> 
+            <param name="client"></param> 
+            <returns>找到的Session对象,如果为null,说明并不存在该回话</returns> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.ReceiveData(System.IAsyncResult)">
+            <summary> 
+            接受数据完成处理函数，异步的特性就体现在这个函数中， 
+            收到数据后，会自动解析为字符串报文 
+            </summary> 
+            <param name="iar">目标客户端Socket</param> 
+        </member>
+        <member name="M:TCPHelper.TcpSvr.SendDataEnd(System.IAsyncResult)">
+            <summary> 
+            发送数据完成处理函数 
+            </summary> 
+            <param name="iar">目标客户端Socket</param> 
+        </member>
+        <member name="E:TCPHelper.TcpSvr.ClientConn">
+            <summary> 
+            客户端建立连接事件 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpSvr.ClientClose">
+            <summary> 
+            客户端关闭事件 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpSvr.ServerFull">
+            <summary> 
+            服务器已经满事件 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpSvr.RecvData">
+            <summary> 
+            服务器接收到数据事件 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpSvr.ServerSocket">
+            <summary> 
+            服务器的Socket对象 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpSvr.Resovlver">
+            <summary> 
+            数据报文分析器 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpSvr.SessionTable">
+            <summary> 
+            客户端会话数组,保存所有的客户端,不允许对该数组的内容进行修改 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpSvr.Capacity">
+            <summary> 
+            服务器可以容纳客户端的最大能力 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpSvr.SessionCount">
+            <summary> 
+            当前的客户端连接数 
+            </summary> 
+        </member>
+        <member name="P:TCPHelper.TcpSvr.IsRun">
+            <summary> 
+            服务器运行状态 
+            </summary> 
+        </member>
+        <member name="E:TCPHelper.TcpSvr.startException">
+            <summary>
+            连接失败事件
+            </summary>
+        </member>
+        <member name="T:TCPHelper.TcpSvr.StartException">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="T:SXLibrary.Log">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.Log.WriteDebugLog(System.String,System.Type)">
+            <summary>
+            写入调试的日志内容
+            </summary>
+            <param name="msg"> 写入的内容</param>
+            <param name="className"> 写日志发生在哪个类中</param>
+        </member>
+        <member name="M:SXLibrary.Log.WriteInfoLog(System.String,System.Type)">
+            <summary>
+            写入正常的内容
+            </summary>
+            <param name="msg"> 写入的内容</param>
+            <param name="className"> 写日志发生在哪个类中</param>
+        </member>
+        <member name="M:SXLibrary.Log.WriteErrorLog(System.String,System.Type)">
+            <summary>
+            写入错误的内容
+            </summary>
+            <param name="msg"> 写入的内容</param>
+            <param name="className"> 写日志发生在哪个类中</param>
+        </member>
+        <member name="T:SXLibrary.XML">
+            <summary>
+            xml操作类
+            </summary>
+        </member>
+        <member name="M:SXLibrary.XML.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_xmlPath"></param>
+        </member>
+        <member name="M:SXLibrary.XML.Read(System.String,System.String)">
+            <summary>
+            节点的属性值
+            </summary>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时返回该属性值，否则返回串联值</param>
+            使用示列:
+            XMLProsess.Read( "/Node", "")
+            XMLProsess.Read( "/Node/Element[@Attribute='Name']", "Attribute")
+        </member>
+        <member name="M:SXLibrary.XML.ReadAllChildallValue(System.String)">
+            <summary>
+            获取某一节点的所有孩子节点的值
+            </summary>
+            <param name="node">要查询的节点</param>
+        </member>
+        <member name="M:SXLibrary.XML.ReadAllChild(System.String)">
+            <summary>
+            获取某一节点的所有孩子节点的值
+            </summary>
+            <param name="node">要查询的节点</param>
+        </member>
+        <member name="M:SXLibrary.XML.Insert(System.String,System.String,System.String,System.String)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="node">节点</param>
+            <param name="element">元素名，非空时插入新元素，否则在该元素中插入属性</param>
+            <param name="attribute">属性名，非空时插入该元素属性值，否则插入元素值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Insert(path, "/Node", "Element", "", "Value")
+            XMLProsess.Insert(path, "/Node", "Element", "Attribute", "Value")
+            XMLProsess.Insert(path, "/Node", "", "Attribute", "Value")
+        </member>
+        <member name="M:SXLibrary.XML.Update(System.String,System.String,System.String)">
+            <summary>
+            修改指定节点的属性值(静态)
+            </summary>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时修改该节点属性值，否则修改节点值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Insert(path, "/Node", "", "Value")
+            XMLProsess.Insert(path, "/Node", "Attribute", "Value")
+        </member>
+        <member name="M:SXLibrary.XML.UpdateXmlRow(System.String[],System.String[],System.String,System.String)">
+            <summary>
+            更改符合条件的一条记录
+            </summary>
+            <param name="Columns">列名数组</param>
+            <param name="ColumnValue">列值数组</param>
+            <param name="strWhereColumnName">条件列名</param>
+            <param name="strWhereColumnValue">条件列值</param>
+        </member>
+        <member name="M:SXLibrary.XML.Delete(System.String,System.String)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时删除该节点属性值，否则删除节点值</param>
+            使用示列:
+            XMLProsess.Delete(path, "/Node", "")
+            XMLProsess.Delete(path, "/Node", "Attribute")
+        </member>
+        <member name="M:SXLibrary.XML.DeleteXmlAllRows">
+            <summary>
+            删除所有行
+            </summary>
+        </member>
+        <member name="M:SXLibrary.XML.DeleteXmlAllRows(System.String)">
+            <summary>
+            删除所有行
+            </summary>
+            <param name="strXmlPath">XML路径</param>
+        </member>
+        <member name="M:SXLibrary.XML.DeleteXmlRowByIndex(System.Int32)">
+            <summary>
+            通过删除DataSet中指定索引行，重写XML以实现删除指定行
+            </summary>
+            <param name="iDeleteRow">要删除的行在DataSet中的Index值</param>
+        </member>
+        <member name="M:SXLibrary.XML.DeleteXmlRowByIndex(System.String,System.Int32)">
+            <summary>
+            通过删除DataSet中指定索引行，重写XML以实现删除指定行
+            </summary>
+            <param name="strXmlPath">路径</param>
+            <param name="iDeleteRow">行号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XML.DeleteXmlRows(System.String,System.String[])">
+            <summary>
+            删除指定列中指定值的行
+            </summary>
+            <param name="strColumn">列名</param>
+            <param name="ColumnValue">指定值</param>
+        </member>
+        <member name="M:SXLibrary.XML.DeleteXmlRows(System.String,System.String,System.String[])">
+            <summary>
+            删除指定列中指定值的行
+            </summary>
+            <param name="strXmlPath">XML相对路径</param>
+            <param name="strColumn">列名</param>
+            <param name="ColumnValue">指定值</param>
+        </member>
+        <member name="M:SXLibrary.XML.FileReadNode(System.String,System.String,System.String)">
+            <summary>
+            读取
+            </summary>
+            <param name="xmlPath"></param>
+            <param name="node"></param>
+            <param name="attribute"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XML.FileInsertNood(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="xmlPath">XML路径</param>
+            <param name="node">节点</param>
+            <param name="element">元素名，非空时插入新元素，否则在该元素中插入属性</param>
+            <param name="attribute">属性名，非空时插入该元素属性值，否则插入元素值</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:SXLibrary.XML.FileUpdateNood(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改指定节点的属性值(静态)
+            </summary>
+            <param name="xmlPath">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时修改该节点属性值，否则修改节点值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Insert(path, "/Node", "", "Value")
+            XMLProsess.Insert(path, "/Node", "Attribute", "Value")
+        </member>
+        <member name="M:SXLibrary.XML.FileDeleteNood(System.String,System.String,System.String)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="xmlpath">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时删除该节点属性值，否则删除节点值</param>
+            使用示列:
+            XMLProsess.Delete(path, "/Node", "")
+            XMLProsess.Delete(path, "/Node", "Attribute")
+        </member>
+        <member name="T:SXLibrary.XMLConvert">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SXLibrary.XMLConvert.ConvertXMLStringToDataSet(System.String)">
+            <summary>
+            将xml对象内容字符串转换为DataSet
+            </summary>
+            <param name="xmlData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XMLConvert.ConvertXMLFileToDataSet(System.String)">
+            <summary>
+            将xml文件转换为DataSet
+            </summary>
+            <param name="xmlFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XMLConvert.ConvertDataSetToXMLString(System.Data.DataSet)">
+            <summary>
+            将DataSet转换为xml对象字符串
+            </summary>
+            <param name="xmlDS"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XMLSerializer.Deserialize(System.Type,System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="type">类型</param>
+            <param name="xml">XML字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XMLSerializer.Deserialize(System.Type,System.IO.Stream)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="type"></param>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SXLibrary.XMLSerializer.Serializer(System.Type,System.Object)">
+            <summary>
+            序列化
+            </summary>
+            <param name="type">类型</param>
+            <param name="obj">对象</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

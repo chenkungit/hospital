@@ -1,0 +1,5 @@
+﻿  <tr>
+                <td width="226" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px;word-wrap:break-word;word-break:break-all;">&nbsp;[项目名称]&nbsp;</td>
+                <td colspan="3" style="border:solid #999; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:14px; word-wrap:break-word;word-break:break-all;">&nbsp;[检查结果]&nbsp;&nbsp;</td>
+		</tr>
+        

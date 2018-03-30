@@ -1,0 +1,80 @@
+
+ 
+记录时间：2015-01-27 10:33:18,536 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：从数据类型 nvarchar 转换为 numeric 时出错。
+CommandText: SELECT DISTINCT HealthExam_Reg.Event_No, HealthExam_Reg.Start_Date, HealthExam_Reg.Exam_End_Date, 
+HealthExam_Reg.Total_Fee, HealthExam_Reg.Name, HealthExam_Reg.Sex_Name, HealthExam_Reg.Age, 
+HealthExam_Reg.Marriage_Name, HealthExam_Reg.Reg_State, HealthExam_Reg.Team, HealthExam_Reg.Team_Part,
+HealthExam_Reg.is_ok, HealthExam_Reg.JianQianQianDao, HealthExam_Reg.qiandao
+FROM HealthExam_Reg INNER JOIN Result_Item
+ON HealthExam_Reg.Event_No=Result_Item.Event_No
+WHERE (HealthExam_Reg.start_date BETWEEN '2015/1/1 0:00:00' and '2015/1/28 0:00:00') AND Result_Item.Item_Group_id='2049' AND Result_Item.Item_ID = '5191757' AND CAST (item_result AS DECIMAL )>=10 AND CAST (item_result AS DECIMAL )>=20order by HealthExam_Reg.start_date desc 
+
+ 
+
+ 
+记录时间：2015-01-27 10:41:25,846 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：从数据类型 nvarchar 转换为 numeric 时出错。
+CommandText: SELECT DISTINCT HealthExam_Reg.Event_No, HealthExam_Reg.Start_Date, HealthExam_Reg.Exam_End_Date, 
+HealthExam_Reg.Total_Fee, HealthExam_Reg.Name, HealthExam_Reg.Sex_Name, HealthExam_Reg.Age, 
+HealthExam_Reg.Marriage_Name, HealthExam_Reg.Reg_State, HealthExam_Reg.Team, HealthExam_Reg.Team_Part,
+HealthExam_Reg.is_ok, HealthExam_Reg.JianQianQianDao, HealthExam_Reg.qiandao
+FROM HealthExam_Reg INNER JOIN Result_Item
+ON HealthExam_Reg.Event_No=Result_Item.Event_No
+WHERE (HealthExam_Reg.start_date BETWEEN '2015/1/1 0:00:00' and '2015/1/28 0:00:00') AND Result_Item.Item_Group_id='2049' AND Result_Item.Item_ID = '5192438' AND CAST (Result_Item.item_result AS DECIMAL )>=1 AND CAST (Result_Item.item_result AS DECIMAL )>=2 order by HealthExam_Reg.start_date desc 
+
+ 
+
+ 
+记录时间：2015-01-27 11:02:30,632 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：从数据类型 nvarchar 转换为 numeric 时出错。
+CommandText: SELECT DISTINCT HealthExam_Reg.Event_No, HealthExam_Reg.Start_Date, HealthExam_Reg.Exam_End_Date, 
+HealthExam_Reg.Total_Fee, HealthExam_Reg.Name, HealthExam_Reg.Sex_Name, HealthExam_Reg.Age, 
+HealthExam_Reg.Marriage_Name, HealthExam_Reg.Reg_State, HealthExam_Reg.Team, HealthExam_Reg.Team_Part,
+HealthExam_Reg.is_ok, HealthExam_Reg.JianQianQianDao, HealthExam_Reg.qiandao
+FROM HealthExam_Reg INNER JOIN Result_Item
+ON HealthExam_Reg.Event_No=Result_Item.Event_No
+WHERE (HealthExam_Reg.start_date BETWEEN '2015/1/1 0:00:00' and '2015/1/28 0:00:00') AND Result_Item.Item_Group_id='2049' AND Result_Item.Item_ID = '5191757' AND ( Result_Item.item_result <> '' AND CAST (Result_Item.item_result AS DECIMAL )>=0 AND CAST (Result_Item.item_result AS DECIMAL )>=3) order by HealthExam_Reg.start_date desc 
+
+ 
+
+ 
+记录时间：2015-01-27 12:04:08,964 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：从数据类型 nvarchar 转换为 numeric 时出错。
+CommandText: SELECT DISTINCT HealthExam_Reg.Event_No, HealthExam_Reg.Start_Date, HealthExam_Reg.Exam_End_Date, 
+HealthExam_Reg.Total_Fee, HealthExam_Reg.Name, HealthExam_Reg.Sex_Name, HealthExam_Reg.Age, 
+HealthExam_Reg.Marriage_Name, HealthExam_Reg.Reg_State, HealthExam_Reg.Team, HealthExam_Reg.Team_Part,
+HealthExam_Reg.is_ok, HealthExam_Reg.JianQianQianDao, HealthExam_Reg.qiandao
+FROM HealthExam_Reg INNER JOIN Result_Item
+ON HealthExam_Reg.Event_No=Result_Item.Event_No
+WHERE (HealthExam_Reg.start_date BETWEEN '2015/1/1 0:00:00' and '2015/1/28 0:00:00') AND Result_Item.Item_Group_id='2049' AND Result_Item.Item_ID = '5191757' AND ( Result_Item.item_result <> '' AND CAST (Result_Item.item_result AS DECIMAL )>=2 AND CAST (Result_Item.item_result AS DECIMAL )>=3) order by HealthExam_Reg.start_date desc 
+
+ 
+
+ 
+记录时间：2015-01-27 16:37:17,671 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体导入格式1.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-01-27 16:44:24,302 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体导入格式1.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 

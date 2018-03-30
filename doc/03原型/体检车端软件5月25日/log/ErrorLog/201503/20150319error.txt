@@ -1,0 +1,23 @@
+
+ 
+记录时间：2015-03-19 09:56:33,923 
+线程ID:[13] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/3/19 9:56:33rn[Application UnhandledException]:未能找到任何可识别的数字。;
+--[堆栈信息]:
+   在 SXLibrary.MySecurity.DecryptString(String inputStr, String keyStr) 位置 c:\Users\LL\Desktop\ll\SXLibrary\MySecurity.cs:行号 205
+   在 SXLibrary.MySecurity.SDecryptString(String inputStr, String keyStr) 位置 c:\Users\LL\Desktop\ll\SXLibrary\MySecurity.cs:行号 118
+   在 易捷健康体检系统.Form1.tcpCli_ReceivedDatagram(Object sender, NetEventArgs e) 位置 c:\Users\LL\Desktop\ll\54所\体检系统\体检软件\易捷健康体检系统\Form1.cs:行号 89
+   在 TCPHelper.TcpCli.RecvData(IAsyncResult iar) 位置 c:\Users\LL\Desktop\ll\SXLibrary\TCPHelper\TcpCli.cs:行号 372
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+
+ 

@@ -1,0 +1,22 @@
+
+ 
+记录时间：2015-07-27 17:27:01,659 
+线程ID:[3] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015-07-27 17:27:01rn[Application UnhandledException]:无法找到表 0。;
+--[堆栈信息]:
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 易捷远程会诊.会诊.申请会诊.tcpCli_ReceivedDatagram(Object sender, NetEventArgs e) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\易捷远程医疗\会诊\申请会诊.cs:行号 77
+   在 TCPHelper.TcpCli.RecvData(IAsyncResult iar) 位置 e:\工作文件夹\远程会诊用体检\易捷远程会诊\SXLibrary\TCPHelper\TcpCli.cs:行号 341
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+
+ 

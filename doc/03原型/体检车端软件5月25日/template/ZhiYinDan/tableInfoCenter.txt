@@ -1,0 +1,7 @@
+﻿<!--申请单信息内容行循环-->
+<tr class="autoNewLine">
+  <td style="font-size:14px; line-height:24px ; line-height:18px">&nbsp;&nbsp;&nbsp;&nbsp;[项目]</td>
+  <td style="font-size:14px ; ">&nbsp;[提示信息]&nbsp;</td>
+  <td style="font-size:14px; line-height:18px;">&nbsp;</td>
+  </tr>
+  

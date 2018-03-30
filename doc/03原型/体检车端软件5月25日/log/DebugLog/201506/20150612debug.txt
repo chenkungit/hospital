@@ -1,0 +1,32 @@
+
+ 
+记录时间：2015-06-12 15:03:15,931 
+线程ID:[9] 
+日志级别：DEBUG 
+发生类：null  
+描述：Duplicate entry '1506121000' for key 'PRIMARY'
+ 
+
+ 
+记录时间：2015-06-12 15:03:21,219 
+线程ID:[9] 
+日志级别：DEBUG 
+发生类：null  
+描述：Duplicate entry '1506121000' for key 'PRIMARY'
+ 
+
+ 
+记录时间：2015-06-12 15:03:42,816 
+线程ID:[9] 
+日志级别：DEBUG 
+发生类：null  
+描述：Duplicate entry '1506121000' for key 'PRIMARY'
+ 
+
+ 
+记录时间：2015-06-12 15:23:42,483 
+线程ID:[10] 
+日志级别：DEBUG 
+发生类：null  
+描述：Duplicate entry '1506121000' for key 'PRIMARY'
+ 

@@ -1,0 +1,9 @@
+﻿            
+      <tr>
+                <td  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:18px;">&nbsp;[项目名称]&nbsp;</td>
+                <td  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:18px;">&nbsp;[检查结果]&nbsp;</td>
+	<!--	<td  style="border:solid #000000; border-width:0px 1px 1px 0px; padding:3px 0px;">&nbsp;[项目结论]&nbsp;</td>-->
+                <td  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:18px;">&nbsp;[参考值]&nbsp;</td>
+                
+                <td  style="border:solid #000000; border-width:0px 0px 0px 0px; padding:3px 0px;font-size:14px; line-height:18px;">&nbsp;[异常]&nbsp;</td>
+                </tr>

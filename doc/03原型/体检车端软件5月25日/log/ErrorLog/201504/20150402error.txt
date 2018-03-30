@@ -1,0 +1,40 @@
+
+ 
+记录时间：2015-04-02 14:12:59,940 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Group'。不能在对象 'dbo.Result_Group' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Group] 
+           ([Result_groupid_Id],[event_no],[office_id],[office_name],[group_id],[group_name],[patient_id],[prtient_name],[time],
+[discountType],[price],discountValue,shishoufei,[isShouFei],[isAppend],
+[AppNo])
+     VALUES ('85120','1504020002','519','检验科(三楼)','2065','血常规','9602','DFD','2015/4/2 14:12:59',
+'打折','30.00','1.00','30.0000','未收费','非附加',
+'');
+
+ 
+
+ 
+记录时间：2015-04-02 14:13:03,757 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Office'。不能在对象 'dbo.Result_Office' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Office]
+                       ([Result_Office_Id],[Office_Id],[Office_name],[Group_Id],[Group_Name],[Patient_Id],[Patient_Name],[Event_No],[date])
+                 VALUES
+                       ('50559','519','检验科(三楼)','2065','血常规','9603','DFD','1504020003','2015/4/2 14:13:03');
+
+ 
+
+ 
+记录时间：2015-04-02 14:13:06,826 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Item'。不能在对象 'dbo.Result_Item' 中插入重复键。
+语句已终止。
+ 

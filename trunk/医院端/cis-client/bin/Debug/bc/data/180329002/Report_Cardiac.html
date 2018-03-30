@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+          @media print
+          {
+          .Noprint { DISPLAY: none }
+          }
+          PageNext{ PAGE-BREAK-AFTER: always }
+          font {FONT-FAMILY:   Arial; COLOR: #000000; FONT-STYLE: normal;  TEXT-DECORATION: none;FONT-SIZE: 12px}
+          .line   {line-height:12px;}
+          .Titlefont{FONT-WEIGHT: 500; FONT-SIZE: 24px}
+          .T1font{FONT-WEIGHT: 500; FONT-SIZE: 24px}
+          .T2font{FONT-WEIGHT: 500; FONT-SIZE: 20px}
+          .T3font{FONT-WEIGHT: 500; FONT-SIZE: 20px}
+          .SubTitlefont{FONT-WEIGHT: 500; FONT-STYLE: italic; FONT-SIZE: 14px}
+          .Itemfont{FONT-WEIGHT: 500;  FONT-SIZE: 12px}
+          table1{BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-COLOR: #ffffff; WIDTH: 100%; BORDER-TOP-COLOR: #ffffff; HEIGHT: 100%; BORDER-RIGHT-COLOR: #ffffff}
+          
+          body{text-align:center;}
+          div{width:620px;margin:0 auto;text-align:left;}
+        </style>
+<script language="javascript1.2">
+
+/*
+ * 重新新建表格
+ */
+function createTable(tableId, colNum, width, height, dataArray, desArray, count, imageP) {
+    var objTable = document.getElementById(tableId);
+    if (objTable != null) {
+    var i = 0;
+    var j;
+    while (i < count) {
+        var objRow = objTable.insertRow(-1);  //增加空行
+        if (objRow != null) {
+            objRow.valign = "top";
+            var col;
+            for (col = 0; col < colNum; col++) {
+                if (i >= count) {
+                    while (col < colNum) {
+                        var objCell = objRow.insertCell(-1);
+                        objCell.width = width;
+                        objCell.height = height;
+                        objCell.valign = "top";
+                        objCell.align = "center";
+                        objCell.innerHTML = "";
+                        col++;
+                    }
+                    break;
+                }
+                var objCell = objRow.insertCell(-1);
+                j = i + 1;
+                objCell.innerHTML = "<img id='" + imageP + j + "' height='" + height + "' width='" + width + "' src='" + dataArray[i] + "' alt='" + desArray[i] + "'/><p align='center'><font class='font'>"+desArray[i]+ "</font></p>";
+                i++;
+            }
+        }
+      }
+    }
+}
+
+/*
+ * 改变表格格式方法
+ */
+function updateFromat(tableId, newcols, imageP) {
+    var objTable = document.getElementById(tableId);
+    var count = objTable.summary;
+    var dataArray = new Array(count);
+    var desArray = new Array(count);
+    var imageId;
+    var ii = 0;
+    var jj;
+ //得到所有图像的路径
+    for (ii = 0; ii < count; ii++) {
+        jj = ii + 1;
+        imageId = imageP + jj;
+        dataArray[ii] = document.getElementById(imageId).src;
+        desArray[ii] = document.getElementById(imageId).alt;
+    }
+
+    //计算图像的宽度和高度
+    var width = 600 / newcols;
+    var height = 400;
+    if(count > 0)
+    {
+        var objImage = document.getElementById(imageP + 1);
+        height = objImage.naturalHeight * width /objImage.naturalWidth;
+    }
+ 
+ // 删除表格中所有行
+    var ro = objTable.rows.length;
+    for (var i = 0; i < ro; i++) {
+        objTable.deleteRow(0);
+    }
+  
+ //重新新建表格
+    createTable(tableId, newcols, width, height, dataArray, desArray, count, imageP);
+}
+
+/*
+ * 改变表格格式
+ */
+function selectImageFormat(tableId, imageFormatid, imageP) {
+    var imageFormat = document.getElementById(imageFormatid);
+    var Format = imageFormat.options[imageFormat.selectedIndex].value;
+    var newcols = Format.substr(2, 1);
+    updateFromat(tableId, newcols, imageP);
+    imageFormat.blur();
+}
+
+/*
+ * 设置表格格式
+ */
+function selectedFormat(formatID, format) {
+    var imageFormat = document.getElementById(formatID);
+    if(imageFormat){
+      for (var i = 0; i < imageFormat.options.length; i++) {
+        if (imageFormat.options[i].value == format) {
+            imageFormat.options[i].selected = true;
+            break;
+        }
+      }
+    }
+}
+
+function hidecontextmenu() {
+   return false;
+}
+ 
+
+        </script><script type="text/javascript">
+          //
+window.onload = update;
+function update() {
+    selectImageFormat("ImagesTable", "imageFormat", "image");
+}
+
+document.onkeydown=keydown;
+function keydown(e)
+{
+     if(e.which==27)   // freeze按键  
+		    window.close();
+     //if(e.which==13)   // print按键  
+		    //window.print();
+}
+
+function hidemenu() {
+   return false;
+}
+document.oncontextmenu=hidemenu;
+//
+        </script>
+</head>
+<body oncontextmenu="return hidecontextmenu()" bgcolor="#e7ebf5"><div>
+<p align="center" class="Noprint" style="display:none;"> &nbsp;&nbsp;<input type="submit" class="button" value="Exit" onclick="javascript:self.close();" oncontextmenu="javascript:self.close();"> &nbsp;&nbsp;<input type="submit" class="button" value="Print" onclick="javascript:window.print();" oncontextmenu="javascript:window.print();"></p>
+<p><table height="45" cellspacing="0" cellpadding="0" width="600" border="0" row="1" col="2"><tr>
+<td valign="top" width="30%" height="100%"><img style="MARGIN-LEFT: 0%" height="60" width="170" src="../../ReportLOGO.bmp"></td>
+<td valign="top" width="50%" height="100%"><p style="MARGIN-LEFT: 0%; WIDTH: 374px; HEIGHT: 0px"><div><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0" style="word-break:break-all;word-wrap:break-all;"><tr><td><p align="left"><font class="T1font"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="T1font"></font><br><font class="T1font"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="T2font"></font><br><font class="T1font"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="T3font"></font></p></td></tr></table></div></p></td>
+</tr></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 599px; HEIGHT: 17px" align="center"><font class="Titlefont">心脏报告</font></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 599px; HEIGHT: 17px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="1"><tr><td style="WIDTH: 100%; HEIGHT: 100%; " align="left"><font class="SubTitlefont">基本信息</font></td></tr></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 607px;"><table style="WIDTH: 607px;" cellspacing="0" cellpadding="0" border="0" row="0" col="0">
+<tr>
+<td style="WIDTH: 217px" align="left">
+<font class="Itemfont">患者姓名:
+                </font><font class="font"></font>
+</td>
+<td style="WIDTH: 216px" align="left">
+<font class="Itemfont">患者ID:
+                </font><font class="font">180309001</font>
+</td>
+<td style="WIDTH: 174px" align="left">
+<font class="Itemfont">检查日期:
+                </font><font class="font">03/09/2018</font>
+</td>
+</tr>
+<tr>
+<td style="WIDTH: 217px" align="left">
+<font class="Itemfont">生日:
+                </font><font class="font"></font>
+</td>
+<td style="WIDTH: 216px" align="left">
+<font class="Itemfont">性别:
+                </font><font class="font">未知</font>
+</td>
+<td style="WIDTH: 174px" align="left">
+<font class="Itemfont">检查编号:
+                </font><font class="font"></font>
+</td>
+</tr>
+</table><table style="WIDTH: 607px;" cellspacing="0" cellpadding="0" border="0" row="1" col="1"><tr><td style="WIDTH: 607px ; word-break:break-all;" align="left" valign="top"><div style="word-break: break-all; word-wrap: break-word; white-space: -moz-pre-wrap;width:600px; ">
+<font class="Itemfont">备注:
+                  </font><font class="font"></font>
+</div></td></tr></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 599px; HEIGHT: 17px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="1"><tr><td style="WIDTH: 100%; HEIGHT: 100%; "><p align="left"><font class="SubTitlefont">检查信息</font></p></td></tr></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 607px;"><table style="WIDTH: 607px;" cellspacing="0" cellpadding="0" border="0" row="1" col="3">
+<tr>
+<td style="WIDTH: 217px" align="left">
+<font class="Itemfont">检查类型:
+                </font><font class="font">心脏</font>
+</td>
+<td style="WIDTH: 216px" align="left">
+<font class="Itemfont">身高(in):
+                    </font><font class="font"></font>
+</td>
+<td style="WIDTH: 174px" align="left">
+<font class="Itemfont">重量(lb):
+                    </font><font class="font"></font>
+</td>
+</tr>
+<tr>
+<td style="WIDTH: 217px" align="left">
+<font class="Itemfont">心率(bpm):
+                </font><font class="font"></font>
+</td>
+<td style="WIDTH: 216px" align="left">
+<font class="Itemfont">体表面积(m^2):
+                </font><font class="font"></font>
+</td>
+<td style="WIDTH: 174px" align="left">
+<font class="Itemfont">右房压力(mmHg):
+                </font><font class="font"></font>
+</td>
+</tr>
+</table><table style="WIDTH: 607px;" cellspacing="0" cellpadding="0" border="0" row="1" col="1"><tr>
+<td style="WIDTH: 217px" align="left"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:217px;">
+<font class="Itemfont">操作者:
+                    </font><font class="font"></font>
+</div></td>
+<td style="WIDTH: 216px" align="left"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:216px;">
+<font class="Itemfont">主治医生:
+                    </font><font class="font"></font>
+</div></td>
+<td style="WIDTH: 174px" align="left"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:174px;">
+<font class="Itemfont">超声医生:
+                    </font><font class="font"></font>
+</div></td>
+</tr></table><table style="WIDTH: 607px;" cellspacing="0" cellpadding="0" border="0" row="1" col="1">
+<tr><td style="WIDTH: 607px" align="left"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:600px;">
+<font class="Itemfont">主诉:
+                  </font><font class="font"></font>
+</div></td></tr>
+<tr><td style="WIDTH: 607px" align="left"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:600px;">
+<font class="Itemfont">既往史:
+                </font><font class="font"></font>
+</div></td></tr>
+<tr><td style="WIDTH:607px; word-break:break-all;" align="left" valign="top"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:600px;">
+<font class="Itemfont">备注:
+                  </font><font class="font"></font>
+</div></td></tr>
+</table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 600px; HEIGHT: 25px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="1"><tr><td style="WIDTH: 100%; HEIGHT: 100%; "><p align="left"><font class="SubTitlefont">测量结果</font></p></td></tr></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 600px; HEIGHT: 25px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="1"><tbody><tr>
+<td style="WIDTH: 100%; HEIGHT: 50%; "><p align="left"><font class="SubTitlefont">图像</font></p></td>
+<td style="WIDTH: 100%; HEIGHT: 50%; display:none;"><p align="right" class="Noprint"><select id="imageFormat" onchange="selectImageFormat('ImagesTable','imageFormat','image')"><option value="1x1">1x1</option>
+<option value="2x2">2x2</option>
+<option value="3x3">3x3</option></select></p></td>
+</tr></tbody></table></p>
+<p><table id="ImagesTable" style="WIDTH: 602px;" cellspacing="0" cellpadding="0" align="justify" border="0" col="2" summary="1"><tbody valign="top"><tr><td valign="top" align="center">
+<img id="image1" height="450" width="300" src="20180309_101410_0.jpeg"><br><font class="font"> &nbsp;</font>
+</td></tr></tbody></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 600px; HEIGHT: 25px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="1"><tbody><tr><td style="WIDTH: 100%; HEIGHT: 50%; "><p align="left"><font class="SubTitlefont">结论</font></p></td></tr></tbody></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 600px; HEIGHT: 80px"><table style="WIDTH: 100%; " cellspacing="0" cellpadding="0" border="0" row="1" col="1"><tbody><tr><td style="WIDTH:607px; TEXT-DECORATION: underline; word-break:break-all;" align="left" valign="top"><div style="word-break: break-word; word-wrap: break-word; white-space: -moz-pre-wrap; width:600px;">
+<font class="Itemfont">概要</font><br><pre style="white-space:pre-wrap;white-space: -moz-pre-wrap;white-space:pre-wrap;white-space: -o-pre-wrap; word-wrap: break-word;"><font class="font"></font></pre>
+</div></td></tr></tbody></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 600px; HEIGHT: 80px"><table style="WIDTH: 100%; HEIGHT: 100%" cellspacing="0" cellpadding="0" border="0"><tbody>
+<tr><td style="TEXT-DECORATION: underline; WIDTH: 100%; HEIGHT: 10px;" align="left"><font class="Itemfont">建议</font></td></tr>
+<tr><td><font class="font"></font></td></tr>
+</tbody></table></p>
+<p><table style="WIDTH: 600px; HEIGHT: 59px" height="59" cellspacing="0" cellpadding="0" width="600" align="justify" border="0" row="2" col="2"><tbody>
+<tr>
+<td valign="top" width="50%" height="50%">
+<p style="MARGIN-LEFT: 0%; WIDTH: 300px; HEIGHT: 10px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0"><tbody><tr><td><p align="left">
+                              ___________________________________
+                            </p></td></tr></tbody></table></p>
+<p style="MARGIN-LEFT: 0%; WIDTH: 250px; HEIGHT: 10px"><table class="table1" cellspacing="0" cellpadding="0" border="0" col="1"><tbody><tr><td style="WIDTH: 250px" align="left">
+<font class="Itemfont">操作者:
+                            </font><font class="font"></font>
+</td></tr></tbody></table></p>
+</td>
+<td valign="top" width="50%" height="50%">
+<p style="MARGIN-LEFT: 0%; WIDTH: 300px; HEIGHT: 10px"><table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0"><tbody><tr><td><p align="right">
+                              ___________________________________
+                            </p></td></tr></tbody></table></p>
+<p style="MARGIN-LEFT: 20%; WIDTH: 250px; HEIGHT: 10px" align="justify"><table class="table1" cellspacing="0" cellpadding="0" border="0" col="1"><tbody><tr><td style="WIDTH: 250px" align="left" attrindex="54">
+<font class="Itemfont">主治医生:
+                            </font><font class="font"></font>
+</td></tr></tbody></table></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%" height="50%"></td>
+<td valign="top" width="50%" height="50%"></td>
+</tr>
+</tbody></table></p>
+<p align="center" class="Noprint" style="display:none;"> &nbsp;&nbsp;<input type="submit" class="button" value="Exit" onclick="javascript:self.close();" oncontextmenu="javascript:self.close();"> &nbsp;&nbsp;<input type="submit" class="button" value="Print" onclick="javascript:window.print();" oncontextmenu="javascript:window.print();"></p>
+</div></body>
+<script language="javascript1.2">
+        selectedFormat('imageFormat', '2x2');
+        selectedFormat('graphFormat', '2x2');
+      </script>
+</html>

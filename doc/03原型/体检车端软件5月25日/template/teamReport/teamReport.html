@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[单位名称]:[分组]</title>
+</head>
+
+<body>
+<span style="font-size: 16px; text-align:left;">一、 基本资料：</span><br />
+<br />
+<span style="font-size: 16px; text-align:left;">1.体检时间</span>
+<table border="1"  cellpadding="2" cellspacing="0" style="width:600px; vertical-align:top; text-align:left; border-color:#CCC">
+    <tr style="font-size: 16px; text-align:left;">
+        <td width="107" style="background-color:#3FF ; font-size:14px"> 开始日期 </td>
+        <td width="487" style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[开始日期]</td>
+    </tr>
+    <tr style="font-size: 16px; text-align:left;">
+      <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all; background-color:#3FF">结束日期</td>
+      <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[结束日期]</td>
+    </tr>
+</table>
+<span style="font-size: 16px; text-align:left;"><br />
+2. 参检人年龄员分布</span><br />
+<br />
+<span style="font-size: 14px; text-align:left;">本次体检共有[总人数]人参加，其中男[男人数]人，女[女人数]人，年龄分布如下： 
+</span>
+<table width="600" border="1" cellspacing="0" cellpadding="2">
+  <tr style="font-size: 16px; text-align:left;">
+    <td style="background-color:#3FF; font-size:14px">&nbsp;</td>
+    <td colspan="3" style="background-color:#3FF; font-size:14px">人数</td>
+    <td colspan="3" style="background-color:#3FF; font-size:14px">百分比</td>
+  </tr>
+  <thead style="display: table-header-group;"><tr style="font-size: 16px; text-align:left;">
+    <td style="background-color:#3FF; font-size:14px">年龄组（岁）</td>
+    <td style="background-color:#3FF; font-size:14px">男性</td>
+    <td style="background-color:#3FF; font-size:14px">女性</td>
+    <td style="background-color:#3FF; font-size:14px">合计</td>
+    <td style="background-color:#3FF; font-size:14px">男性</td>
+    <td style="background-color:#3FF; font-size:14px">女性</td>
+    <td style="background-color:#3FF; font-size:14px">平均</td>
+  </tr></thead>
+  {参检人年龄员分布[
+  <tr style="font-size: 14px; text-align:left;">
+    <td>[年龄组]</td>
+    <td>[年龄组男]</td>
+    <td>[年龄组女]</td>
+    <td>[年龄组全部]</td>
+    <td>[年龄组男%]</td>
+    <td>[年龄组女%]</td>
+    <td>[年龄组平均%]</td>
+  </tr>
+  ]参检人年龄员分布}
+</table>
+<br /> 
+<!--chart0-->
+<br/>
+<span style="text-align:left; font-size:16px; ">二、本次体检异常结果检出统计</span><br />
+<br />
+<span style="text-align:left; font-size:14px; ">贵单位此次在我中心进行团体体检，现将检出的异常按比例进行统计分析，以反映员工的健康状况</span>
+<br/>
+ <table width="600" border="1" cellspacing="0" cellpadding="2">
+  <tr style="font-size: 14px; text-align:left; background-color:#3FF">
+    <td  >&nbsp;</td>
+    <td colspan="3"  >人数</td>
+    <td colspan="3"  >百分比</td>
+  </tr>
+  <thead style="display: table-header-group;"><tr style="font-size: 14px; text-align:left; background-color:#3FF">
+    <td  >体检结论</td>
+    <td >男性</td>
+    <td >女性</td>
+    <td >合计</td>
+    <td >男性</td>
+    <td >女性</td>
+    <td >平均</td>
+  </tr></thead>
+  {本次体检异常结果检出统计[
+  <tr  style="font-size: 14px; text-align:left;  ">
+    <td >[病种]</td>
+    <td>[病种男]</td>
+    <td>[病种女]</td>
+    <td>[病种全部]</td>
+    <td>[病种男%]</td>
+    <td>[病种女%]</td>
+    <td>[病种全部%]</td>
+  </tr>
+  ]本次体检异常结果检出统计} 
+</table>
+<br />
+<!--chart1-->
+<br />
+ 
+<span style="text-align:left; font-size:16px; ">三、健康问题分析</span><br />
+<br />
+<span style="text-align:left; font-size:14px; ">该部分对检出的常见部分进行详细情况列表分析</span>
+<br/>
+<span style="text-align:left; font-size:14px; ">检出数量排行前十异常结果</span><br />
+<!--chart2-->
+<br />
+<br />
+<span style="text-align:left; font-size:16px; ">以下为各异常详细信息</span><br />
+{病种表格循环[
+<div style="width:610px;">
+<hr style="width:600px ; text-align:left"/>
+[病种]
+ <table width="600" border="1" cellspacing="0" cellpadding="2">
+  <thead style="display: table-header-group;"><tr  style="font-size: 16px; text-align:left; background-color:#3FF">
+    <td width="102">体检号</td>
+    <td width="97">姓名</td>
+    <td width="48">性别</td>
+    <td width="51">年龄</td>
+    <td>分组</td>
+    </tr></thead>
+  {病种人员名单[
+  <tr>
+    <td>[体检号]</td>
+    <td>[姓名]</td>
+    <td>[性别]</td>
+    <td>[年龄]</td>
+    <td>[分组]</td>
+    </tr>
+    ]病种人员名单}
+</table>
+<br />
+<span style="text-align:left; font-size:14px; ">检出比率</span><br />
+<table width="600" border="1" cellspacing="0" cellpadding="2">
+  <thead style="display: table-header-group;"><tr style="font-size: 14px; text-align:left; background-color:#3FF">
+    <td width="143">结果</td>
+    <td width="137">男性</td>
+    <td width="139">女性</td>
+    <td width="171">合计</td>
+  </tr></thead>
+  <tr>
+    <td style="font-size: 14px; text-align:left; background-color:#3FF">检出人数</td>
+    <td style="font-size: 14px; text-align:left; background-color:#3FF">[病种男人数]</td>
+    <td style="font-size: 14px; text-align:left; background-color:#3FF">[病种女人数]</td>
+    <td style="font-size: 14px; text-align:left; background-color:#3FF">[病种总人数]</td>
+  </tr>
+  <tr>
+    <td style="font-size: 14px; text-align:left; background-color:#3FF">总体检人数</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[男总人数]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[女总人数]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[总人数]</td>
+  </tr>
+  <tr>
+    <td style="font-size: 16px; text-align:left; background-color:#3FF">总体检出率（%）</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[病种检出率男]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[病种检出率女]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[病种检出率合计]</td>
+  </tr>
+</table>
+<br />
+ <table width="600" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+    <td style="font-size: 16px; text-align:left;"> </td>
+  </tr>
+  <tr>
+    <td style="font-size: 14px; text-align:left;">[建议]</td>
+  </tr>
+</table>
+<br/><br/>
+</div>
+]病种表格循环}
+<br />
+<br/>
+四、人员详细信息<br /><br />
+
+
+<table width="600" border="1" cellspacing="0" cellpadding="2">
+  <thead style="display: table-header-group;">
+  <tr style="font-size: 16px; text-align:left; background-color:#3FF">
+    <td width="51">序号</td>
+    <td width="51">体检号</td>
+    <td width="97">姓名</td>
+    <td width="48">性别</td>
+    <td width="51">年龄</td>
+    <td>病种</td>
+    </tr> </thead>
+  {人员详细信息[
+  <tr >
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all; ">[序号]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all; ">[体检号]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[姓名]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[性别]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[年龄]</td>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all">[病种]</td>
+    </tr>
+    ]人员详细信息}
+</table>
+<br />
+<table width="600" border="0" cellspacing="0" cellpadding="2" >
+  <tr>
+    <td style="font-size:14px; text-align:justify;word-wrap:break-word;word-break:break-all; padding:5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好！欢迎您莅临[医院名称]健康体检中心。身体健康是学习工作的基础，注重健康是生活和事业发展的必须。世界卫生组织（WHO）提出："健康是人的生理、心理和社会的完美态,而不仅仅是指无疾病或非体弱的状态"。通过健康体检，检查和发现影响健康的有关因素，成为促进身心健康的重要措施和保证。为了您的健康，我们真诚的建议您至少每年进行一次系统的健康体检。</td>
+  </tr>
+</table>
+
+ 
+</body>
+</html>

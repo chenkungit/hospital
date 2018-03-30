@@ -1,0 +1,42 @@
+
+ 
+记录时间：2017-04-16 08:33:21,300 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+CommandText: select * from TbSession  ORDER BY SendTime DESC LIMIT 0,1
+
+ 
+
+ 
+记录时间：2017-04-16 21:32:40,665 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-16 21:32:40
+[异常类型]：TimeoutException
+[异常消息]：
+Timeout in IO operation
+[异常信息]：
+   at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadOk(Boolean read)
+   at MySql.Data.MySqlClient.NativeDriver.SetDatabase(String dbName)
+   at MySql.Data.MySqlClient.Driver.SetDatabase(String dbName)
+   at MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(String databaseName)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 1030
+   at SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 552
+   at SXLibrary.DBHelper.GetDataTable(String cmdText) in x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:line 515
+   at 易捷远程会诊.开始.开始.ReciveSession()
+   at 易捷远程会诊.开始.开始.timer1_Tick(Object sender, EventArgs e)
+   at System.Windows.Forms.Timer.OnTick(EventArgs e)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

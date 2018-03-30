@@ -1,0 +1,18 @@
+
+ 
+记录时间：2015-03-05 15:39:49,856 
+线程ID:[10] 
+日志级别：DEBUG 
+发生类：null  
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Office'。不能在对象 'dbo.Result_Office' 中插入重复键。
+语句已终止。
+ 
+
+ 
+记录时间：2015-03-05 15:39:54,080 
+线程ID:[10] 
+日志级别：DEBUG 
+发生类：null  
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Item'。不能在对象 'dbo.Result_Item' 中插入重复键。
+语句已终止。
+ 

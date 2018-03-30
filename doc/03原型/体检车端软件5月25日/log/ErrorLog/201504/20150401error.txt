@@ -1,0 +1,22 @@
+
+ 
+记录时间：2015-04-01 08:44:19,492 
+线程ID:[13] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/4/1 8:44:19rn[Application UnhandledException]:由于目标计算机积极拒绝，无法连接。 192.168.1.174:47600;
+--[堆栈信息]:
+   在 易捷健康体检系统.Form1.tcpCli_connentException(String str) 位置 d:\ll\54所\体检系统\体检软件\易捷健康体检系统\Form1.cs:行号 67
+   在 TCPHelper.TcpCli.Connected(IAsyncResult iar) 位置 d:\ll\SXLibrary\TCPHelper\TcpCli.cs:行号 303
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.Socket.ConnectCallback()
+   在 System.Net.Sockets.Socket.RegisteredWaitCallback(Object state, Boolean timedOut)
+   在 System.Threading._ThreadPoolWaitOrTimerCallback.PerformWaitOrTimerCallback(Object state, Boolean timedOut)
+
+ 

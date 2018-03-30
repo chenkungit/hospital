@@ -1,0 +1,107 @@
+
+ 
+记录时间：2014-12-07 23:24:15,220 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Cehr_Patient'。不能在对象 'dbo.Cehr_Patient' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Cehr_Patient]
+           ([Last_Update_DTime],[Org_Code],[Patient_Id],[Name],[Sex_Code],[Sex_Name],[Birth_Date]
+           ,[Nationality_Code],[Nationality_Name],[ID_Type_Code],[ID_Type_Name],[ID_No],[Card_No]
+           ,[Occupation_Code],[Occupation_Name],[Email],[This_Health_Card_No],[Native],[Address]
+           ,[Postal_Code],[Tel_No],[Name_PY],[Secret_Level])
+     VALUES
+           ('2014/12/7 23:24:15','','7010','34','1','男','1980/12/7 0:00:00','1','汉族','01','居民身份证','','9167','010101','其他'
+,'email','','籍贯','','邮编','34','34',0)
+
+ 
+
+ 
+记录时间：2014-12-07 23:29:18,270 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Group'。不能在对象 'dbo.Result_Group' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Group] 
+           ([Result_groupid_Id],[event_no],[office_id],[office_name],[group_id],[group_name],[patient_id],[prtient_name],[time],
+[discountType],[price],discountValue,shishoufei,[isShouFei],[isAppend],
+[AppNo])
+     VALUES ('48302','1412070002','519','检验科(三楼)','2065','血常规','7011','56','2014/12/7 23:29:17',
+'打折','30.00','1.00','30.0000','未收费','非附加',
+'');
+
+ 
+
+ 
+记录时间：2014-12-07 23:30:31,835 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2014/12/7 23:30:31
+[异常类型]：Exception
+[异常消息]：
+违反了 PRIMARY KEY 约束 'PK_Result_Group'。不能在对象 'dbo.Result_Group' 中插入重复键。
+语句已终止。
+[异常信息]：
+   在 SXLibrary.DBHelper.ExecuteNonQuery(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 243
+   在 SXLibrary.DBHelper.ExecuteNonQuery(String cmdText) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 197
+   在 TJobj.DB.ins.Ins_Result(String Patient_id, String Patient_Name, String Event_No, List`1 Group_id, List`1 discountTypeList, List`1 discountValueList, String doctor, List`1 isAppendList, String regSource, Boolean AppNoisAppend) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\TJobj\DB.cs:行号 507
+   在 易捷健康体检系统.Reg.Reg.do_reg(String reg_state) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\Reg\Reg.cs:行号 696
+   在 易捷健康体检系统.Reg.Reg.button6_Click(Object sender, EventArgs e) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\Reg\Reg.cs:行号 511
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2014-12-07 23:33:06,902 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Office'。不能在对象 'dbo.Result_Office' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Office]
+                       ([Result_Office_Id],[Office_Id],[Office_name],[Group_Id],[Group_Name],[Patient_Id],[Patient_Name],[Event_No],[date])
+                 VALUES
+                       ('31063','519','检验科(三楼)','2065','血常规','7012','34','1412070003','2014/12/7 23:33:06');
+
+ 
+
+ 
+记录时间：2014-12-07 23:33:48,397 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2014/12/7 23:33:48
+[异常类型]：Exception
+[异常消息]：
+违反了 PRIMARY KEY 约束 'PK_Result_Office'。不能在对象 'dbo.Result_Office' 中插入重复键。
+语句已终止。
+[异常信息]：
+   在 SXLibrary.DBHelper.ExecuteNonQuery(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 243
+   在 SXLibrary.DBHelper.ExecuteNonQuery(String cmdText) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 197
+   在 TJobj.DB.ins.Ins_Result(String Patient_id, String Patient_Name, String Event_No, List`1 Group_id, List`1 discountTypeList, List`1 discountValueList, String doctor, List`1 isAppendList, String regSource, Boolean AppNoisAppend) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\TJobj\DB.cs:行号 555
+   在 易捷健康体检系统.Reg.Reg.do_reg(String reg_state) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\Reg\Reg.cs:行号 696
+   在 易捷健康体检系统.Reg.Reg.button6_Click(Object sender, EventArgs e) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\Reg\Reg.cs:行号 511
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

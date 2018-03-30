@@ -1,0 +1,28 @@
+
+ 
+记录时间：2017-04-23 11:16:20,216 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2017-04-23 11:16:20
+[异常类型]：MySqlException
+[异常消息]：
+Unable to connect to any of the specified MySQL hosts.
+[异常信息]：
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 SXLibrary.DBHelper.PrepareCommand(DbConnection conn, DbCommand cmd, String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:行号 1030
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:行号 552
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\DBHelper\DBHelper.cs:行号 515
+   在 易捷远程会诊.开始.开始.ReciveSession()
+   在 易捷远程会诊.开始.开始.timer1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

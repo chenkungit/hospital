@@ -1,0 +1,98 @@
+
+ 
+记录时间：2015-02-04 16:13:31,584 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：字符串 ' order by [Display_Sort]' 后的引号不完整。
+' order by [Display_Sort]' 附近有语法错误。
+CommandText: SELECT * FROM  [Base_Item_Group] where Item_Group_ID <> '0' and item_py like '%'%' order by [Display_Sort]
+
+ 
+
+ 
+记录时间：2015-02-04 16:30:57,123 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：')' 附近有语法错误。
+CommandText: 
+SELECT Result_Item.* from Result_Item
+INNER JOIN Base_Office  on Base_Office.Office_Id = Result_Item.Office_id
+where Result_Item. Event_No in ()
+and Base_Office.Office_Type_Name='既往史' 
+AND Result_Item.Is_Ok = 1 
+
+ 
+
+ 
+记录时间：2015-02-04 16:32:37,966 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：')' 附近有语法错误。
+CommandText: 
+SELECT Result_Item.* from Result_Item
+INNER JOIN Base_Office  on Base_Office.Office_Id = Result_Item.Office_id
+where Result_Item. Event_No in ()
+and Base_Office.Office_Type_Name='既往史' 
+AND Result_Item.Is_Ok = 1 
+
+ 
+
+ 
+记录时间：2015-02-04 17:40:15,980 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：必须声明标量变量 "@timeL"。
+CommandText: SELECT Appoint.*,Base_Unit_BM.BM_ID,Base_Unit_BM.Unit_ID,Base_Unit_FZ.FZ_Name,Base_Unit_FZ_sfxm.Group_Name,Base_Item_Group.ShiJiJiaGe 
+FROM Appoint 
+LEFT JOIN Base_Unit_BM 
+ON Appoint.team=Base_Unit_BM.Unit_Name AND Appoint.teamPart=Base_Unit_BM.BM_Name 
+LEFT JOIN Base_Unit_FZ ON Base_Unit_BM.BM_ID=Base_Unit_FZ.BM_ID AND Appoint.teamGroup=Base_Unit_FZ.FZ_Name
+LEFT JOIN Base_Unit_FZ_sfxm ON Base_Unit_FZ.FZ_ID=Base_Unit_FZ_sfxm.FZid
+LEFT JOIN Base_Item_Group ON Base_Unit_FZ_sfxm.Group_ID=Base_Item_Group.Item_Group_ID
+WHERE Appoint.InsDate >=@timeL AND Appoint.InsDate<@timeH ORDER BY Appoint.AppointStartDate DESC 
+
+ 
+
+ 
+记录时间：2015-02-04 17:42:32,756 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：必须声明标量变量 "@timeL"。
+CommandText: SELECT Appoint.*,Base_Unit_BM.BM_ID,Base_Unit_BM.Unit_ID,Base_Unit_FZ.FZ_Name,Base_Unit_FZ_sfxm.Group_Name,Base_Item_Group.ShiJiJiaGe 
+FROM Appoint 
+LEFT JOIN Base_Unit_BM 
+ON Appoint.team=Base_Unit_BM.Unit_Name AND Appoint.teamPart=Base_Unit_BM.BM_Name 
+LEFT JOIN Base_Unit_FZ ON Base_Unit_BM.BM_ID=Base_Unit_FZ.BM_ID AND Appoint.teamGroup=Base_Unit_FZ.FZ_Name
+LEFT JOIN Base_Unit_FZ_sfxm ON Base_Unit_FZ.FZ_ID=Base_Unit_FZ_sfxm.FZid
+LEFT JOIN Base_Item_Group ON Base_Unit_FZ_sfxm.Group_ID=Base_Item_Group.Item_Group_ID
+WHERE Appoint.InsDate >=@timeL AND Appoint.InsDate<@timeH ORDER BY Appoint.AppointStartDate DESC 
+
+ 
+
+ 
+记录时间：2015-02-04 17:48:48,741 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：必须声明标量变量 "@idnoORDER"。
+CommandText: SELECT Appoint.*,Base_Unit_BM.BM_ID,Base_Unit_BM.Unit_ID,Base_Unit_FZ.FZ_Name,Base_Unit_FZ_sfxm.Group_Name,Base_Item_Group.ShiJiJiaGe 
+FROM Appoint 
+LEFT JOIN Base_Unit_BM 
+ON Appoint.team=Base_Unit_BM.Unit_Name AND Appoint.teamPart=Base_Unit_BM.BM_Name 
+LEFT JOIN Base_Unit_FZ ON Base_Unit_BM.BM_ID=Base_Unit_FZ.BM_ID AND Appoint.teamGroup=Base_Unit_FZ.FZ_Name
+LEFT JOIN Base_Unit_FZ_sfxm ON Base_Unit_FZ.FZ_ID=Base_Unit_FZ_sfxm.FZid
+LEFT JOIN Base_Item_Group ON Base_Unit_FZ_sfxm.Group_ID=Base_Item_Group.Item_Group_ID
+WHERE Appoint.InsDate >=@timeL AND Appoint.InsDate<@timeH  AND Appoint.pSex =@sex  AND Appoint.pAge>=@ageL AND Appoint.pAge <=@ageH AND Appoint.IsFinish=0  AND IDNo =@idnoORDER BY Appoint.AppointStartDate DESC 
+Params: @timeL = 2015/2/2 0:00:00
+Params: @timeH = 2015/2/5 0:00:00
+Params: @sex = 男
+Params: @ageL = 20
+Params: @ageH = 50
+Params: @idno = 142625196810034318
+
+ 

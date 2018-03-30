@@ -1,0 +1,26 @@
+
+ 
+记录时间：2016-05-25 12:28:11,033 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2016/5/25 12:28:10
+[异常类型]：Exception
+[异常消息]：
+Fatal error encountered during command execution.
+[异常信息]：
+   在 WSDBHelperCli.DBHelperCli.ExecuteNonQuery(String sql, Dictionary`2 dc) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\WSDBHelper\WSDBHelperCli\WSDBHelperCli\DBHelperCli.cs:行号 135
+   在 易捷远程会诊.会诊.编辑会诊详细信息.UpApplyInfo(String applyId) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\易捷远程医疗\会诊\编辑会诊详细信息.cs:行号 258
+   在 易捷远程会诊.会诊.编辑会诊详细信息.btnApply_Click(Object sender, EventArgs e) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\易捷远程医疗\会诊\编辑会诊详细信息.cs:行号 411
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

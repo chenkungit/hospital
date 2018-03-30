@@ -1,0 +1,16 @@
+
+ 
+记录时间：2015-04-15 10:29:37,846 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆失败@admin@QH-20150328ZOYZ\Administrator
+ 
+
+ 
+记录时间：2015-04-15 10:29:40,459 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@QH-20150328ZOYZ\Administrator
+ 

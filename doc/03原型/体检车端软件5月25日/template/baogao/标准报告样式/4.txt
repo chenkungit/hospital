@@ -1,0 +1,12 @@
+﻿
+<table width="680px"  align="center" border="0" cellpadding="0" cellspacing="0"   style="border:solid #999; border-width:0px 0px 1px 0px;">
+<tr>
+<td colspan="5" bgcolor="#CCCCCC" style="border:solid #999; border-width:0px 0px 0px 0px; padding:5px 0px;"><span style="font-size:14px; line-height:20px"><strong>[收费项目名称]</strong></span></td>
+  </tr>
+              <tr>
+                <td width="197"  style="border:solid #999; border-width:1px 1px 1px 0px; padding:3px 0px;word-wrap:break-word;word-break:break-all;"><span style=" font-size:16px; line-height:18px">项目名称</span></td>
+                <td width="361"  style="border:solid #999; border-width:1px 1px 1px 0px; padding:3px 0px; word-wrap:break-word;word-break:break-all;"><span style=" font-size:16px; line-height:18px">检查结果</span></td>
+ 	<td width="94"  style="border:solid #999; border-width:1px 1px 1px 0px; padding:3px 0px;word-wrap:break-word;word-break:break-all;"><span style="font-size:16px; line-height:18px"><span style=" font-size:16px; line-height:18px">单位</span></td>
+                <td width="119"  style="border:solid #999; border-width:1px 1px 1px 0px; padding:3px 0px;word-wrap:break-word;word-break:break-all;"><span style=" font-size:16px; line-height:18px">参考值</span></td>
+                 <td width="59"  style="border:solid #999; border-width:1px 0px 1px 0px; padding:3px 0px;word-wrap:break-word;word-break:break-all;"><span style=" font-size:16px; line-height:18px">提示</span></td>
+              </tr>

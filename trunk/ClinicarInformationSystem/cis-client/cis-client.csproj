@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4626B2B-6D02-4A50-BC81-78B1B7CBA46C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cis_client</RootNamespace>
+    <AssemblyName>cis-client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Administrator\Desktop\fb\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v10.1.Design, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v10.1.Design, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v10.1.Extensions, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Geckofx-Core">
+      <HintPath>..\..\..\..\AmvigProject\DLL\GeckoFX\Geckofx-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Winforms">
+      <HintPath>..\..\..\..\AmvigProject\DLL\GeckoFX\Geckofx-Winforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\SCommon\DLL\Log4Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\SCommon\DLL\Db\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\SCommon\Castle\ActiveRecord\net40\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UBaseLib">
+      <HintPath>..\SCommon\DLL\Uc\x86\UBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UComponentLib">
+      <HintPath>..\SCommon\DLL\Uc\x86\UComponentLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\SCommon\DLL\Tab\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.15.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ui\clinicar\FrmPView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmPView.Designer.cs">
+      <DependentUpon>FrmPView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmBView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmBView.Designer.cs">
+      <DependentUpon>FrmBView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheckCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheckCancel.Designer.cs">
+      <DependentUpon>FrmClinicarAllCheckCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckTotal.Designer.cs">
+      <DependentUpon>FrmClinicarCheckTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarConsultationManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarConsultationManage.Designer.cs">
+      <DependentUpon>FrmClinicarConsultationManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarDataUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarDataUpload.Designer.cs">
+      <DependentUpon>FrmClinicarDataUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmCliniWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmCliniWebBrowser.Designer.cs">
+      <DependentUpon>FrmCliniWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarItemDetailManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarItemDetailManage.Designer.cs">
+      <DependentUpon>FrmClinicarItemDetailManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheckAdviceManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheckAdviceManage.Designer.cs">
+      <DependentUpon>FrmClinicarAllCheckAdviceManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheckDiseaseManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheckDiseaseManage.Designer.cs">
+      <DependentUpon>FrmClinicarAllCheckDiseaseManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarSortCheckHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarSortCheckHistory.Designer.cs">
+      <DependentUpon>FrmClinicarSortCheckHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarSortCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarSortCheck.Designer.cs">
+      <DependentUpon>FrmClinicarSortCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheck.Designer.cs">
+      <DependentUpon>FrmClinicarCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckItemChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckItemChoose.Designer.cs">
+      <DependentUpon>FrmClinicarCheckItemChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckPatient.Designer.cs">
+      <DependentUpon>FrmClinicarCheckPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckGuideOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarCheckGuideOrder.Designer.cs">
+      <DependentUpon>FrmClinicarCheckGuideOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarConsultation.Designer.cs">
+      <DependentUpon>FrmClinicarConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarAllCheck.Designer.cs">
+      <DependentUpon>FrmClinicarAllCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarHospital.Designer.cs">
+      <DependentUpon>FrmClinicarHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarHospitalManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarHospitalManage.Designer.cs">
+      <DependentUpon>FrmClinicarHospitalManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDptSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDptSearch.Designer.cs">
+      <DependentUpon>FrmClinihospitalDptSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmCliniHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmCliniHospital.Designer.cs">
+      <DependentUpon>FrmCliniHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDptSechedulManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDptSechedulManage.Designer.cs">
+      <DependentUpon>FrmClinihospitalDptSechedulManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarItemManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarItemManage.Designer.cs">
+      <DependentUpon>FrmClinicarItemManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarItem.Designer.cs">
+      <DependentUpon>FrmClinicarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarDpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarDpt.Designer.cs">
+      <DependentUpon>FrmClinicarDpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarDptManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinicar\FrmClinicarDptManage.Designer.cs">
+      <DependentUpon>FrmClinicarDptManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalMyConsultationManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalMyConsultationManage.Designer.cs">
+      <DependentUpon>FrmClinihospitalMyConsultationManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalMyConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalMyConsultation.Designer.cs">
+      <DependentUpon>FrmClinihospitalMyConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDpt.Designer.cs">
+      <DependentUpon>FrmClinihospitalDpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDptManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\clinihospital\FrmClinihospitalDptManage.Designer.cs">
+      <DependentUpon>FrmClinihospitalDptManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\sys\FrmBaseData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\sys\FrmBaseData.Designer.cs">
+      <DependentUpon>FrmBaseData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\sys\FrmBaseDataManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\sys\FrmBaseDataManage.Designer.cs">
+      <DependentUpon>FrmBaseDataManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\sys\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\sys\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\sys\FrmSysUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\sys\FrmSysUser.Designer.cs">
+      <DependentUpon>FrmSysUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\sys\FrmSysUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\sys\FrmSysUserManage.Designer.cs">
+      <DependentUpon>FrmSysUserManage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ui\clinicar\FrmPView.resx">
+      <DependentUpon>FrmPView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmBView.resx">
+      <DependentUpon>FrmBView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarAllCheckCancel.resx">
+      <DependentUpon>FrmClinicarAllCheckCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarCheckTotal.resx">
+      <DependentUpon>FrmClinicarCheckTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarConsultationManage.resx">
+      <DependentUpon>FrmClinicarConsultationManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarDataUpload.resx">
+      <DependentUpon>FrmClinicarDataUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmCliniWebBrowser.resx">
+      <DependentUpon>FrmCliniWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarItemDetailManage.resx">
+      <DependentUpon>FrmClinicarItemDetailManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarAllCheckAdviceManage.resx">
+      <DependentUpon>FrmClinicarAllCheckAdviceManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarAllCheckDiseaseManage.resx">
+      <DependentUpon>FrmClinicarAllCheckDiseaseManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarSortCheckHistory.resx">
+      <DependentUpon>FrmClinicarSortCheckHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarSortCheck.resx">
+      <DependentUpon>FrmClinicarSortCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarCheck.resx">
+      <DependentUpon>FrmClinicarCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarCheckItemChoose.resx">
+      <DependentUpon>FrmClinicarCheckItemChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarCheckPatient.resx">
+      <DependentUpon>FrmClinicarCheckPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarCheckGuideOrder.resx">
+      <DependentUpon>FrmClinicarCheckGuideOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarConsultation.resx">
+      <DependentUpon>FrmClinicarConsultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarAllCheck.resx">
+      <DependentUpon>FrmClinicarAllCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarHospital.resx">
+      <DependentUpon>FrmClinicarHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarHospitalManage.resx">
+      <DependentUpon>FrmClinicarHospitalManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmClinihospitalDptSearch.resx">
+      <DependentUpon>FrmClinihospitalDptSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmCliniHospital.resx">
+      <DependentUpon>FrmCliniHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmClinihospitalDptSechedulManage.resx">
+      <DependentUpon>FrmClinihospitalDptSechedulManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarItemManage.resx">
+      <DependentUpon>FrmClinicarItemManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarItem.resx">
+      <DependentUpon>FrmClinicarItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarDpt.resx">
+      <DependentUpon>FrmClinicarDpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinicar\FrmClinicarDptManage.resx">
+      <DependentUpon>FrmClinicarDptManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmClinihospitalMyConsultationManage.resx">
+      <DependentUpon>FrmClinihospitalMyConsultationManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmClinihospitalMyConsultation.resx">
+      <DependentUpon>FrmClinihospitalMyConsultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmClinihospitalDpt.resx">
+      <DependentUpon>FrmClinihospitalDpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\clinihospital\FrmClinihospitalDptManage.resx">
+      <DependentUpon>FrmClinihospitalDptManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\sys\FrmBaseData.resx">
+      <DependentUpon>FrmBaseData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\sys\FrmBaseDataManage.resx">
+      <DependentUpon>FrmBaseDataManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\sys\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\sys\FrmSysUser.resx">
+      <DependentUpon>FrmSysUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\sys\FrmSysUserManage.resx">
+      <DependentUpon>FrmSysUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cis-business\cis-business.csproj">
+      <Project>{baeeec4d-e6e7-4f0b-8a3f-88668cc0ff7e}</Project>
+      <Name>cis-business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cis-model\cis-model.csproj">
+      <Project>{f1bed9e0-b0b3-411a-83cd-776ad9a17d1d}</Project>
+      <Name>cis-model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cis-util\cis-util.csproj">
+      <Project>{7b11f03c-4b83-4b81-b5ab-3ef428c9cb0c}</Project>
+      <Name>cis-util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCommon\SCommon.csproj">
+      <Project>{d0c96775-a236-45cb-b185-43cffb3b93fc}</Project>
+      <Name>SCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ui\inspection\" />
+    <Folder Include="ui\register\" />
+    <Folder Include="ui\sorting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

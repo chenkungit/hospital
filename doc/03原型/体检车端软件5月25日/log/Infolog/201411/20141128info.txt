@@ -1,0 +1,192 @@
+
+ 
+记录时间：2014-11-28 18:31:20,015 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:32:04,004 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:37:06,802 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:38:24,428 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:39:44,831 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:42:34,509 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:44:03,432 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:45:12,035 
+线程ID:[11] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:46:11,995 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:47:06,898 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:49:07,586 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:54:26,619 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:56:55,213 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 18:58:34,338 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 19:02:16,255 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 19:02:58,390 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 19:08:15,474 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-28 19:17:41,093 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 
+
+ 
+记录时间：2014-11-28 19:21:44,562 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 
+
+ 
+记录时间：2014-11-28 20:06:12,890 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 
+
+ 
+记录时间：2014-11-28 20:22:41,890 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 
+
+ 
+记录时间：2014-11-28 20:47:29,609 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 
+
+ 
+记录时间：2014-11-28 21:04:01,562 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 
+
+ 
+记录时间：2014-11-28 21:05:06,265 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@LL\admin
+ 

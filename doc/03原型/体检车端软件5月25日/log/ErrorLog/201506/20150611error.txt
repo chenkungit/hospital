@@ -1,0 +1,113 @@
+
+ 
+记录时间：2015-06-11 12:20:32,867 
+线程ID:[8] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2015/6/11 12:20:32
+[异常类型]：Exception
+[异常消息]：
+空路径名是非法的。
+[异常信息]：
+   在 SXLibrary.ExcelHelper.Save(String SaveFullPath) 位置 e:\快盘\SXLibrary\ExcelObj\ExcelObj.cs:行号 689
+   在 易捷健康体检系统.收费.收费信息查询.btnExportdetial_Click(Object sender, EventArgs e) 位置 e:\快盘\体检软件收费修改版\体检软件收费修改版\易捷健康体检系统\收费\收费信息查询.cs:行号 277
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2015-06-11 20:11:50,283 
+线程ID:[16] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：Duplicate entry '1506111000' for key 'PRIMARY'
+CommandText: INSERT INTO HealthExam_Reg 
+( 
+Card_No, Last_Update_DTime, Org_Code, Health_Record_No, Patient_Id, Event_No,
+Health_Exam_Form_No, Start_Date, Exam_End_Date, Retrieve_Date, Total_Fee, 
+ICD_Code, Diagnosis_Name, Report_Title, Effective_DTime, `NAME`, Sex_Code,
+Sex_Name, Birth_Date, Age, Age_Unit, Address, Employer_Name, ID_Type_name, ID_No,
+Occup_Name, Occup_Code, Marriage_Name, Marriage_Code, Exam_Summary, 
+Exam_Chief_Doctor, Health_Guide, Memo, Hold_Check, Reg_State, Print_State, 
+Tel_No, TJZ_Type, TJ_Type, Team, Team_Part, Team_Group, Pay_Type, Pay_Money, 
+KD_Doctor, Link_Doctor, Dj_Nurse, Reg_Doctor, Get_Report_Type, Name_PY, 
+is_menzhen, is_benren, itemComoboName,comoboPrice, payState, QueryPwd, LimitPay
+ ) VALUES (
+@Card_No,@Last_Update_DTime,@Org_Code,@Health_Record_No,@Patient_Id,@Event_No,
+@Health_Exam_Form_No,@Start_Date,@Exam_End_Date,@Retrieve_Date,@Total_Fee,
+@ICD_Code,@Diagnosis_Name,@Report_Title,@Effective_DTime,@NAME,@Sex_Code,
+@Sex_Name,@Birth_Date,@Age,@Age_Unit,@Address,@Employer_Name,@ID_Type_name,@ID_No,
+@Occup_Name,@Occup_Code,@Marriage_Name,@Marriage_Code,@Exam_Summary,
+@Exam_Chief_Doctor,@Health_Guide,@Memo,@Hold_Check,@Reg_State,@Print_State,
+@Tel_No,@TJZ_Type,@TJ_Type,@Team,@Team_Part,@Team_Group,@Pay_Type,@Pay_Money,
+@KD_Doctor,@Link_Doctor,@Dj_Nurse,@Reg_Doctor,@Get_Report_Type,@Name_PY,
+@is_menzhen,@is_benren,@itemComoboName,@comoboPrice,@payState,@QueryPwd,@LimitPay 
+)
+Params: @Card_No = 
+Params: @Last_Update_DTime = 2015/6/11 20:11:50
+Params: @Org_Code = 
+Params: @Health_Record_No = 
+Params: @Patient_Id = 18769
+Params: @Event_No = 1506111000
+Params: @Health_Exam_Form_No = 
+Params: @Start_Date = 2015/6/11 20:11:50
+Params: @Exam_End_Date = 2015/6/11 20:11:50
+Params: @Retrieve_Date = 2015/6/11 20:11:50
+Params: @Total_Fee = 686
+Params: @ICD_Code = 
+Params: @Diagnosis_Name = 
+Params: @Report_Title = 
+Params: @Effective_DTime = 2015/6/11 20:11:50
+Params: @Name = 庞斌鲡
+Params: @Sex_Code = 2
+Params: @Sex_Name = 女
+Params: @Birth_Date = 1989/6/11 20:11:49
+Params: @Age = 26
+Params: @Age_Unit = 岁
+Params: @Address = 
+Params: @Employer_Name = 临汾市农机局
+Params: @ID_Type_name = 居民身份证
+Params: @ID_No = 
+Params: @Occup_Name = 其他
+Params: @Occup_Code = 010101
+Params: @Marriage_Name = 已婚
+Params: @Marriage_Code = 婚姻状态代码
+Params: @Exam_Summary = 
+Params: @Exam_Chief_Doctor = 
+Params: @Health_Guide = 
+Params: @Memo = 团体导入
+Params: @Hold_Check = 0
+Params: @Reg_State = 0
+Params: @Print_State = 0
+Params: @Tel_No = 
+Params: @TJZ_Type = 
+Params: @TJ_Type = 体检类型
+Params: @Team = 临汾市农机局
+Params: @Team_Part = 临汾市农机局
+Params: @Team_Group = 男
+Params: @Pay_Type = 自费
+Params: @Pay_Money = 0
+Params: @KD_Doctor = 管理员
+Params: @Link_Doctor = 
+Params: @Dj_Nurse = 
+Params: @Reg_Doctor = 管理员
+Params: @Get_Report_Type = 报告领取方式
+Params: @Name_PY = PBL
+Params: @is_menzhen = 0
+Params: @is_benren = 1
+Params: @itemComoboName = 
+Params: @comoboPrice = 0
+Params: @payState = 未收费
+Params: @QueryPwd = 135145
+Params: @LimitPay = 0
+
+ 

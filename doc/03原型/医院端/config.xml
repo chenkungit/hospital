@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <HosInfio loginname="h004" password="h004"/>
+  <Conn str="http://123.57.61.160:8001/dbsvr.asmx"  /> 
+  <webSvr address="http://123.57.61.160:8005/OperateFile.asmx" />
+  <Screen Primary="0" Second="0"/>
+  <Cam index="0" name="0" ip="192.168.1.46" auto_ip="0" port="2346" LogInName="admin" LogInPass="" InUse ="1"/>
+  <Cam index="1" name="1" ip="192.168.1.46" auto_ip="0" port="2346" LogInName="admin" LogInPass="" InUse ="0"/>
+  <server ip="123.57.61.160" port="7410" />
+</root>
+

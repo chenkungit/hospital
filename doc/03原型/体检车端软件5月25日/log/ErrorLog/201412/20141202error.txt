@@ -1,0 +1,15 @@
+
+ 
+记录时间：2014-12-02 16:39:47,820 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：如果指定了 SELECT DISTINCT，那么 ORDER BY 子句中的项就必须出现在选择列表中。
+CommandText: 
+SELECT DISTINCT HealthExam_Reg.Event_No,HealthExam_Reg.Name,HealthExam_Reg.Sex_Name,HealthExam_Reg.Age  FROM Result_Group 
+INNER JOIN HealthExam_Reg ON Result_Group.event_no= HealthExam_Reg.Event_No
+WHERE Result_Group.isok=2  
+and HealthExam_Reg.start_date BETWEEN '2014/11/25 0:00:00' and '2014/12/3 0:00:00'
+order by HealthExam_Reg.start_date desc 
+
+ 

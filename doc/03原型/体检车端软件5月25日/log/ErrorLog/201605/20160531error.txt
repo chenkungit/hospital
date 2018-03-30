@@ -1,0 +1,35 @@
+
+ 
+记录时间：2016-05-31 14:09:26,431 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：未将对象引用设置到对象的实例。
+ 
+
+ 
+记录时间：2016-05-31 14:09:26,442 
+线程ID:[1] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2016/5/31 14:09:26
+[异常类型]：FileNotFoundException
+[异常消息]：
+J:\会诊软件车端\远程会诊医疗车端\体检车端软件5月25日\tmpimg\20160531_140926.jpg
+[异常信息]：
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 SXLibrary.ImageProcess.ImageToByteArray(String imgPath, ImageFormat format) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\SXLibrary\ImageProcess.cs:行号 158
+   在 易捷远程会诊.TW.caichao.get_img_ins_db() 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\易捷远程医疗\TW\caichao.cs:行号 220
+   在 易捷远程会诊.TW.caichao.button2_Click_1(Object sender, EventArgs e) 位置 x:\B_北京市\S_市辖区\北京天道河源会诊\车端\远程会诊用体检联网\易捷远程会诊\易捷远程医疗\TW\caichao.cs:行号 170
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

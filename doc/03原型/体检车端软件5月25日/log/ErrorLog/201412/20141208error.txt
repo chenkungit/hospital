@@ -1,0 +1,113 @@
+
+ 
+记录时间：2014-12-08 00:01:37,383 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：对象名 'TJ_view_app' 无效。
+CommandText: SELECT
+TJ_view_app.Application_no AS AppNo,
+'' AS eventNo,
+TJ_view_app.Result_time AS ExamDate,
+1 AS ispay,
+TJ_view_app.Findings AS reportDesc,
+TJ_view_app.Result AS reportDiagnose,
+'' AS reportImgPath,
+TJ_view_app.Doctor_name AS checkDoctorName,
+Instrument_model AS device,
+TJ_view_app.Group_name  AS examBodyPart
+FROM 
+TJ_view_app WHERE Application_no=@appno 
+Params: @appno = 148917
+
+ 
+
+ 
+记录时间：2014-12-08 00:06:33,116 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：对象名 'TJ_view_app' 无效。
+CommandText: SELECT
+TJ_view_app.Application_no AS AppNo,
+'' AS eventNo,
+TJ_view_app.Result_time AS ExamDate,
+1 AS ispay,
+TJ_view_app.Findings AS reportDesc,
+TJ_view_app.Result AS reportDiagnose,
+'' AS reportImgPath,
+TJ_view_app.Doctor_name AS checkDoctorName,
+Instrument_model AS device,
+TJ_view_app.Group_name  AS examBodyPart
+FROM 
+TJ_view_app WHERE Application_no=@appno 
+Params: @appno = 148917
+
+ 
+
+ 
+记录时间：2014-12-08 00:06:38,939 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2014/12/8 0:06:38
+[异常类型]：Exception
+[异常消息]：
+对象名 'TJ_view_app' 无效。
+[异常信息]：
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 539
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText, Dictionary`2 ParametersList) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 514
+   在 PACSInterface.PACSInterface.ReadItem(String eventNo, String appno) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\思信PACSInterface\PACSInterface.cs:行号 61
+   在 易捷健康体检系统.PE.PE_From_NK.ReadViewInterface(String _officeid, String _eventno) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\PE\PE_From_NK.cs:行号 1258
+   在 易捷健康体检系统.PE.zj.SaveInterfaceOfficesResults(String eventNo) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\PE\zj.cs:行号 908
+   在 易捷健康体检系统.PE.zj.GetPatientAllInfo(String eventNo) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\PE\zj.cs:行号 768
+   在 易捷健康体检系统.PE.zj.textBox1_KeyDown(Object sender, KeyEventArgs e) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\PE\zj.cs:行号 192
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 
+
+ 
+记录时间：2014-12-08 00:18:17,026 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：'强下' 附近有语法错误。
+CommandText: SELECT  Exam_Chief_Doctor, Exam_Chief_DoctorID ,Hold_Check
+FROM HealthExam_Reg WHERE Event_No='AND Result_Item.Item_Result<>'强下' AND Result_Item.Item_Result<>'弃检''
+
+ 
+
+ 
+记录时间：2014-12-08 00:18:20,351 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：[出现应用程序未处理的异常]：2014/12/8 0:18:20
+[异常类型]：Exception
+[异常消息]：
+'强下' 附近有语法错误。
+[异常信息]：
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText, CommandType cmdType, Dictionary`2 ParametersList) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 539
+   在 SXLibrary.DBHelper.GetDataTable(String cmdText) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\SXLibrary\DBHelper\DBHelper.cs:行号 492
+   在 易捷健康体检系统.PE.zj.textBox1_KeyDown(Object sender, KeyEventArgs e) 位置 f:\2014年12月7日云龙\体检软件12-06\体检软件+1204\易捷健康体检系统\PE\zj.cs:行号 171
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+ 

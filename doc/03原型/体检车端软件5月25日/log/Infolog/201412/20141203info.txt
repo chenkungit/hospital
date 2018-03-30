@@ -1,0 +1,224 @@
+
+ 
+记录时间：2014-12-03 09:10:09,334 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 09:19:37,312 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 09:33:59,014 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 09:36:55,330 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 09:50:57,214 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 09:57:19,111 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 14:15:06,515 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆失败@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 14:15:09,814 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 15:06:47,976 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 15:43:23,559 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 15:56:27,082 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:04:11,341 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:06:17,164 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:07:43,660 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:09:44,374 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:11:56,104 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:42:24,639 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:59:00,972 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 16:59:46,962 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:16:40,228 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:17:10,920 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:18:05,133 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:20:17,950 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:23:13,870 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:28:32,515 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 17:30:58,203 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 18:14:11,938 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-12-03 18:29:52,875 
+线程ID:[1] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 

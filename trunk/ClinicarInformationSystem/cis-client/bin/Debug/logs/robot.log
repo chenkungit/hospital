@@ -1,0 +1,1056 @@
+
+---------------------- application startup --------------------------
+[2018-03-30 08:47:38,616][INFO][cis_client.Program->Main] - 系统初始化开始...
+[2018-03-30 08:47:40,579][INFO][NHibernate.Cfg.Environment->lambda_method] - NHibernate 3.1.0.4000 (3.1.0.4000)
+[2018-03-30 08:47:40,620][INFO][NHibernate.Cfg.Environment->lambda_method] - hibernate-configuration section not found in application configuration file
+[2018-03-30 08:47:40,620][INFO][NHibernate.Cfg.Environment->lambda_method] - Bytecode provider name : lcg
+[2018-03-30 08:47:40,622][INFO][NHibernate.Cfg.Environment->lambda_method] - Using reflection optimizer
+[2018-03-30 08:47:40,712][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinihospital.ClinihospitalDpt, cis-model" table="t_clinihospital_dpt">
+    <id name="Id" access="property" column="code" type="String">
+      <generator class="assigned">
+      </generator>
+    </id>
+    <property name="Hospitalcode" access="property" type="String">
+      <column name="hospitalcode" />
+    </property>
+    <property name="Hospitalname" access="property" type="String">
+      <column name="hospitalname" />
+    </property>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+    <property name="Enabled" access="property" type="Boolean">
+      <column name="enabled" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:40,905][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,033][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinihospital.ClinihospitalDpt -> t_clinihospital_dpt
+[2018-03-30 08:47:41,058][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> code, type: String
+[2018-03-30 08:47:41,072][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Hospitalcode -> hospitalcode, type: String
+[2018-03-30 08:47:41,072][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Hospitalname -> hospitalname, type: String
+[2018-03-30 08:47:41,072][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,073][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,073][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Enabled -> enabled, type: Boolean
+[2018-03-30 08:47:41,078][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarDpt, cis-model" table="t_clinicar_dpt">
+    <id name="Id" access="property" column="code" type="String">
+      <generator class="assigned">
+      </generator>
+    </id>
+    <property name="Hospitalcode" access="property" type="String">
+      <column name="hospitalcode" />
+    </property>
+    <property name="Hospitalname" access="property" type="String">
+      <column name="hospitalname" />
+    </property>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+    <property name="Enabled" access="property" type="Boolean">
+      <column name="enabled" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,079][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,080][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarDpt -> t_clinicar_dpt
+[2018-03-30 08:47:41,080][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> code, type: String
+[2018-03-30 08:47:41,080][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Hospitalcode -> hospitalcode, type: String
+[2018-03-30 08:47:41,080][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Hospitalname -> hospitalname, type: String
+[2018-03-30 08:47:41,081][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,081][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,081][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Enabled -> enabled, type: Boolean
+[2018-03-30 08:47:41,081][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarCheckResult, cis-model" table="t_clinicar_check_result">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="CheckNumber" access="property" type="String">
+      <column name="check_number" />
+    </property>
+    <property name="ItemCode" access="property" type="String">
+      <column name="item_code" />
+    </property>
+    <property name="ItemName" access="property" type="String">
+      <column name="item_name" />
+    </property>
+    <property name="DetailCode" access="property" type="String">
+      <column name="item_detail_code" />
+    </property>
+    <property name="DetailName" access="property" type="String">
+      <column name="item_detail_name" />
+    </property>
+    <property name="Result" access="property" type="String">
+      <column name="result" />
+    </property>
+    <property name="Unit" access="property" type="String">
+      <column name="unit" />
+    </property>
+    <property name="Conclusion" access="property" type="String">
+      <column name="conclusion" />
+    </property>
+    <property name="AttachmentPath" access="property" type="String">
+      <column name="attachment_path" />
+    </property>
+    <property name="Deleted" access="property" type="Boolean">
+      <column name="deleted" />
+    </property>
+    <property name="DptCode" access="property" type="String">
+      <column name="dpt_code" />
+    </property>
+    <property name="DptName" access="property" type="String">
+      <column name="dpt_name" />
+    </property>
+    <property name="ReportPath" access="property" type="String">
+      <column name="report_path" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,082][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,082][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarCheckResult -> t_clinicar_check_result
+[2018-03-30 08:47:41,083][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,083][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckNumber -> check_number, type: String
+[2018-03-30 08:47:41,083][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ItemCode -> item_code, type: String
+[2018-03-30 08:47:41,083][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ItemName -> item_name, type: String
+[2018-03-30 08:47:41,084][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DetailCode -> item_detail_code, type: String
+[2018-03-30 08:47:41,084][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DetailName -> item_detail_name, type: String
+[2018-03-30 08:47:41,084][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Result -> result, type: String
+[2018-03-30 08:47:41,084][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Unit -> unit, type: String
+[2018-03-30 08:47:41,084][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Conclusion -> conclusion, type: String
+[2018-03-30 08:47:41,085][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: AttachmentPath -> attachment_path, type: String
+[2018-03-30 08:47:41,085][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Deleted -> deleted, type: Boolean
+[2018-03-30 08:47:41,085][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DptCode -> dpt_code, type: String
+[2018-03-30 08:47:41,085][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DptName -> dpt_name, type: String
+[2018-03-30 08:47:41,086][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ReportPath -> report_path, type: String
+[2018-03-30 08:47:41,086][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.sys.SysDic, cis-model" table="t_sys_dict">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="Code" access="property" type="String">
+      <column name="code" />
+    </property>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="Pcode" access="property" type="String">
+      <column name="pcode" />
+    </property>
+    <property name="Sort" access="property" type="String">
+      <column name="sort" />
+    </property>
+    <property name="Enabled" access="property" type="String">
+      <column name="enabled" />
+    </property>
+    <property name="DisplayOrder" access="property" type="String">
+      <column name="display_order" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,086][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,087][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.sys.SysDic -> t_sys_dict
+[2018-03-30 08:47:41,087][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,087][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Code -> code, type: String
+[2018-03-30 08:47:41,088][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,088][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Pcode -> pcode, type: String
+[2018-03-30 08:47:41,088][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Sort -> sort, type: String
+[2018-03-30 08:47:41,088][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Enabled -> enabled, type: String
+[2018-03-30 08:47:41,089][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DisplayOrder -> display_order, type: String
+[2018-03-30 08:47:41,089][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,089][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarItem, cis-model" table="t_clinicar_item">
+    <id name="Id" access="property" column="code" type="String">
+      <generator class="assigned">
+      </generator>
+    </id>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="DptCode" access="property" type="String">
+      <column name="dpt_code" />
+    </property>
+    <property name="DptName" access="property" type="String">
+      <column name="dpt_name" />
+    </property>
+    <property name="DeviceCode" access="property" type="String">
+      <column name="device_code" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+    <property name="Enabled" access="property" type="Boolean">
+      <column name="enabled" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,090][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,090][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarItem -> t_clinicar_item
+[2018-03-30 08:47:41,090][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> code, type: String
+[2018-03-30 08:47:41,091][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,091][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DptCode -> dpt_code, type: String
+[2018-03-30 08:47:41,091][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DptName -> dpt_name, type: String
+[2018-03-30 08:47:41,091][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DeviceCode -> device_code, type: String
+[2018-03-30 08:47:41,091][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,092][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Enabled -> enabled, type: Boolean
+[2018-03-30 08:47:41,092][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarHospital, cis-model" table="t_clinicar_hospital">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="HospitalCode" access="property" type="String">
+      <column name="hospitalcode" />
+    </property>
+    <property name="HospitalName" access="property" type="String">
+      <column name="hospitalname" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,092][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,093][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarHospital -> t_clinicar_hospital
+[2018-03-30 08:47:41,102][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,102][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: HospitalCode -> hospitalcode, type: String
+[2018-03-30 08:47:41,102][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: HospitalName -> hospitalname, type: String
+[2018-03-30 08:47:41,103][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,103][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.sys.SysBaseData, cis-model" table="t_sys_dict">
+    <id name="Id" access="property" column="code" type="String">
+      <generator class="assigned">
+      </generator>
+    </id>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="Pcode" access="property" type="String">
+      <column name="pcode" />
+    </property>
+    <property name="Sort" access="property" type="String">
+      <column name="sort" />
+    </property>
+    <property name="Enabled" access="property" type="Boolean">
+      <column name="enabled" />
+    </property>
+    <property name="DisplayOrder" access="property" type="Int32">
+      <column name="display_order" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,104][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,104][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.sys.SysBaseData -> t_sys_dict
+[2018-03-30 08:47:41,104][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> code, type: String
+[2018-03-30 08:47:41,105][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,105][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Pcode -> pcode, type: String
+[2018-03-30 08:47:41,105][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Sort -> sort, type: String
+[2018-03-30 08:47:41,105][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Enabled -> enabled, type: Boolean
+[2018-03-30 08:47:41,105][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DisplayOrder -> display_order, type: Int32
+[2018-03-30 08:47:41,106][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,106][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarCheckItem, cis-model" table="t_clinicar_check_item">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="CheckId" access="property" type="Int32">
+      <column name="check_id" />
+    </property>
+    <property name="ItemCode" access="property" type="String">
+      <column name="item_code" />
+    </property>
+    <property name="ItemName" access="property" type="String">
+      <column name="item_name" />
+    </property>
+    <property name="DptCode" access="property" type="String">
+      <column name="dpt_code" />
+    </property>
+    <property name="DptName" access="property" type="String">
+      <column name="dpt_name" />
+    </property>
+    <property name="Completed" access="property" type="Boolean">
+      <column name="completed" />
+    </property>
+    <property name="Summary" access="property" type="String">
+      <column name="summary" />
+    </property>
+    <property name="Conclusion" access="property" type="String">
+      <column name="conclusion" />
+    </property>
+    <property name="Advice" access="property" type="String">
+      <column name="advice" />
+    </property>
+    <property name="Deleted" access="property" type="Boolean">
+      <column name="deleted" />
+    </property>
+    <property name="Canceled" access="property" type="Boolean">
+      <column name="canceled" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,107][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,107][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarCheckItem -> t_clinicar_check_item
+[2018-03-30 08:47:41,107][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,107][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckId -> check_id, type: Int32
+[2018-03-30 08:47:41,108][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ItemCode -> item_code, type: String
+[2018-03-30 08:47:41,108][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ItemName -> item_name, type: String
+[2018-03-30 08:47:41,108][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DptCode -> dpt_code, type: String
+[2018-03-30 08:47:41,108][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DptName -> dpt_name, type: String
+[2018-03-30 08:47:41,109][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Completed -> completed, type: Boolean
+[2018-03-30 08:47:41,109][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Summary -> summary, type: String
+[2018-03-30 08:47:41,109][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Conclusion -> conclusion, type: String
+[2018-03-30 08:47:41,109][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Advice -> advice, type: String
+[2018-03-30 08:47:41,109][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Deleted -> deleted, type: Boolean
+[2018-03-30 08:47:41,110][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Canceled -> canceled, type: Boolean
+[2018-03-30 08:47:41,110][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarDptSechedul, cis-model" table="t_clinicar_dpt_sechedul">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="SechedulDate" access="property" type="System.DateTime">
+      <column name="sechedulDate" />
+    </property>
+    <property name="SechedulType" access="property" type="String">
+      <column name="sechedulType" />
+    </property>
+    <property name="DeptCode" access="property" type="String">
+      <column name="deptCode" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,110][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,111][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarDptSechedul -> t_clinicar_dpt_sechedul
+[2018-03-30 08:47:41,111][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,111][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: SechedulDate -> sechedulDate, type: DateTime
+[2018-03-30 08:47:41,111][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: SechedulType -> sechedulType, type: String
+[2018-03-30 08:47:41,112][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DeptCode -> deptCode, type: String
+[2018-03-30 08:47:41,112][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarConsultation, cis-model" table="t_clinicar_consultation">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="ApplyHospitalCode" access="property" type="String">
+      <column name="applyhospitalcode" />
+    </property>
+    <property name="ApplyHospitalName" access="property" type="String">
+      <column name="applyhospitalname" />
+    </property>
+    <property name="ApplyHospitalTel" access="property" type="String">
+      <column name="applyhospitaltel" />
+    </property>
+    <property name="ApplyHospitalDate" access="property" type="System.DateTime">
+      <column name="applyhospitaldate" />
+    </property>
+    <property name="HospitalCode" access="property" type="String">
+      <column name="hospitalcode" />
+    </property>
+    <property name="HospitalName" access="property" type="String">
+      <column name="hospitalname" />
+    </property>
+    <property name="DeptCode" access="property" type="String">
+      <column name="deptcode" />
+    </property>
+    <property name="DeptName" access="property" type="String">
+      <column name="deptname" />
+    </property>
+    <property name="UserName" access="property" type="String">
+      <column name="username" />
+    </property>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="CheckNumber" access="property" type="String">
+      <column name="check_number" />
+    </property>
+    <property name="Sex" access="property" type="String">
+      <column name="sex" />
+    </property>
+    <property name="Age" access="property" type="String">
+      <column name="age" />
+    </property>
+    <property name="Married" access="property" type="String">
+      <column name="married" />
+    </property>
+    <property name="Cardnumber" access="property" type="String">
+      <column name="cardnumber" />
+    </property>
+    <property name="Tel" access="property" type="String">
+      <column name="tel" />
+    </property>
+    <property name="ConsultationDate" access="property" type="System.DateTime">
+      <column name="consultationdate" />
+    </property>
+    <property name="ConsultationType" access="property" type="String">
+      <column name="consultationtype" />
+    </property>
+    <property name="Diagnosis" access="property" type="String">
+      <column name="diagnosis" />
+    </property>
+    <property name="Medicalhistory" access="property" type="String">
+      <column name="medicalhistory" />
+    </property>
+    <property name="Results" access="property" type="String">
+      <column name="results" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,113][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,113][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarConsultation -> t_clinicar_consultation
+[2018-03-30 08:47:41,113][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,113][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ApplyHospitalCode -> applyhospitalcode, type: String
+[2018-03-30 08:47:41,114][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ApplyHospitalName -> applyhospitalname, type: String
+[2018-03-30 08:47:41,114][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ApplyHospitalTel -> applyhospitaltel, type: String
+[2018-03-30 08:47:41,114][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ApplyHospitalDate -> applyhospitaldate, type: DateTime
+[2018-03-30 08:47:41,114][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: HospitalCode -> hospitalcode, type: String
+[2018-03-30 08:47:41,115][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: HospitalName -> hospitalname, type: String
+[2018-03-30 08:47:41,115][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DeptCode -> deptcode, type: String
+[2018-03-30 08:47:41,115][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DeptName -> deptname, type: String
+[2018-03-30 08:47:41,115][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: UserName -> username, type: String
+[2018-03-30 08:47:41,115][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,116][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckNumber -> check_number, type: String
+[2018-03-30 08:47:41,116][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Sex -> sex, type: String
+[2018-03-30 08:47:41,116][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Age -> age, type: String
+[2018-03-30 08:47:41,116][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Married -> married, type: String
+[2018-03-30 08:47:41,116][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Cardnumber -> cardnumber, type: String
+[2018-03-30 08:47:41,117][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Tel -> tel, type: String
+[2018-03-30 08:47:41,117][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ConsultationDate -> consultationdate, type: DateTime
+[2018-03-30 08:47:41,117][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ConsultationType -> consultationtype, type: String
+[2018-03-30 08:47:41,117][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Diagnosis -> diagnosis, type: String
+[2018-03-30 08:47:41,117][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Medicalhistory -> medicalhistory, type: String
+[2018-03-30 08:47:41,118][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Results -> results, type: String
+[2018-03-30 08:47:41,118][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarItemDetail, cis-model" table="t_clinicar_item_detail">
+    <id name="Id" access="property" column="code" type="String">
+      <generator class="assigned">
+      </generator>
+    </id>
+    <property name="DetailName" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="ItemCode" access="property" type="String">
+      <column name="item_code" />
+    </property>
+    <property name="Unit" access="property" type="String">
+      <column name="unit" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,118][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,119][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarItemDetail -> t_clinicar_item_detail
+[2018-03-30 08:47:41,119][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> code, type: String
+[2018-03-30 08:47:41,119][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: DetailName -> name, type: String
+[2018-03-30 08:47:41,120][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: ItemCode -> item_code, type: String
+[2018-03-30 08:47:41,120][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Unit -> unit, type: String
+[2018-03-30 08:47:41,120][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarCheck, cis-model" table="t_clinicar_check">
+    <id name="Id" access="property" column="id" type="String">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="CheckNumber" access="property" type="String">
+      <column name="check_number" />
+    </property>
+    <property name="Name" access="property" type="String">
+      <column name="name" />
+    </property>
+    <property name="GenderCode" access="property" type="String">
+      <column name="gender_code" />
+    </property>
+    <property name="GenderName" access="property" type="String">
+      <column name="gender_name" />
+    </property>
+    <property name="NationalityCode" access="property" type="String">
+      <column name="nationality_code" />
+    </property>
+    <property name="NationalityName" access="property" type="String">
+      <column name="nationality_name" />
+    </property>
+    <property name="Birthday" access="property" type="String">
+      <column name="birthday" />
+    </property>
+    <property name="Age" access="property" type="Int32">
+      <column name="age" />
+    </property>
+    <property name="MaritalStatusCode" access="property" type="String">
+      <column name="marital_status_code" />
+    </property>
+    <property name="MaritalStatusName" access="property" type="String">
+      <column name="marital_status_name" />
+    </property>
+    <property name="CertificateTypeCode" access="property" type="String">
+      <column name="certificate_type_code" />
+    </property>
+    <property name="CertificateTypeName" access="property" type="String">
+      <column name="certificate_type_name" />
+    </property>
+    <property name="CertificateNumber" access="property" type="String">
+      <column name="certificate_number" />
+    </property>
+    <property name="Address" access="property" type="String">
+      <column name="address" />
+    </property>
+    <property name="Tel" access="property" type="String">
+      <column name="tel" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+    <property name="CheckDoctor" access="property" type="String">
+      <column name="check_doctor" />
+    </property>
+    <property name="CheckDate" access="property" type="String">
+      <column name="check_date" />
+    </property>
+    <property name="Conclusion" access="property" type="String">
+      <column name="conclusion" />
+    </property>
+    <property name="Advice" access="property" type="String">
+      <column name="advice" />
+    </property>
+    <property name="Deleted" access="property" type="Boolean">
+      <column name="deleted" />
+    </property>
+    <property name="AllcheckCompleted" access="property" type="Boolean">
+      <column name="allcheck_completed" />
+    </property>
+    <property name="Disease" access="property" type="String">
+      <column name="disease" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,121][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,121][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarCheck -> t_clinicar_check
+[2018-03-30 08:47:41,121][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: String
+[2018-03-30 08:47:41,122][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckNumber -> check_number, type: String
+[2018-03-30 08:47:41,122][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Name -> name, type: String
+[2018-03-30 08:47:41,122][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: GenderCode -> gender_code, type: String
+[2018-03-30 08:47:41,122][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: GenderName -> gender_name, type: String
+[2018-03-30 08:47:41,122][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: NationalityCode -> nationality_code, type: String
+[2018-03-30 08:47:41,123][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: NationalityName -> nationality_name, type: String
+[2018-03-30 08:47:41,123][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Birthday -> birthday, type: String
+[2018-03-30 08:47:41,123][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Age -> age, type: Int32
+[2018-03-30 08:47:41,123][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: MaritalStatusCode -> marital_status_code, type: String
+[2018-03-30 08:47:41,124][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: MaritalStatusName -> marital_status_name, type: String
+[2018-03-30 08:47:41,124][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CertificateTypeCode -> certificate_type_code, type: String
+[2018-03-30 08:47:41,124][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CertificateTypeName -> certificate_type_name, type: String
+[2018-03-30 08:47:41,124][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CertificateNumber -> certificate_number, type: String
+[2018-03-30 08:47:41,124][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Address -> address, type: String
+[2018-03-30 08:47:41,125][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Tel -> tel, type: String
+[2018-03-30 08:47:41,125][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,125][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckDoctor -> check_doctor, type: String
+[2018-03-30 08:47:41,125][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckDate -> check_date, type: String
+[2018-03-30 08:47:41,125][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Conclusion -> conclusion, type: String
+[2018-03-30 08:47:41,126][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Advice -> advice, type: String
+[2018-03-30 08:47:41,126][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Deleted -> deleted, type: Boolean
+[2018-03-30 08:47:41,126][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: AllcheckCompleted -> allcheck_completed, type: Boolean
+[2018-03-30 08:47:41,126][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Disease -> disease, type: String
+[2018-03-30 08:47:41,127][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.sys.SysUser, cis-model" table="t_sys_user">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="Username" access="property" type="String">
+      <column name="username" />
+    </property>
+    <property name="Password" access="property" type="String">
+      <column name="password" />
+    </property>
+    <property name="UserType" access="property" type="String">
+      <column name="user_type" />
+    </property>
+    <property name="FullName" access="property" type="String">
+      <column name="full_name" />
+    </property>
+    <property name="Tel" access="property" type="String">
+      <column name="tel" />
+    </property>
+    <property name="Remark" access="property" type="String">
+      <column name="remark" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,127][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,127][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.sys.SysUser -> t_sys_user
+[2018-03-30 08:47:41,128][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,128][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Username -> username, type: String
+[2018-03-30 08:47:41,128][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Password -> password, type: String
+[2018-03-30 08:47:41,128][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: UserType -> user_type, type: String
+[2018-03-30 08:47:41,129][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: FullName -> full_name, type: String
+[2018-03-30 08:47:41,129][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Tel -> tel, type: String
+[2018-03-30 08:47:41,129][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Remark -> remark, type: String
+[2018-03-30 08:47:41,129][DEBUG][NHibernate.Cfg.Configuration->lambda_method] - Mapping XML:
+<?xml version="1.0" encoding="utf-16"?>
+<hibernate-mapping  auto-import="true" default-lazy="false" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="cis_model.clinicar.ClinicarAllCheck, cis-model" table="t_clinicar_allcheck">
+    <id name="Id" access="property" column="id" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="CheckNumber" access="property" type="String">
+      <column name="check_number" />
+    </property>
+    <property name="Advice" access="property" type="String">
+      <column name="advice" />
+    </property>
+    <property name="Disease" access="property" type="String">
+      <column name="disease" />
+    </property>
+    <property name="AduitStatus" access="property" type="Boolean">
+      <column name="aduitStatus" />
+    </property>
+  </class>
+</hibernate-mapping>
+
+[2018-03-30 08:47:41,130][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:47:41,130][INFO][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapping class: cis_model.clinicar.ClinicarAllCheck -> t_clinicar_allcheck
+[2018-03-30 08:47:41,130][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Id -> id, type: Int32
+[2018-03-30 08:47:41,130][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: CheckNumber -> check_number, type: String
+[2018-03-30 08:47:41,131][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Advice -> advice, type: String
+[2018-03-30 08:47:41,131][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: Disease -> disease, type: String
+[2018-03-30 08:47:41,131][DEBUG][NHibernate.Cfg.XmlHbmBinding.Binder->lambda_method] - Mapped property: AduitStatus -> aduitStatus, type: Boolean
+[2018-03-30 08:48:00,507][INFO][NHibernate.Cfg.Configuration->lambda_method] - checking mappings queue
+[2018-03-30 08:48:00,827][INFO][NHibernate.Cfg.Configuration->lambda_method] - processing one-to-many association mappings
+[2018-03-30 08:48:00,827][INFO][NHibernate.Cfg.Configuration->lambda_method] - processing one-to-one association property references
+[2018-03-30 08:48:00,836][INFO][NHibernate.Cfg.Configuration->lambda_method] - processing foreign key constraints
+[2018-03-30 08:48:00,838][INFO][NHibernate.Cfg.Configuration->lambda_method] - processing filters (second pass)
+[2018-03-30 08:48:00,855][INFO][NHibernate.Dialect.Dialect->lambda_method] - Using dialect: NHibernate.Dialect.MySQLDialect
+[2018-03-30 08:48:00,882][INFO][NHibernate.Exceptions.SQLExceptionConverterFactory->lambda_method] - Using dialect defined converter
+[2018-03-30 08:48:00,883][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Generate SQL with comments: disabled
+[2018-03-30 08:48:00,884][INFO][NHibernate.Connection.ConnectionProviderFactory->lambda_method] - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+[2018-03-30 08:48:00,885][INFO][NHibernate.Connection.ConnectionProvider->lambda_method] - Configuring ConnectionProvider
+[2018-03-30 08:48:00,950][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+[2018-03-30 08:48:00,951][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Optimize cache for minimal puts: False
+[2018-03-30 08:48:00,952][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Connection release mode: auto
+[2018-03-30 08:48:00,952][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Default batch fetch size: 1
+[2018-03-30 08:48:00,953][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Statistics: disabled
+[2018-03-30 08:48:00,953][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Deleted entity synthetic identifier rollback: disabled
+[2018-03-30 08:48:00,954][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+[2018-03-30 08:48:00,955][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Query language substitutions: {}
+[2018-03-30 08:48:00,956][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+[2018-03-30 08:48:00,957][DEBUG][NHibernate.Cfg.SettingsFactory->lambda_method] - Wrap result sets: disabled
+[2018-03-30 08:48:00,958][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+[2018-03-30 08:48:00,958][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Default entity-mode: Poco
+[2018-03-30 08:48:00,959][INFO][NHibernate.Cfg.SettingsFactory->lambda_method] - Named query checking : enabled
+[2018-03-30 08:48:00,971][INFO][NHibernate.Impl.SessionFactoryImpl->lambda_method] - building session factory
+[2018-03-30 08:48:00,971][DEBUG][NHibernate.Impl.SessionFactoryImpl->lambda_method] - Session factory constructed with filter configurations : {}
+[2018-03-30 08:48:00,972][DEBUG][NHibernate.Impl.SessionFactoryImpl->lambda_method] - instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.MySqlDataDriver', 'dialect'='NHibernate.Dialect.MySQLDialect', 'connection.connection_string'='server=localhost;port=3306;database=cis_v1.0;uid=root;pwd=root;charset=utf8;'}
+[2018-03-30 08:48:00,974][DEBUG][NHibernate.Connection.DriverConnectionProvider->lambda_method] - Obtaining IDbConnection from Driver
+[2018-03-30 08:48:01,981][DEBUG][NHibernate.Connection.ConnectionProvider->lambda_method] - Closing connection
+[2018-03-30 08:48:02,043][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinihospital.ClinihospitalDpt
+[2018-03-30 08:48:02,046][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinihospital.ClinihospitalDpt
+[2018-03-30 08:48:02,082][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinihospital.ClinihospitalDpt
+[2018-03-30 08:48:02,110][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarDpt
+[2018-03-30 08:48:02,111][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarDpt
+[2018-03-30 08:48:02,112][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarDpt
+[2018-03-30 08:48:02,113][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarCheckResult
+[2018-03-30 08:48:02,116][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarCheckResult
+[2018-03-30 08:48:02,117][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarCheckResult
+[2018-03-30 08:48:02,118][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.sys.SysDic
+[2018-03-30 08:48:02,118][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.sys.SysDic
+[2018-03-30 08:48:02,119][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.sys.SysDic
+[2018-03-30 08:48:02,119][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarItem
+[2018-03-30 08:48:02,120][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarItem
+[2018-03-30 08:48:02,120][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarItem
+[2018-03-30 08:48:02,121][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarHospital
+[2018-03-30 08:48:02,121][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarHospital
+[2018-03-30 08:48:02,122][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarHospital
+[2018-03-30 08:48:02,122][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.sys.SysBaseData
+[2018-03-30 08:48:02,123][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.sys.SysBaseData
+[2018-03-30 08:48:02,123][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.sys.SysBaseData
+[2018-03-30 08:48:02,124][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarCheckItem
+[2018-03-30 08:48:02,124][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarCheckItem
+[2018-03-30 08:48:02,125][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarCheckItem
+[2018-03-30 08:48:02,126][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarDptSechedul
+[2018-03-30 08:48:02,126][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarDptSechedul
+[2018-03-30 08:48:02,126][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarDptSechedul
+[2018-03-30 08:48:02,127][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarConsultation
+[2018-03-30 08:48:02,128][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarConsultation
+[2018-03-30 08:48:02,128][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarConsultation
+[2018-03-30 08:48:02,130][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarItemDetail
+[2018-03-30 08:48:02,130][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarItemDetail
+[2018-03-30 08:48:02,131][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarItemDetail
+[2018-03-30 08:48:02,132][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarCheck
+[2018-03-30 08:48:02,134][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarCheck
+[2018-03-30 08:48:02,134][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarCheck
+[2018-03-30 08:48:02,135][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.sys.SysUser
+[2018-03-30 08:48:02,135][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.sys.SysUser
+[2018-03-30 08:48:02,136][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.sys.SysUser
+[2018-03-30 08:48:02,136][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarAllCheck
+[2018-03-30 08:48:02,137][DEBUG][NHibernate.Tuple.Entity.AbstractEntityTuplizer->lambda_method] - No custom accessors found for entity: cis_model.clinicar.ClinicarAllCheck
+[2018-03-30 08:48:02,137][DEBUG][NHibernate.Tuple.Entity.PocoEntityTuplizer->lambda_method] - Create Instantiator using optimizer for:cis_model.clinicar.ClinicarAllCheck
+[2018-03-30 08:48:02,172][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinihospital.ClinihospitalDpt
+[2018-03-30 08:48:02,173][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT code FROM t_clinihospital_dpt WHERE code = ?
+[2018-03-30 08:48:02,173][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinihospi_.code, clinihospi_.hospitalcode as hospital2_0_, clinihospi_.hospitalname as hospital3_0_, clinihospi_.name as name0_, clinihospi_.remark as remark0_, clinihospi_.enabled as enabled0_ FROM t_clinihospital_dpt clinihospi_ WHERE clinihospi_.code=?
+[2018-03-30 08:48:02,174][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinihospital_dpt (hospitalcode, hospitalname, name, remark, enabled, code) VALUES (?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,174][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinihospital_dpt SET hospitalcode = ?, hospitalname = ?, name = ?, remark = ?, enabled = ? WHERE code = ?
+[2018-03-30 08:48:02,175][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinihospital_dpt WHERE code = ?
+[2018-03-30 08:48:02,200][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=?
+[2018-03-30 08:48:02,201][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=?
+[2018-03-30 08:48:02,202][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinihospital_dpt clinihospi0_
+[2018-03-30 08:48:02,202][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=? for update
+[2018-03-30 08:48:02,202][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinihospital_dpt clinihospi0_
+[2018-03-30 08:48:02,203][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=? for update
+[2018-03-30 08:48:02,203][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinihospital_dpt clinihospi0_
+[2018-03-30 08:48:02,204][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=? for update
+[2018-03-30 08:48:02,205][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=?
+[2018-03-30 08:48:02,205][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinihospital.ClinihospitalDpt: SELECT clinihospi0_.code as code0_0_, clinihospi0_.hospitalcode as hospital2_0_0_, clinihospi0_.hospitalname as hospital3_0_0_, clinihospi0_.name as name0_0_, clinihospi0_.remark as remark0_0_, clinihospi0_.enabled as enabled0_0_ FROM t_clinihospital_dpt clinihospi0_ WHERE clinihospi0_.code=?
+[2018-03-30 08:48:02,206][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarDpt
+[2018-03-30 08:48:02,207][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT code FROM t_clinicar_dpt WHERE code = ?
+[2018-03-30 08:48:02,207][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicardp_.code, clinicardp_.hospitalcode as hospital2_1_, clinicardp_.hospitalname as hospital3_1_, clinicardp_.name as name1_, clinicardp_.remark as remark1_, clinicardp_.enabled as enabled1_ FROM t_clinicar_dpt clinicardp_ WHERE clinicardp_.code=?
+[2018-03-30 08:48:02,207][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_dpt (hospitalcode, hospitalname, name, remark, enabled, code) VALUES (?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,208][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_dpt SET hospitalcode = ?, hospitalname = ?, name = ?, remark = ?, enabled = ? WHERE code = ?
+[2018-03-30 08:48:02,208][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_dpt WHERE code = ?
+[2018-03-30 08:48:02,208][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=?
+[2018-03-30 08:48:02,209][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=?
+[2018-03-30 08:48:02,209][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_dpt clinicardp0_
+[2018-03-30 08:48:02,209][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=? for update
+[2018-03-30 08:48:02,210][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_dpt clinicardp0_
+[2018-03-30 08:48:02,210][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=? for update
+[2018-03-30 08:48:02,210][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_dpt clinicardp0_
+[2018-03-30 08:48:02,211][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=? for update
+[2018-03-30 08:48:02,211][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=?
+[2018-03-30 08:48:02,211][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarDpt: SELECT clinicardp0_.code as code1_0_, clinicardp0_.hospitalcode as hospital2_1_0_, clinicardp0_.hospitalname as hospital3_1_0_, clinicardp0_.name as name1_0_, clinicardp0_.remark as remark1_0_, clinicardp0_.enabled as enabled1_0_ FROM t_clinicar_dpt clinicardp0_ WHERE clinicardp0_.code=?
+[2018-03-30 08:48:02,213][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarCheckResult
+[2018-03-30 08:48:02,214][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_check_result WHERE id = ?
+[2018-03-30 08:48:02,214][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarch_.id, clinicarch_.check_number as check2_2_, clinicarch_.item_code as item3_2_, clinicarch_.item_name as item4_2_, clinicarch_.item_detail_code as item5_2_, clinicarch_.item_detail_name as item6_2_, clinicarch_.result as result2_, clinicarch_.unit as unit2_, clinicarch_.conclusion as conclusion2_, clinicarch_.attachment_path as attachment10_2_, clinicarch_.deleted as deleted2_, clinicarch_.dpt_code as dpt12_2_, clinicarch_.dpt_name as dpt13_2_, clinicarch_.report_path as report14_2_ FROM t_clinicar_check_result clinicarch_ WHERE clinicarch_.id=?
+[2018-03-30 08:48:02,214][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_check_result (check_number, item_code, item_name, item_detail_code, item_detail_name, result, unit, conclusion, attachment_path, deleted, dpt_code, dpt_name, report_path, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,215][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_check_result SET check_number = ?, item_code = ?, item_name = ?, item_detail_code = ?, item_detail_name = ?, result = ?, unit = ?, conclusion = ?, attachment_path = ?, deleted = ?, dpt_code = ?, dpt_name = ?, report_path = ? WHERE id = ?
+[2018-03-30 08:48:02,215][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_check_result WHERE id = ?
+[2018-03-30 08:48:02,215][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_check_result (check_number, item_code, item_name, item_detail_code, item_detail_name, result, unit, conclusion, attachment_path, deleted, dpt_code, dpt_name, report_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,216][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,216][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,217][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check_result clinicarch0_
+[2018-03-30 08:48:02,217][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,218][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check_result clinicarch0_
+[2018-03-30 08:48:02,220][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,221][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check_result clinicarch0_
+[2018-03-30 08:48:02,221][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,222][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,222][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarCheckResult: SELECT clinicarch0_.id as id2_0_, clinicarch0_.check_number as check2_2_0_, clinicarch0_.item_code as item3_2_0_, clinicarch0_.item_name as item4_2_0_, clinicarch0_.item_detail_code as item5_2_0_, clinicarch0_.item_detail_name as item6_2_0_, clinicarch0_.result as result2_0_, clinicarch0_.unit as unit2_0_, clinicarch0_.conclusion as conclusion2_0_, clinicarch0_.attachment_path as attachment10_2_0_, clinicarch0_.deleted as deleted2_0_, clinicarch0_.dpt_code as dpt12_2_0_, clinicarch0_.dpt_name as dpt13_2_0_, clinicarch0_.report_path as report14_2_0_ FROM t_clinicar_check_result clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,222][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.sys.SysDic
+[2018-03-30 08:48:02,223][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_sys_dict WHERE id = ?
+[2018-03-30 08:48:02,223][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT sysdic_.id, sysdic_.code as code3_, sysdic_.name as name3_, sysdic_.pcode as pcode3_, sysdic_.sort as sort3_, sysdic_.enabled as enabled3_, sysdic_.display_order as display7_3_, sysdic_.remark as remark3_ FROM t_sys_dict sysdic_ WHERE sysdic_.id=?
+[2018-03-30 08:48:02,223][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_sys_dict (code, name, pcode, sort, enabled, display_order, remark, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,224][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_sys_dict SET code = ?, name = ?, pcode = ?, sort = ?, enabled = ?, display_order = ?, remark = ? WHERE id = ?
+[2018-03-30 08:48:02,224][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_sys_dict WHERE id = ?
+[2018-03-30 08:48:02,224][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_sys_dict (code, name, pcode, sort, enabled, display_order, remark) VALUES (?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,225][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=?
+[2018-03-30 08:48:02,225][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=?
+[2018-03-30 08:48:02,225][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_dict sysdic0_
+[2018-03-30 08:48:02,226][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=? for update
+[2018-03-30 08:48:02,226][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_dict sysdic0_
+[2018-03-30 08:48:02,226][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=? for update
+[2018-03-30 08:48:02,227][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_dict sysdic0_
+[2018-03-30 08:48:02,227][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=? for update
+[2018-03-30 08:48:02,228][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=?
+[2018-03-30 08:48:02,228][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.sys.SysDic: SELECT sysdic0_.id as id3_0_, sysdic0_.code as code3_0_, sysdic0_.name as name3_0_, sysdic0_.pcode as pcode3_0_, sysdic0_.sort as sort3_0_, sysdic0_.enabled as enabled3_0_, sysdic0_.display_order as display7_3_0_, sysdic0_.remark as remark3_0_ FROM t_sys_dict sysdic0_ WHERE sysdic0_.id=?
+[2018-03-30 08:48:02,228][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarItem
+[2018-03-30 08:48:02,229][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT code FROM t_clinicar_item WHERE code = ?
+[2018-03-30 08:48:02,229][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarit_.code, clinicarit_.name as name4_, clinicarit_.dpt_code as dpt3_4_, clinicarit_.dpt_name as dpt4_4_, clinicarit_.device_code as device5_4_, clinicarit_.remark as remark4_, clinicarit_.enabled as enabled4_ FROM t_clinicar_item clinicarit_ WHERE clinicarit_.code=?
+[2018-03-30 08:48:02,230][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_item (name, dpt_code, dpt_name, device_code, remark, enabled, code) VALUES (?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,230][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_item SET name = ?, dpt_code = ?, dpt_name = ?, device_code = ?, remark = ?, enabled = ? WHERE code = ?
+[2018-03-30 08:48:02,230][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_item WHERE code = ?
+[2018-03-30 08:48:02,231][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,231][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,232][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_item clinicarit0_
+[2018-03-30 08:48:02,232][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=? for update
+[2018-03-30 08:48:02,232][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_item clinicarit0_
+[2018-03-30 08:48:02,233][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=? for update
+[2018-03-30 08:48:02,233][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_item clinicarit0_
+[2018-03-30 08:48:02,234][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=? for update
+[2018-03-30 08:48:02,234][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,234][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarItem: SELECT clinicarit0_.code as code4_0_, clinicarit0_.name as name4_0_, clinicarit0_.dpt_code as dpt3_4_0_, clinicarit0_.dpt_name as dpt4_4_0_, clinicarit0_.device_code as device5_4_0_, clinicarit0_.remark as remark4_0_, clinicarit0_.enabled as enabled4_0_ FROM t_clinicar_item clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,235][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarHospital
+[2018-03-30 08:48:02,235][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_hospital WHERE id = ?
+[2018-03-30 08:48:02,235][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarho_.id, clinicarho_.hospitalcode as hospital2_5_, clinicarho_.hospitalname as hospital3_5_, clinicarho_.remark as remark5_ FROM t_clinicar_hospital clinicarho_ WHERE clinicarho_.id=?
+[2018-03-30 08:48:02,236][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_hospital (hospitalcode, hospitalname, remark, id) VALUES (?, ?, ?, ?)
+[2018-03-30 08:48:02,236][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_hospital SET hospitalcode = ?, hospitalname = ?, remark = ? WHERE id = ?
+[2018-03-30 08:48:02,236][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_hospital WHERE id = ?
+[2018-03-30 08:48:02,237][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_hospital (hospitalcode, hospitalname, remark) VALUES (?, ?, ?)
+[2018-03-30 08:48:02,237][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=?
+[2018-03-30 08:48:02,237][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=?
+[2018-03-30 08:48:02,238][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_hospital clinicarho0_
+[2018-03-30 08:48:02,238][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=? for update
+[2018-03-30 08:48:02,238][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_hospital clinicarho0_
+[2018-03-30 08:48:02,239][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=? for update
+[2018-03-30 08:48:02,239][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_hospital clinicarho0_
+[2018-03-30 08:48:02,240][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=? for update
+[2018-03-30 08:48:02,240][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=?
+[2018-03-30 08:48:02,240][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarHospital: SELECT clinicarho0_.id as id5_0_, clinicarho0_.hospitalcode as hospital2_5_0_, clinicarho0_.hospitalname as hospital3_5_0_, clinicarho0_.remark as remark5_0_ FROM t_clinicar_hospital clinicarho0_ WHERE clinicarho0_.id=?
+[2018-03-30 08:48:02,241][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.sys.SysBaseData
+[2018-03-30 08:48:02,241][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT code FROM t_sys_dict WHERE code = ?
+[2018-03-30 08:48:02,241][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT sysbasedat_.code, sysbasedat_.name as name3_, sysbasedat_.pcode as pcode3_, sysbasedat_.sort as sort3_, sysbasedat_.enabled as enabled3_, sysbasedat_.display_order as display7_3_, sysbasedat_.remark as remark3_ FROM t_sys_dict sysbasedat_ WHERE sysbasedat_.code=?
+[2018-03-30 08:48:02,242][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_sys_dict (name, pcode, sort, enabled, display_order, remark, code) VALUES (?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,242][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_sys_dict SET name = ?, pcode = ?, sort = ?, enabled = ?, display_order = ?, remark = ? WHERE code = ?
+[2018-03-30 08:48:02,242][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_sys_dict WHERE code = ?
+[2018-03-30 08:48:02,243][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=?
+[2018-03-30 08:48:02,243][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=?
+[2018-03-30 08:48:02,243][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_dict sysbasedat0_
+[2018-03-30 08:48:02,244][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=? for update
+[2018-03-30 08:48:02,244][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_dict sysbasedat0_
+[2018-03-30 08:48:02,245][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=? for update
+[2018-03-30 08:48:02,249][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_dict sysbasedat0_
+[2018-03-30 08:48:02,250][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=? for update
+[2018-03-30 08:48:02,250][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=?
+[2018-03-30 08:48:02,251][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.sys.SysBaseData: SELECT sysbasedat0_.code as code3_0_, sysbasedat0_.name as name3_0_, sysbasedat0_.pcode as pcode3_0_, sysbasedat0_.sort as sort3_0_, sysbasedat0_.enabled as enabled3_0_, sysbasedat0_.display_order as display7_3_0_, sysbasedat0_.remark as remark3_0_ FROM t_sys_dict sysbasedat0_ WHERE sysbasedat0_.code=?
+[2018-03-30 08:48:02,251][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarCheckItem
+[2018-03-30 08:48:02,251][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_check_item WHERE id = ?
+[2018-03-30 08:48:02,252][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarch_.id, clinicarch_.check_id as check2_6_, clinicarch_.item_code as item3_6_, clinicarch_.item_name as item4_6_, clinicarch_.dpt_code as dpt5_6_, clinicarch_.dpt_name as dpt6_6_, clinicarch_.completed as completed6_, clinicarch_.summary as summary6_, clinicarch_.conclusion as conclusion6_, clinicarch_.advice as advice6_, clinicarch_.deleted as deleted6_, clinicarch_.canceled as canceled6_ FROM t_clinicar_check_item clinicarch_ WHERE clinicarch_.id=?
+[2018-03-30 08:48:02,252][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_check_item (check_id, item_code, item_name, dpt_code, dpt_name, completed, summary, conclusion, advice, deleted, canceled, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,252][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_check_item SET check_id = ?, item_code = ?, item_name = ?, dpt_code = ?, dpt_name = ?, completed = ?, summary = ?, conclusion = ?, advice = ?, deleted = ?, canceled = ? WHERE id = ?
+[2018-03-30 08:48:02,253][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_check_item WHERE id = ?
+[2018-03-30 08:48:02,253][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_check_item (check_id, item_code, item_name, dpt_code, dpt_name, completed, summary, conclusion, advice, deleted, canceled) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,253][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,254][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,254][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check_item clinicarch0_
+[2018-03-30 08:48:02,254][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,255][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check_item clinicarch0_
+[2018-03-30 08:48:02,255][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,256][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check_item clinicarch0_
+[2018-03-30 08:48:02,256][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,256][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,257][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarCheckItem: SELECT clinicarch0_.id as id6_0_, clinicarch0_.check_id as check2_6_0_, clinicarch0_.item_code as item3_6_0_, clinicarch0_.item_name as item4_6_0_, clinicarch0_.dpt_code as dpt5_6_0_, clinicarch0_.dpt_name as dpt6_6_0_, clinicarch0_.completed as completed6_0_, clinicarch0_.summary as summary6_0_, clinicarch0_.conclusion as conclusion6_0_, clinicarch0_.advice as advice6_0_, clinicarch0_.deleted as deleted6_0_, clinicarch0_.canceled as canceled6_0_ FROM t_clinicar_check_item clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,258][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarDptSechedul
+[2018-03-30 08:48:02,258][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_dpt_sechedul WHERE id = ?
+[2018-03-30 08:48:02,259][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicardp_.id, clinicardp_.sechedulDate as sechedul2_7_, clinicardp_.sechedulType as sechedul3_7_, clinicardp_.deptCode as deptCode7_ FROM t_clinicar_dpt_sechedul clinicardp_ WHERE clinicardp_.id=?
+[2018-03-30 08:48:02,259][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_dpt_sechedul (sechedulDate, sechedulType, deptCode, id) VALUES (?, ?, ?, ?)
+[2018-03-30 08:48:02,259][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_dpt_sechedul SET sechedulDate = ?, sechedulType = ?, deptCode = ? WHERE id = ?
+[2018-03-30 08:48:02,260][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_dpt_sechedul WHERE id = ?
+[2018-03-30 08:48:02,260][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_dpt_sechedul (sechedulDate, sechedulType, deptCode) VALUES (?, ?, ?)
+[2018-03-30 08:48:02,260][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=?
+[2018-03-30 08:48:02,261][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=?
+[2018-03-30 08:48:02,261][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_dpt_sechedul clinicardp0_
+[2018-03-30 08:48:02,261][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=? for update
+[2018-03-30 08:48:02,262][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_dpt_sechedul clinicardp0_
+[2018-03-30 08:48:02,262][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=? for update
+[2018-03-30 08:48:02,262][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_dpt_sechedul clinicardp0_
+[2018-03-30 08:48:02,263][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=? for update
+[2018-03-30 08:48:02,263][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=?
+[2018-03-30 08:48:02,263][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarDptSechedul: SELECT clinicardp0_.id as id7_0_, clinicardp0_.sechedulDate as sechedul2_7_0_, clinicardp0_.sechedulType as sechedul3_7_0_, clinicardp0_.deptCode as deptCode7_0_ FROM t_clinicar_dpt_sechedul clinicardp0_ WHERE clinicardp0_.id=?
+[2018-03-30 08:48:02,264][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarConsultation
+[2018-03-30 08:48:02,264][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_consultation WHERE id = ?
+[2018-03-30 08:48:02,265][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarco_.id, clinicarco_.applyhospitalcode as applyhos2_8_, clinicarco_.applyhospitalname as applyhos3_8_, clinicarco_.applyhospitaltel as applyhos4_8_, clinicarco_.applyhospitaldate as applyhos5_8_, clinicarco_.hospitalcode as hospital6_8_, clinicarco_.hospitalname as hospital7_8_, clinicarco_.deptcode as deptcode8_, clinicarco_.deptname as deptname8_, clinicarco_.username as username8_, clinicarco_.name as name8_, clinicarco_.check_number as check12_8_, clinicarco_.sex as sex8_, clinicarco_.age as age8_, clinicarco_.married as married8_, clinicarco_.cardnumber as cardnumber8_, clinicarco_.tel as tel8_, clinicarco_.consultationdate as consult18_8_, clinicarco_.consultationtype as consult19_8_, clinicarco_.diagnosis as diagnosis8_, clinicarco_.medicalhistory as medical21_8_, clinicarco_.results as results8_ FROM t_clinicar_consultation clinicarco_ WHERE clinicarco_.id=?
+[2018-03-30 08:48:02,265][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_consultation (applyhospitalcode, applyhospitalname, applyhospitaltel, applyhospitaldate, hospitalcode, hospitalname, deptcode, deptname, username, name, check_number, sex, age, married, cardnumber, tel, consultationdate, consultationtype, diagnosis, medicalhistory, results, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,265][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_consultation SET applyhospitalcode = ?, applyhospitalname = ?, applyhospitaltel = ?, applyhospitaldate = ?, hospitalcode = ?, hospitalname = ?, deptcode = ?, deptname = ?, username = ?, name = ?, check_number = ?, sex = ?, age = ?, married = ?, cardnumber = ?, tel = ?, consultationdate = ?, consultationtype = ?, diagnosis = ?, medicalhistory = ?, results = ? WHERE id = ?
+[2018-03-30 08:48:02,266][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_consultation WHERE id = ?
+[2018-03-30 08:48:02,267][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_consultation (applyhospitalcode, applyhospitalname, applyhospitaltel, applyhospitaldate, hospitalcode, hospitalname, deptcode, deptname, username, name, check_number, sex, age, married, cardnumber, tel, consultationdate, consultationtype, diagnosis, medicalhistory, results) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,267][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=?
+[2018-03-30 08:48:02,267][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=?
+[2018-03-30 08:48:02,268][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_consultation clinicarco0_
+[2018-03-30 08:48:02,268][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=? for update
+[2018-03-30 08:48:02,269][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_consultation clinicarco0_
+[2018-03-30 08:48:02,269][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=? for update
+[2018-03-30 08:48:02,270][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_consultation clinicarco0_
+[2018-03-30 08:48:02,271][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=? for update
+[2018-03-30 08:48:02,271][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=?
+[2018-03-30 08:48:02,272][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarConsultation: SELECT clinicarco0_.id as id8_0_, clinicarco0_.applyhospitalcode as applyhos2_8_0_, clinicarco0_.applyhospitalname as applyhos3_8_0_, clinicarco0_.applyhospitaltel as applyhos4_8_0_, clinicarco0_.applyhospitaldate as applyhos5_8_0_, clinicarco0_.hospitalcode as hospital6_8_0_, clinicarco0_.hospitalname as hospital7_8_0_, clinicarco0_.deptcode as deptcode8_0_, clinicarco0_.deptname as deptname8_0_, clinicarco0_.username as username8_0_, clinicarco0_.name as name8_0_, clinicarco0_.check_number as check12_8_0_, clinicarco0_.sex as sex8_0_, clinicarco0_.age as age8_0_, clinicarco0_.married as married8_0_, clinicarco0_.cardnumber as cardnumber8_0_, clinicarco0_.tel as tel8_0_, clinicarco0_.consultationdate as consult18_8_0_, clinicarco0_.consultationtype as consult19_8_0_, clinicarco0_.diagnosis as diagnosis8_0_, clinicarco0_.medicalhistory as medical21_8_0_, clinicarco0_.results as results8_0_ FROM t_clinicar_consultation clinicarco0_ WHERE clinicarco0_.id=?
+[2018-03-30 08:48:02,272][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarItemDetail
+[2018-03-30 08:48:02,273][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT code FROM t_clinicar_item_detail WHERE code = ?
+[2018-03-30 08:48:02,273][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarit_.code, clinicarit_.name as name9_, clinicarit_.item_code as item3_9_, clinicarit_.unit as unit9_ FROM t_clinicar_item_detail clinicarit_ WHERE clinicarit_.code=?
+[2018-03-30 08:48:02,273][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_item_detail (name, item_code, unit, code) VALUES (?, ?, ?, ?)
+[2018-03-30 08:48:02,274][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_item_detail SET name = ?, item_code = ?, unit = ? WHERE code = ?
+[2018-03-30 08:48:02,275][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_item_detail WHERE code = ?
+[2018-03-30 08:48:02,275][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,276][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,276][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_item_detail clinicarit0_
+[2018-03-30 08:48:02,278][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=? for update
+[2018-03-30 08:48:02,279][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_item_detail clinicarit0_
+[2018-03-30 08:48:02,279][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=? for update
+[2018-03-30 08:48:02,280][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_item_detail clinicarit0_
+[2018-03-30 08:48:02,280][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=? for update
+[2018-03-30 08:48:02,281][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,281][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarItemDetail: SELECT clinicarit0_.code as code9_0_, clinicarit0_.name as name9_0_, clinicarit0_.item_code as item3_9_0_, clinicarit0_.unit as unit9_0_ FROM t_clinicar_item_detail clinicarit0_ WHERE clinicarit0_.code=?
+[2018-03-30 08:48:02,282][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarCheck
+[2018-03-30 08:48:02,282][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_check WHERE id = ?
+[2018-03-30 08:48:02,283][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicarch_.id, clinicarch_.check_number as check2_10_, clinicarch_.name as name10_, clinicarch_.gender_code as gender4_10_, clinicarch_.gender_name as gender5_10_, clinicarch_.nationality_code as national6_10_, clinicarch_.nationality_name as national7_10_, clinicarch_.birthday as birthday10_, clinicarch_.age as age10_, clinicarch_.marital_status_code as marital10_10_, clinicarch_.marital_status_name as marital11_10_, clinicarch_.certificate_type_code as certifi12_10_, clinicarch_.certificate_type_name as certifi13_10_, clinicarch_.certificate_number as certifi14_10_, clinicarch_.address as address10_, clinicarch_.tel as tel10_, clinicarch_.remark as remark10_, clinicarch_.check_doctor as check18_10_, clinicarch_.check_date as check19_10_, clinicarch_.conclusion as conclusion10_, clinicarch_.advice as advice10_, clinicarch_.deleted as deleted10_, clinicarch_.allcheck_completed as allcheck23_10_, clinicarch_.disease as disease10_ FROM t_clinicar_check clinicarch_ WHERE clinicarch_.id=?
+[2018-03-30 08:48:02,284][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_check (check_number, name, gender_code, gender_name, nationality_code, nationality_name, birthday, age, marital_status_code, marital_status_name, certificate_type_code, certificate_type_name, certificate_number, address, tel, remark, check_doctor, check_date, conclusion, advice, deleted, allcheck_completed, disease, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,284][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_check SET check_number = ?, name = ?, gender_code = ?, gender_name = ?, nationality_code = ?, nationality_name = ?, birthday = ?, age = ?, marital_status_code = ?, marital_status_name = ?, certificate_type_code = ?, certificate_type_name = ?, certificate_number = ?, address = ?, tel = ?, remark = ?, check_doctor = ?, check_date = ?, conclusion = ?, advice = ?, deleted = ?, allcheck_completed = ?, disease = ? WHERE id = ?
+[2018-03-30 08:48:02,284][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_check WHERE id = ?
+[2018-03-30 08:48:02,285][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_check (check_number, name, gender_code, gender_name, nationality_code, nationality_name, birthday, age, marital_status_code, marital_status_name, certificate_type_code, certificate_type_name, certificate_number, address, tel, remark, check_doctor, check_date, conclusion, advice, deleted, allcheck_completed, disease) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,285][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,286][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,286][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check clinicarch0_
+[2018-03-30 08:48:02,287][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,287][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check clinicarch0_
+[2018-03-30 08:48:02,287][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,288][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_check clinicarch0_
+[2018-03-30 08:48:02,289][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=? for update
+[2018-03-30 08:48:02,290][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,290][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarCheck: SELECT clinicarch0_.id as id10_0_, clinicarch0_.check_number as check2_10_0_, clinicarch0_.name as name10_0_, clinicarch0_.gender_code as gender4_10_0_, clinicarch0_.gender_name as gender5_10_0_, clinicarch0_.nationality_code as national6_10_0_, clinicarch0_.nationality_name as national7_10_0_, clinicarch0_.birthday as birthday10_0_, clinicarch0_.age as age10_0_, clinicarch0_.marital_status_code as marital10_10_0_, clinicarch0_.marital_status_name as marital11_10_0_, clinicarch0_.certificate_type_code as certifi12_10_0_, clinicarch0_.certificate_type_name as certifi13_10_0_, clinicarch0_.certificate_number as certifi14_10_0_, clinicarch0_.address as address10_0_, clinicarch0_.tel as tel10_0_, clinicarch0_.remark as remark10_0_, clinicarch0_.check_doctor as check18_10_0_, clinicarch0_.check_date as check19_10_0_, clinicarch0_.conclusion as conclusion10_0_, clinicarch0_.advice as advice10_0_, clinicarch0_.deleted as deleted10_0_, clinicarch0_.allcheck_completed as allcheck23_10_0_, clinicarch0_.disease as disease10_0_ FROM t_clinicar_check clinicarch0_ WHERE clinicarch0_.id=?
+[2018-03-30 08:48:02,291][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.sys.SysUser
+[2018-03-30 08:48:02,291][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_sys_user WHERE id = ?
+[2018-03-30 08:48:02,291][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT sysuser_.id, sysuser_.username as username11_, sysuser_.password as password11_, sysuser_.user_type as user4_11_, sysuser_.full_name as full5_11_, sysuser_.tel as tel11_, sysuser_.remark as remark11_ FROM t_sys_user sysuser_ WHERE sysuser_.id=?
+[2018-03-30 08:48:02,292][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_sys_user (username, password, user_type, full_name, tel, remark, id) VALUES (?, ?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,292][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_sys_user SET username = ?, password = ?, user_type = ?, full_name = ?, tel = ?, remark = ? WHERE id = ?
+[2018-03-30 08:48:02,293][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_sys_user WHERE id = ?
+[2018-03-30 08:48:02,293][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_sys_user (username, password, user_type, full_name, tel, remark) VALUES (?, ?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,294][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=?
+[2018-03-30 08:48:02,294][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=?
+[2018-03-30 08:48:02,295][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_user sysuser0_
+[2018-03-30 08:48:02,295][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=? for update
+[2018-03-30 08:48:02,295][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_user sysuser0_
+[2018-03-30 08:48:02,296][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=? for update
+[2018-03-30 08:48:02,296][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_sys_user sysuser0_
+[2018-03-30 08:48:02,296][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=? for update
+[2018-03-30 08:48:02,297][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=?
+[2018-03-30 08:48:02,297][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.sys.SysUser: SELECT sysuser0_.id as id11_0_, sysuser0_.username as username11_0_, sysuser0_.password as password11_0_, sysuser0_.user_type as user4_11_0_, sysuser0_.full_name as full5_11_0_, sysuser0_.tel as tel11_0_, sysuser0_.remark as remark11_0_ FROM t_sys_user sysuser0_ WHERE sysuser0_.id=?
+[2018-03-30 08:48:02,298][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Static SQL for entity: cis_model.clinicar.ClinicarAllCheck
+[2018-03-30 08:48:02,298][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Version select: SELECT id FROM t_clinicar_allcheck WHERE id = ?
+[2018-03-30 08:48:02,298][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Snapshot select: SELECT clinicaral_.id, clinicaral_.check_number as check2_12_, clinicaral_.advice as advice12_, clinicaral_.disease as disease12_, clinicaral_.aduitStatus as aduitSta5_12_ FROM t_clinicar_allcheck clinicaral_ WHERE clinicaral_.id=?
+[2018-03-30 08:48:02,298][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Insert 0: INSERT INTO t_clinicar_allcheck (check_number, advice, disease, aduitStatus, id) VALUES (?, ?, ?, ?, ?)
+[2018-03-30 08:48:02,299][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Update 0: UPDATE t_clinicar_allcheck SET check_number = ?, advice = ?, disease = ?, aduitStatus = ? WHERE id = ?
+[2018-03-30 08:48:02,299][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Delete 0: DELETE FROM t_clinicar_allcheck WHERE id = ?
+[2018-03-30 08:48:02,299][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] -  Identity insert: INSERT INTO t_clinicar_allcheck (check_number, advice, disease, aduitStatus) VALUES (?, ?, ?, ?)
+[2018-03-30 08:48:02,300][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=?
+[2018-03-30 08:48:02,300][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=?
+[2018-03-30 08:48:02,301][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_allcheck clinicaral0_
+[2018-03-30 08:48:02,301][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=? for update
+[2018-03-30 08:48:02,301][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_allcheck clinicaral0_
+[2018-03-30 08:48:02,302][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=? for update
+[2018-03-30 08:48:02,302][DEBUG][NHibernate.SqlCommand.SqlSelectBuilder->lambda_method] - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table t_clinicar_allcheck clinicaral0_
+[2018-03-30 08:48:02,303][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=? for update
+[2018-03-30 08:48:02,303][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=?
+[2018-03-30 08:48:02,304][DEBUG][NHibernate.Loader.Entity.AbstractEntityLoader->lambda_method] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity cis_model.clinicar.ClinicarAllCheck: SELECT clinicaral0_.id as id12_0_, clinicaral0_.check_number as check2_12_0_, clinicaral0_.advice as advice12_0_, clinicaral0_.disease as disease12_0_, clinicaral0_.aduitStatus as aduitSta5_12_0_ FROM t_clinicar_allcheck clinicaral0_ WHERE clinicaral0_.id=?
+[2018-03-30 08:48:02,305][DEBUG][NHibernate.Impl.SessionFactoryObjectFactory->lambda_method] - initializing class SessionFactoryObjectFactory
+[2018-03-30 08:48:02,306][DEBUG][NHibernate.Impl.SessionFactoryObjectFactory->lambda_method] - registered: d0943e565279420791195cbc4f941588(unnamed)
+[2018-03-30 08:48:02,306][INFO][NHibernate.Impl.SessionFactoryObjectFactory->lambda_method] - no name configured
+[2018-03-30 08:48:02,307][DEBUG][NHibernate.Impl.SessionFactoryImpl->lambda_method] - Instantiated session factory
+[2018-03-30 08:48:02,310][DEBUG][NHibernate.Impl.SessionFactoryImpl->lambda_method] - Checking 0 named HQL queries
+[2018-03-30 08:48:02,310][DEBUG][NHibernate.Impl.SessionFactoryImpl->lambda_method] - Checking 0 named SQL queries
+[2018-03-30 08:48:02,322][DEBUG][NHibernate.Impl.SessionImpl->lambda_method] - [session-id=bed5f13b-c5a3-4547-aaf9-be899e52c684] opened session at timestamp: 636579964823, for session factory: [/d0943e565279420791195cbc4f941588]
+[2018-03-30 08:48:02,330][DEBUG][NHibernate.Engine.Query.QueryPlanCache->lambda_method] - unable to locate HQL query plan in cache; generating (From SysUser Where 1=1  and username=? Order By id desc)
+[2018-03-30 08:48:02,354][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlParseEngine->lambda_method] - parse() - HQL: From SysUser Where 1=1  and username=? Order By id desc
+[2018-03-30 08:48:02,414][DEBUG][NHibernate.Hql.Ast.ANTLR.ErrorCounter->lambda_method] - throwQueryException() : no errors
+[2018-03-30 08:48:02,444][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - select << begin [level=1, statement=select]
+[2018-03-30 08:48:02,457][DEBUG][NHibernate.Hql.Ast.ANTLR.Tree.FromElement->lambda_method] - FromClause{level=1} :  SysUser (no alias) -> sysuser0_
+[2018-03-30 08:48:02,481][INFO][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - attempting to resolve property [username] as a non-qualified ref
+[2018-03-30 08:48:02,567][INFO][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - attempting to resolve property [id] as a non-qualified ref
+[2018-03-30 08:48:02,568][DEBUG][NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode->lambda_method] - Resolved :  {synthetic-alias} -> {synthetic-alias}
+[2018-03-30 08:48:02,572][INFO][NHibernate.Hql.Ast.ANTLR.Tree.FromElement->lambda_method] - handling property dereference [cis_model.sys.SysUser () -> id (Class)]
+[2018-03-30 08:48:02,574][DEBUG][NHibernate.Hql.Ast.ANTLR.Tree.DotNode->lambda_method] - getDataType() : id -> NHibernate.Type.Int32Type
+[2018-03-30 08:48:02,577][DEBUG][NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode->lambda_method] - Resolved :  {synthetic-alias}.id -> sysuser0_.id
+[2018-03-30 08:48:02,578][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - select : finishing up [level=1, statement=select]
+[2018-03-30 08:48:02,580][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - processQuery() : ( SELECT ( FromClause{level=1} t_sys_user sysuser0_ ) ( Where ( and ( = 1 1 ) ( = username ? ) ) ) ( Order ( sysuser0_.id {synthetic-alias} id ) desc ) )
+[2018-03-30 08:48:02,589][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - Derived SELECT clause created.
+[2018-03-30 08:48:02,596][DEBUG][NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor->lambda_method] - Using FROM fragment [t_sys_user sysuser0_]
+[2018-03-30 08:48:02,600][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlSqlWalker->lambda_method] - select >> end [level=1, statement=select]
+[2018-03-30 08:48:02,601][DEBUG][NHibernate.Hql.Ast.ANTLR.ErrorCounter->lambda_method] - throwQueryException() : no errors
+[2018-03-30 08:48:02,628][DEBUG][NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator->lambda_method] - SQL: select sysuser0_.id as id11_, sysuser0_.username as username11_, sysuser0_.password as password11_, sysuser0_.user_type as user4_11_, sysuser0_.full_name as full5_11_, sysuser0_.tel as tel11_, sysuser0_.remark as remark11_ from t_sys_user sysuser0_ where 1=1 and username=? order by sysuser0_.id desc
+[2018-03-30 08:48:02,628][DEBUG][NHibernate.Hql.Ast.ANTLR.ErrorCounter->lambda_method] - throwQueryException() : no errors
+[2018-03-30 08:48:02,650][DEBUG][NHibernate.Engine.Query.QueryPlanCache->lambda_method] - located HQL query plan in cache (From SysUser Where 1=1  and username=? Order By id desc)
+[2018-03-30 08:48:02,653][DEBUG][NHibernate.Engine.Query.HQLQueryPlan->lambda_method] - find: From SysUser Where 1=1  and username=? Order By id desc
+[2018-03-30 08:48:02,656][DEBUG][NHibernate.Engine.QueryParameters->lambda_method] - parameters: ['ys']
+[2018-03-30 08:48:02,657][DEBUG][NHibernate.Engine.QueryParameters->lambda_method] - named parameters: {}
+[2018-03-30 08:48:02,678][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - Opened new IDbCommand, open IDbCommands: 1
+[2018-03-30 08:48:02,679][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - Building an IDbCommand object for the SqlString: select sysuser0_.id as id11_, sysuser0_.username as username11_, sysuser0_.password as password11_, sysuser0_.user_type as user4_11_, sysuser0_.full_name as full5_11_, sysuser0_.tel as tel11_, sysuser0_.remark as remark11_ from t_sys_user sysuser0_ where 1=1 and username=? order by sysuser0_.id desc
+[2018-03-30 08:48:02,683][DEBUG][NHibernate.Engine.QueryParameters->lambda_method] - BindParameters(Positional0:NHibernate.Type.StringType) ys -> [0]
+[2018-03-30 08:48:02,685][DEBUG][NHibernate.Type.StringType->lambda_method] - binding 'ys' to parameter: 0
+[2018-03-30 08:48:02,687][INFO][NHibernate.Loader.Loader->lambda_method] - select sysuser0_.id as id11_, sysuser0_.username as username11_, sysuser0_.password as password11_, sysuser0_.user_type as user4_11_, sysuser0_.full_name as full5_11_, sysuser0_.tel as tel11_, sysuser0_.remark as remark11_ from t_sys_user sysuser0_ where 1=1 and username=?p0 order by sysuser0_.id desc
+[2018-03-30 08:48:02,693][DEBUG][NHibernate.SQL->lambda_method] - select sysuser0_.id as id11_, sysuser0_.username as username11_, sysuser0_.password as password11_, sysuser0_.user_type as user4_11_, sysuser0_.full_name as full5_11_, sysuser0_.tel as tel11_, sysuser0_.remark as remark11_ from t_sys_user sysuser0_ where 1=1 and username=?p0 order by sysuser0_.id desc;?p0 = 'ys' [Type: String (2)]
+[2018-03-30 08:48:02,694][DEBUG][NHibernate.Connection.DriverConnectionProvider->lambda_method] - Obtaining IDbConnection from Driver
+[2018-03-30 08:48:02,802][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - ExecuteReader took 105 ms
+[2018-03-30 08:48:02,803][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - Opened IDataReader, open IDataReaders: 1
+[2018-03-30 08:48:02,805][DEBUG][NHibernate.Loader.Loader->lambda_method] - processing result set
+[2018-03-30 08:48:02,806][DEBUG][NHibernate.Loader.Loader->lambda_method] - result set row: 0
+[2018-03-30 08:48:02,809][DEBUG][NHibernate.Type.Int32Type->lambda_method] - returning '3' as column: id11_
+[2018-03-30 08:48:02,812][DEBUG][NHibernate.Loader.Loader->lambda_method] - result row: EntityKey[cis_model.sys.SysUser#3]
+[2018-03-30 08:48:02,817][DEBUG][NHibernate.Loader.Loader->lambda_method] - Initializing object from DataReader: [cis_model.sys.SysUser#3]
+[2018-03-30 08:48:02,822][DEBUG][NHibernate.Persister.Entity.AbstractEntityPersister->lambda_method] - Hydrating entity: [cis_model.sys.SysUser#3]
+[2018-03-30 08:48:02,823][DEBUG][NHibernate.Type.StringType->lambda_method] - returning 'ys' as column: username11_
+[2018-03-30 08:48:02,823][DEBUG][NHibernate.Type.StringType->lambda_method] - returning 'ys' as column: password11_
+[2018-03-30 08:48:02,824][DEBUG][NHibernate.Type.StringType->lambda_method] - returning '21' as column: user4_11_
+[2018-03-30 08:48:02,824][DEBUG][NHibernate.Type.StringType->lambda_method] - returning 'sad' as column: full5_11_
+[2018-03-30 08:48:02,825][DEBUG][NHibernate.Type.StringType->lambda_method] - returning '13' as column: tel11_
+[2018-03-30 08:48:02,825][DEBUG][NHibernate.Type.StringType->lambda_method] - returning '1' as column: remark11_
+[2018-03-30 08:48:02,828][DEBUG][NHibernate.Loader.Loader->lambda_method] - done processing result set (1 rows)
+[2018-03-30 08:48:02,829][DEBUG][NHibernate.Driver.NHybridDataReader->lambda_method] - running NHybridDataReader.Dispose()
+[2018-03-30 08:48:02,830][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - Closed IDataReader, open IDataReaders :0
+[2018-03-30 08:48:02,830][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - DataReader was closed after 133 ms
+[2018-03-30 08:48:02,831][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - Closed IDbCommand, open IDbCommands: 0
+[2018-03-30 08:48:02,833][DEBUG][NHibernate.AdoNet.ConnectionManager->lambda_method] - aggressively releasing database connection
+[2018-03-30 08:48:02,833][DEBUG][NHibernate.Connection.ConnectionProvider->lambda_method] - Closing connection
+[2018-03-30 08:48:02,835][DEBUG][NHibernate.Loader.Loader->lambda_method] - total objects hydrated: 1
+[2018-03-30 08:48:02,838][DEBUG][NHibernate.Engine.TwoPhaseLoad->lambda_method] - resolving associations for [cis_model.sys.SysUser#3]
+[2018-03-30 08:48:02,843][DEBUG][NHibernate.Engine.TwoPhaseLoad->lambda_method] - done materializing entity [cis_model.sys.SysUser#3]
+[2018-03-30 08:48:02,844][DEBUG][NHibernate.Engine.StatefulPersistenceContext->lambda_method] - initializing non-lazy collections
+[2018-03-30 08:48:02,847][DEBUG][NHibernate.AdoNet.ConnectionManager->lambda_method] - after autocommit
+[2018-03-30 08:48:02,847][DEBUG][NHibernate.Impl.SessionImpl->lambda_method] - transaction completion
+[2018-03-30 08:48:02,848][DEBUG][NHibernate.AdoNet.ConnectionManager->lambda_method] - aggressively releasing database connection
+[2018-03-30 08:48:02,854][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - flushing session
+[2018-03-30 08:48:02,855][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - processing flush-time cascades
+[2018-03-30 08:48:02,858][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - dirty checking collections
+[2018-03-30 08:48:02,859][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - Flushing entities and processing referenced collections
+[2018-03-30 08:48:02,868][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - Processing unreferenced collections
+[2018-03-30 08:48:02,869][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - Scheduling collection removes/(re)creates/updates
+[2018-03-30 08:48:02,870][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[2018-03-30 08:48:02,870][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[2018-03-30 08:48:02,871][DEBUG][NHibernate.Impl.Printer->lambda_method] - listing entities:
+[2018-03-30 08:48:02,873][DEBUG][NHibernate.Impl.Printer->lambda_method] - cis_model.sys.SysUser{'Id'='3', 'Username'='ys', 'Password'='ys', 'UserType'='21', 'FullName'='sad', 'Tel'='13', 'Remark'='1'}
+[2018-03-30 08:48:02,873][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - executing flush
+[2018-03-30 08:48:02,874][DEBUG][NHibernate.AdoNet.ConnectionManager->lambda_method] - registering flush begin
+[2018-03-30 08:48:02,875][DEBUG][NHibernate.AdoNet.ConnectionManager->lambda_method] - registering flush end
+[2018-03-30 08:48:02,876][DEBUG][NHibernate.AdoNet.ConnectionManager->lambda_method] - aggressively releasing database connection
+[2018-03-30 08:48:02,877][DEBUG][NHibernate.Event.Default.AbstractFlushingEventListener->lambda_method] - post flush
+[2018-03-30 08:48:02,878][DEBUG][NHibernate.Impl.SessionImpl->lambda_method] - [session-id=bed5f13b-c5a3-4547-aaf9-be899e52c684] running ISession.Dispose()
+[2018-03-30 08:48:02,879][DEBUG][NHibernate.Impl.SessionImpl->lambda_method] - [session-id=bed5f13b-c5a3-4547-aaf9-be899e52c684] executing real Dispose(True)
+[2018-03-30 08:48:02,881][DEBUG][NHibernate.Impl.SessionImpl->lambda_method] - closing session
+[2018-03-30 08:48:02,881][DEBUG][NHibernate.AdoNet.AbstractBatcher->lambda_method] - running BatcherImpl.Dispose(true)
+
+---------------------- application shutdown --------------------------

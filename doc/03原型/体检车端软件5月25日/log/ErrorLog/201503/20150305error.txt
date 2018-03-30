@@ -1,0 +1,76 @@
+
+ 
+记录时间：2015-03-05 08:53:44,424 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体模版.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-03-05 09:12:01,147 
+线程ID:[9] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：关键字 'WHERE' 附近有语法错误。
+CommandText: SELECT Base_Unit_FZ.FZ_Name,Base_Unit_BM.BM_Name,Base_Unit_BM.Unit_Name FROM Base_Unit_FZ 
+INNER JOIN Base_Unit_BM ON Base_Unit_FZ.BM_ID=Base_Unit_BM.BM_ID ORDER BY FZ_ID 
+WHERE Base_Unit_FZ.FZ_ID =fz_id
+
+ 
+
+ 
+记录时间：2015-03-05 15:30:12,205 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体模版.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-03-05 15:33:19,994 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：null 
+描述：文件“C:\Users\LL\Desktop\ll\54所\有用信息\团体模版.xls”正由另一进程使用，因此该进程无法访问此文件。
+ 
+
+ 
+记录时间：2015-03-05 15:35:30,231 
+线程ID:[16] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Group'。不能在对象 'dbo.Result_Group' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Group] 
+           ([Result_groupid_Id],[event_no],[office_id],[office_name],[group_id],[group_name],[patient_id],[prtient_name],[time],
+[discountType],[price],discountValue,shishoufei,[isShouFei],[isAppend],
+[AppNo])
+     VALUES ('84677','1503050002','519','检验科(三楼)','2283','血常规8项','9562','张小明','2015/3/5 15:35:30',
+'打折','20.00','1.00','20.0000','已收费','非附加',
+'');
+
+ 
+
+ 
+记录时间：2015-03-05 15:39:49,835 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Office'。不能在对象 'dbo.Result_Office' 中插入重复键。
+语句已终止。
+CommandText: INSERT INTO  [Result_Office]
+                       ([Result_Office_Id],[Office_Id],[Office_name],[Group_Id],[Group_Name],[Patient_Id],[Patient_Name],[Event_No],[date])
+                 VALUES
+                       ('50330','510','超声科(三楼)','1979','彩超肝胆脾胰双肾(餐前)','9563','LLL','1503050004','2015/3/5 15:39:49');
+
+ 
+
+ 
+记录时间：2015-03-05 15:39:54,061 
+线程ID:[10] 
+日志级别：ERROR 
+发生类：SXLibrary.DBHelper 
+描述：违反了 PRIMARY KEY 约束 'PK_Result_Item'。不能在对象 'dbo.Result_Item' 中插入重复键。
+语句已终止。
+ 

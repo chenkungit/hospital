@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <peDoctorId></peDoctorId>
+  <DefaultMsgContent>{姓名}{称谓}：您的XXX</DefaultMsgContent>
+  <customTemplate typeName="--食品" templateName="广东省餐饮服务从业人员健康检查表.doc"></customTemplate>
+  <customTemplate typeName="--入职体检" templateName="顺德区大良医院体格检查表.doc"></customTemplate>
+  <customTemplate typeName="--托幼机构" templateName="托幼机构工作人员健康检查表.doc"></customTemplate>
+  <customTemplate typeName="--公共卫生" templateName="中华人民共和国预防性健康检查.doc"></customTemplate>
+  <NeedSQDOfficeName officeName="放射科"/>
+  <NeedSQDOfficeName officeName="超声科"/>
+  <ZhiYinDanTemplate>template\ZhiYinDan</ZhiYinDanTemplate>
+  <BaoGaoTemplate type = "团队" path="template\BaoGao"/>
+  <BaoGaoTemplate type = "个人" path="template\BaoGao"/>
+</root>

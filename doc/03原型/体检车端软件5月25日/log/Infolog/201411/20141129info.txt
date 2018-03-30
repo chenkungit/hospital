@@ -1,0 +1,168 @@
+
+ 
+记录时间：2014-11-29 10:34:40,499 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:35:20,687 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:36:17,332 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:37:16,418 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:41:37,215 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:44:01,489 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:44:39,515 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:48:11,208 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:56:51,141 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:57:58,180 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 10:58:25,124 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:10:37,224 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:12:58,960 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:17:34,754 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:37:44,037 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:45:14,142 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:56:47,411 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 11:59:56,653 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 12:08:13,855 
+线程ID:[9] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 15:17:27,950 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
+
+ 
+记录时间：2014-11-29 15:19:19,817 
+线程ID:[10] 
+日志级别：INFO  
+发生类：null  
+描述：登陆成功@admin@wisecn-PC\wisecn
+ 
